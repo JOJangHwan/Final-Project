@@ -1,0 +1,136 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".manager_activity_home_bottom_navi">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/frame_home"
+        android:layout_width="match_parent"
+        android:layout_height="590dp"
+
+        android:background="#FFEB3B"
+
+        >
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:orientation="horizontal">
+
+            <TableRow>
+
+
+                <Button
+                    android:id="@+id/button_user_mana"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="사용자관리"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/button_hosp"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="병원 추가"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/button_noti"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="공지사항관리"
+                    android:textColor="@android:color/white"></Button>
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/button_vimo"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="바이러스    수정"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/button_QnA"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="Q and A"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/button_gogu"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="정부지침    수정 및 등록"
+                    android:textColor="@android:color/white"></Button>
+            </TableRow>
+
+
+            <TableRow android:layout_height="174dp">
+
+                <Button
+                    android:id="@+id/button_vimana"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="바이러스    관리"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/button_mfimana"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="문의사항    관리"
+                    android:textColor="@android:color/white"></Button>
+
+                <Button
+                    android:id="@+id/button_hosp_list"
+                    android:layout_width="120dp"
+                    android:layout_height="110dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#1DAC5C"
+                    android:text="병원 목록"
+                    android:textColor="@android:color/white"></Button>
+            </TableRow>
+
+
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

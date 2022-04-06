@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/person_picture"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/person_name"
+            android:src="@drawable/man"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:text="조장환"
+            android:textSize="27dp">
+
+        </TextView>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_user_pass"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="비빌번호 변경"
+        android:textSize="20dp"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_user_number"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="전화번호"
+        android:textSize="20dp"
+        >
+
+    </Button>
+    <Button
+        android:id="@+id/user1"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="기타 정보"
+        android:textSize="20dp"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/user2"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="기타 정보"
+        android:textSize="20dp"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/user3"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="기타 정보"
+        android:textSize="20dp"
+        >
+
+    </Button>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".manager_activity_home_bottom_navi">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0073B1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="전염성 확진자 관리 어플"
+            android:textColor="@android:color/white"
+            android:textSize="12pt">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frame_home"
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:layout_marginTop="50dp"
+        android:background="#FFEB3B"
+
+        >
+
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="#C8D1DA"
+        app:itemIconSize="35dp"
+        app:menu="@menu/manager_home_bottom_nav_menu" />
+    // app:labelVisibilityMode="unlabeled" 바텀 네비게이션 그림만 나오게 하는 것
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+

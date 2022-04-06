@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user_govguide"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0073B1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="정부지침"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="12pt">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_gogu1"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#1DAC5C"
+        android:text="거리두기"
+        android:textColor="@android:color/white"></Button>
+
+    <Button
+        android:id="@+id/button_gogu2"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#1DAC5C"
+        android:text="의료기관"
+        android:textColor="@android:color/white"></Button>
+
+    <Button
+        android:id="@+id/button_gogu3"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#1DAC5C"
+        android:text="집단시설, 다중이용시설"
+        android:textColor="@android:color/white"></Button>
+
+    <Button
+        android:id="@+id/button_gogu4"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#1DAC5C"
+        android:text="집단행사"
+        android:textColor="@android:color/white"></Button>
+
+    <Button
+        android:id="@+id/button_gogu5"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#1DAC5C"
+        android:text="장례관리"
+        android:textColor="@android:color/white"></Button>
+
+</LinearLayout>

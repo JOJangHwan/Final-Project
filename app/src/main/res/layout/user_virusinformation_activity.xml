@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    tools:context=".user_virusinformation"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="320dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="xxx바이러스"
+            android:textSize="40dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="659dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="정의 : 2019년 12월 중국 우한에서 처음 발생한 뒤 전 세계로 확산된, 새로운 유형의 코로나바이러스에 의한 호흡기 감염질환."
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="증상 : 발열, 권태감, 기침, 호흡곤란 및 폐렴 등 경증에서 중증까지 다양한 호흡기감염증이 나타남. 그 외 가래, 인후통, 두통, 객혈과 오심, 설사 등도 나타남."
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="검사 : 필수검체는 상기도 검체이며, 하기도 검체는 가래가 있는 환자에서 채취. 검체는 의사, 간호사, 임상병리사가 지정된 장소(선별진료소 등)에서 채취함." />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="백신 : 전 국민을 대상으로 접종하되, 접종순서 및 백신의 공급 상황에 맞춰 차례대로 접종." />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

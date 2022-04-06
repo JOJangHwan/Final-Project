@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user_govguidepage"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0073B1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="xxxx페이지"
+            android:textColor="@android:color/white"
+            android:textSize="12pt">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:background="@color/cardview_shadow_start_color"
+        android:text="거리두기면 거리두기 내용,의료기관이면 의료기관 내용 xxxx페이지 관련 지침 삽입"
+        android:textSize="14pt" />
+
+
+</LinearLayout>
