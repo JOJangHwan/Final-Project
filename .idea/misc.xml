@@ -42,6 +42,12 @@
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_menu.xml" value="0.246875" />
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_nav_manu.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_nav_menu.xml" value="0.246875" />
+        <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_login_activity.xml" value="0.14722222222222223" />
+        <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_register_activity.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_gogu.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwirhlist_activity.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwith_activity.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_findpwd_activity.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>

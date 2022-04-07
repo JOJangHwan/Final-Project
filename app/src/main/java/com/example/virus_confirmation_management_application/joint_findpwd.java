@@ -4,10 +4,10 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class user_register extends AppCompatActivity {
+public class joint_findpwd extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_register_activity);
+        setContentView(R.layout.joint_findpwd_activity);
     }
 }
