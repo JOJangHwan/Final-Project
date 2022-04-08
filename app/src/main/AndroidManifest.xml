@@ -57,37 +57,32 @@
         <activity android:name=".user_virusinformationlist"/>
         <activity android:name=".user_checkwirhlist"/>
         <activity android:name=".user_checkwith"/>
-        <activity android:name=".joint_findpwd"/>
+        <activity android:name=".user_findpwd"/>
         <activity android:name=".user_govguide"/>
         <activity android:name=".user_govguidepage"/>
         <activity android:name=".user_gpsmap"/>
         <activity android:name=".user_hosinformation"/>
-        <activity android:name=".joint_login"/>
+        <activity android:name=".user_login"/>
         <activity android:name=".user_mypage"/>
         <activity android:name=".user_mystatereportlist"/>
         <activity android:name=".user_mystatereport"/>
         <activity android:name=".user_myvaccine"/>
-        <activity android:name=".joint_register"/>
+        <activity android:name=".user_register"/>
         <activity android:name=".user_selftest"/>
         <activity android:name=".user_vaccineenroll"/>
         <activity android:name=".user_virusinformation"/>
         <activity android:name=".user_QandA"/>
         <activity android:name=".user_nearhosfind"/>
         <activity android:name=".user_announce"/>
-        <activity android:name=".user_myfamily"/>
         <activity android:name=".user_addfamily"/>
-
         <activity android:name=".user_MainActivity"/>
-
-
-        <activity android:name=".manager_activity_home_bottom_navi"/>
 
 
 
 
 
         <activity
-            android:name=".user_bottomnavi"
+            android:name=".manager_activity_home_bottom_navi"
             android:exported="true">
 
 
