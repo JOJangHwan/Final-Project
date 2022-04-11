@@ -52,7 +52,7 @@ public class user_mypage  extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),user_addfamily.class);
+                Intent intent = new Intent(getApplicationContext(), user_myfamily.class);
                 startActivity(intent);
             }
         });

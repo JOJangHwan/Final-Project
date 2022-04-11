@@ -57,7 +57,7 @@ public class user_Frag3 extends Fragment {
         addfamily_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),user_addfamily.class);
+                Intent intent = new Intent(getActivity(), user_myfamily.class);
                 startActivity(intent);
             }
         });

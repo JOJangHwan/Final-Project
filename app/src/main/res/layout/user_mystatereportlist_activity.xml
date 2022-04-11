@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/addreportButton"
         android:layout_width="88dp"
         android:layout_height="84dp"
         android:layout_marginStart="20dp"

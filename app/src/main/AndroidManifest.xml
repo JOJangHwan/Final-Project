@@ -74,15 +74,20 @@
         <activity android:name=".user_QandA"/>
         <activity android:name=".user_nearhosfind"/>
         <activity android:name=".user_announce"/>
+        <activity android:name=".user_myfamily"/>
         <activity android:name=".user_addfamily"/>
+
         <activity android:name=".user_MainActivity"/>
+
+
+        <activity android:name=".manager_activity_home_bottom_navi"/>
 
 
 
 
 
         <activity
-            android:name=".manager_activity_home_bottom_navi"
+            android:name=".user_bottomnavi"
             android:exported="true">
 
 
