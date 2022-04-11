@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".user_addfamily">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".user_myfamily"
 
+    android:layout_height="match_parent">
 
-
-<Button
-        android:id="@+id/login_loginButton2"
+    <Button
+        android:id="@+id/addfamilyButton"
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginStart="105dp"
         android:layout_marginEnd="106dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="50dp"
         android:backgroundTint="#F8CBAD"
-        android:text="가족 추가하기"
+        android:text="가족추가하기"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,37 +28,28 @@
         android:layout_height="60dp"
         android:background="#9DD5DC"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="나의 가족 추가하기"
+            android:text="나의가족"
             android:textSize="45sp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="275dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
-        android:orientation="horizontal"
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="200dp"
-            android:layout_height="match_parent"
-            android:hint="아이디를 입력하세요"
-            android:textSize="23sp" />
-
-        <Button
-            android:id="@+id/findfamilyButton"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="찾기" />
-    </LinearLayout>
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
