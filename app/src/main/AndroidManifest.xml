@@ -57,6 +57,13 @@
         <activity
             android:name=".manager_activity_home_bottom_navi"
             android:exported="false" />
+        <activity
+            android:name=".joint_activity_register_manager"
+            android:exported="false" />
+
+        <activity
+            android:name=".joint_activity_register_user"
+            android:exported="false" />
 
         <activity android:name=".user_virusinformationlist"/>
         <activity android:name=".user_checkwirhlist"/>

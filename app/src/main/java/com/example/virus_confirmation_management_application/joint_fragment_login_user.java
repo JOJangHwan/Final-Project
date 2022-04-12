@@ -32,6 +32,16 @@ public class joint_fragment_login_user extends Fragment {
             }
         });
 
+        button_move = view.findViewById(R.id.btn_signup_user); // 회원가입
+        button_move.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View v) {
+                Intent intent =new Intent(getActivity(),joint_activity_register_user.class);
+                startActivity(intent); // 액티비티 이동 구문
+            }
+        });
+
 
 
 
