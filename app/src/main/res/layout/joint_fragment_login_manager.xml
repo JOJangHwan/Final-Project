@@ -28,6 +28,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="textPassword"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="110dp"
         android:hint="비밀번호를 입력하세요"

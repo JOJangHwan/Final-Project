@@ -48,9 +48,13 @@
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_update.xml" value="0.215625" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_home_bottom_navi.xml" value="0.35260416666666666" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_hosp_add.xml" value="0.37228260869565216" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_hosp_list.xml" value="0.37228260869565216" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_hosp_list.xml" value="0.22" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_matter_mana.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_matter_update.xml" value="0.253125" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_notice.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_notice_update.xml" value="0.253125" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_qanda.xml" value="0.253125" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_qanda_update.xml" value="0.253125" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_user_mana.xml" value="0.2677083333333333" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_viral_isolation_period.xml" value="0.215625" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_virus_mana.xml" value="0.215625" />
