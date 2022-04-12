@@ -28,7 +28,7 @@ public class manager_activity_home_bottom_navi extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_manager_home_bottom_navi);
+        setContentView(R.layout.manager_home_bottom_navi);
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frame_home, ad_frag_home).commitAllowingStateLoss();
 

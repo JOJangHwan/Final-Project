@@ -54,6 +54,10 @@
             android:name=".manager_activity_gogu"
             android:exported="false" />
 
+        <activity
+            android:name=".manager_activity_home_bottom_navi"
+            android:exported="false" />
+
         <activity android:name=".user_virusinformationlist"/>
         <activity android:name=".user_checkwirhlist"/>
         <activity android:name=".user_checkwith"/>
@@ -82,7 +86,7 @@
 
 
         <activity
-            android:name=".manager_activity_home_bottom_navi"
+            android:name=".joint_login"
             android:exported="true">
 
 

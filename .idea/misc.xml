@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Fianl/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.241" />
+        <entry key="..\:/Fianl/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.32" />
         <entry key="..\:/Fianl/app/src/main/res/drawable/ic_baseline_airline_seat_individual_suite_24.xml" value="0.241" />
+        <entry key="..\:/Fianl/app/src/main/res/drawable/ic_baseline_engineering_24.xml" value="0.2465" />
         <entry key="..\:/Fianl/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.241" />
         <entry key="..\:/Fianl/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.241" />
+        <entry key="..\:/Fianl/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2465" />
         <entry key="..\:/Fianl/app/src/main/res/drawable/ic_launcher_background.xml" value="0.241" />
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_avtivity_matter_mana.xml" value="0.28125" />
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_bttom.xml" value="0.38697916666666665" />
@@ -16,7 +19,10 @@
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_hosp_add.xml" value="0.28125" />
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_hosp_list.xml" value="0.5" />
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_isolation_period.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/activity_joint_login.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/activity_manager_home_bottom_navi.xml" value="0.215625" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/activity_manager_home_bottom_navi1.xml" value="0.35260416666666666" />
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_matter_update.xml" value="0.2079207920792079" />
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_notice.xml" value="0.28125" />
         <entry key="..\:/Fianl/app/src/main/res/layout/activity_notice_update.xml" value="0.340625" />
@@ -30,18 +36,50 @@
         <entry key="..\:/Fianl/app/src/main/res/layout/frag_con_case.xml" value="0.3260416666666667" />
         <entry key="..\:/Fianl/app/src/main/res/layout/frag_home.xml" value="0.25" />
         <entry key="..\:/Fianl/app/src/main/res/layout/frag_peo_infor.xml" value="0.3260416666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_peo_infor.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/joint_findpwd_activity.xml" value="0.246875" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/joint_fragment_login_manager.xml" value="0.21510416666666668" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/joint_fragment_login_user.xml" value="0.25" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/joint_gragment_login_user.xml" value="0.21510416666666668" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/joint_login.xml" value="0.22" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/joint_login_activity.xml" value="0.246875" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/joint_register_activity.xml" value="0.246875" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu.xml" value="0.215625" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_update.xml" value="0.215625" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_home_bottom_navi.xml" value="0.35260416666666666" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_hosp_add.xml" value="0.37228260869565216" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_hosp_list.xml" value="0.37228260869565216" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_matter_mana.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_notice.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_user_mana.xml" value="0.2677083333333333" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_viral_isolation_period.xml" value="0.215625" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_virus_mana.xml" value="0.215625" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_con_case.xml" value="0.215625" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_home.xml" value="0.21510416666666668" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_peo_infor.xml" value="0.25" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_activity_main.xml" value="0.38697916666666665" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_announce_activity.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_addfamily_activity.xml" value="0.25364583333333335" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_announce_activity.xml" value="0.2" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_bottomnavi.xml" value="0.16" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_checkwirhlist_activity.xml" value="0.16197916666666667" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_checkwith_activity.xml" value="0.16197916666666667" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_frag1.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_frag2.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_frag3.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_govguidepage_activity.xml" value="0.37228260869565216" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_hosinformation_activity.xml" value="0.37228260869565216" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_login_activity.xml" value="0.215625" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_mypage_activity.xml" value="0.25364583333333335" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_mystatereportlist_activity.xml" value="0.37228260869565216" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_nearhosfind_activity.xml" value="0.13551165146909827" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_register_activity.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_selftest_activity.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_vaccineenroll_activity.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_menu.xml" value="0.246875" />
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_nav_manu.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_nav_menu.xml" value="0.246875" />
+        <entry key="..\:/Fianl/app/src/main/res/menu/joint_login_menu.xml" value="0.1" />
+        <entry key="..\:/Fianl/app/src/main/res/menu/manager_home_bottom_nav_menu.xml" value="0.38697916666666665" />
+        <entry key="..\:/Fianl/app/src/main/res/menu/user_bottom_menu.xml" value="0.38697916666666665" />
       </map>
     </option>
   </component>

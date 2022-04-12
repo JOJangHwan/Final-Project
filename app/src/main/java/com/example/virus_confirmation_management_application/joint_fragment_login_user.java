@@ -27,7 +27,7 @@ public class joint_fragment_login_user extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), user_MainActivity.class);
+                Intent intent =new Intent(getActivity(),user_MainActivity.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
