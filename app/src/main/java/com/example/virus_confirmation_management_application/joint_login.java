@@ -1,18 +1,6 @@
 package com.example.virus_confirmation_management_application;
 
 import android.os.Bundle;
-<<<<<<< HEAD
-
-import androidx.appcompat.app.AppCompatActivity;
-
-public class joint_login extends AppCompatActivity {
-
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.joint_login_activity);
-    }
-}
-=======
 import android.view.MenuItem;
 import android.widget.Button;
 
@@ -36,6 +24,7 @@ public class joint_login extends AppCompatActivity {
 
     private Button fp_info;
 
+    @Override
     protected  void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
@@ -69,8 +58,7 @@ public class joint_login extends AppCompatActivity {
         }
     }
 
-    }
+}
 
 
 
->>>>>>> 08b178a (3/31->4/9)
