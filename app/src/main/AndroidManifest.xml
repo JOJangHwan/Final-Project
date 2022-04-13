@@ -87,7 +87,7 @@
         <activity android:name=".user_announce"/>
         <activity android:name=".user_addfamily"/>
         <activity android:name=".user_MainActivity"/>
-        <activity android:name=".joint_login"/>
+        <activity android:name=".user_bottomnavi"/>
 
 
 
@@ -95,7 +95,7 @@
 
 
         <activity
-            android:name=".user_bottomnavi"
+            android:name=".joint_login"
             android:exported="true">
 
 

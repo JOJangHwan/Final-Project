@@ -48,6 +48,8 @@
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwirhlist_activity.xml" value="0.358695652173913" />
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwith_activity.xml" value="0.358695652173913" />
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_findpwd_activity.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_fragment_login_user.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_login.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_login_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/mainui.xml" value="0.33" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_gogu_update.xml" value="0.36614583333333334" />
@@ -73,9 +75,13 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_bottomnavi.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwirhlist_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwith_activity.xml" value="0.33" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_frag1.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_frag2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_frag3.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mypage_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mystatereport_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mystatereportlist_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/menu/joint_login_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/menu/user_bottom_menu.xml" value="0.18802083333333333" />
       </map>
     </option>
