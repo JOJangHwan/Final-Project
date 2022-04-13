@@ -104,7 +104,15 @@ public class manager_frag_home extends Fragment {
 
 
 
+        button_move = view.findViewById(R.id.button_vimo); // 내정보인데 사실 지도
+        button_move.setOnClickListener(new View.OnClickListener() {
+            @Override
 
+            public void onClick(View v) {
+                Intent intent =new Intent(getActivity(), manager_activity_webview.class);
+                startActivity(intent); // 액티비티 이동 구문
+            }
+        });
 
 
 

@@ -81,7 +81,7 @@
 
         android:layout_marginBottom="12dp"
         android:ems="10"
-        android:hint="닉네임을 입력하세요"
+        android:hint="이름을 입력하세요"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toTopOf="@+id/register_phoneNum"
         app:layout_constraintEnd_toEndOf="parent"

@@ -80,5 +80,5 @@ public class user_bottomnavi extends AppCompatActivity {
                 ft.commit();
                 break;
         }
-     }
+    }
 }
