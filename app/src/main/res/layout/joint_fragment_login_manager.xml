@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#E3B3ED"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="45dp"
+        android:text="아이디 : "
+
+        android:textSize="12pt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="60dp"
+        android:hint="아이디를 입력하세요"
+        android:textSize="10pt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="110dp"
+        android:hint="비밀번호를 입력하세요"
+        android:textSize="10pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginRight="60dp"
+        android:text="비밀번호 : "
+        android:textSize="12pt" />
+
+    <Button
+        android:id="@+id/btn_login_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="200dp"
+        android:text="로그인"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_signup_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="200dp"
+        android:text="회원가입"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_id_find_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="300dp"
+        android:text="아이디 찾기"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/btn_pw_find_manager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        android:textSize="20dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="300dp"
+        />
+
+
+</RelativeLayout>

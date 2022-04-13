@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_login_user"
+        android:title="login"
+        android:icon="@drawable/ic_baseline_person_24"
+        />
+
+    <item
+        android:id="@+id/menu_login_manager"
+        android:title="sign up"
+        android:icon="@drawable/ic_baseline_engineering_24"
+        />
+
+</menu>

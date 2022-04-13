@@ -5,9 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".manager_activity_home_bottom_navi">
-
-
+    tools:context=".joint_login">
 
 
     <LinearLayout
