@@ -10,12 +10,12 @@
     <FrameLayout
         android:id="@+id/main_frame"
         android:layout_width="match_parent"
-        android:layout_height="630dp"
+        android:layout_height="match_parent"
 
 
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavi"
-        tools:layout_editor_absoluteX="-1dp">
+        tools:layout_editor_absoluteX="0dp">
 
     </FrameLayout>
 
@@ -23,7 +23,7 @@
 
         android:id="@+id/bottomNavi"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="1dp"
 
         android:layout_marginBottom="32dp"
