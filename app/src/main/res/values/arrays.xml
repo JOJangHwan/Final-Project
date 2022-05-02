@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="vaccineCheckNUM">
+        <item>1차</item>
+        <item>2차</item>
+        <item>3차</item>
+        <item>4차</item>
+        <item>5차</item>
+    </string-array>
+
+</resources>
