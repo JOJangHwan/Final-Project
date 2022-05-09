@@ -17,14 +17,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="자가진단"
-        android:textSize="45sp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="자가진단"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="45sp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
     </FrameLayout>
 
 
@@ -56,6 +59,8 @@
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:hint="체온을 입력해주세요"
                     android:textSize="20sp"
                     android:layout_weight="1"
@@ -63,11 +68,11 @@
 
                 <Spinner
                     android:id="@+id/selftest_C_ComboBox"
+                    android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:layout_marginBottom="187dp"
-                    android:spinnerMode="dropdown"
                     android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:spinnerMode="dropdown" />
             </LinearLayout>
 
             <LinearLayout
@@ -80,22 +85,28 @@
                 <TextView
                     android:layout_height="match_parent"
                     android:hint="기침을 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
+                        android:id="@+id/g1y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g1n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -114,22 +125,27 @@
                 <TextView
                     android:layout_height="match_parent"
                     android:text="가래가 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g2y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g2n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -148,22 +164,27 @@
                 <TextView
                     android:layout_height="match_parent"
                     android:text="오한이 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g3y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g3n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -182,22 +203,27 @@
                 <TextView
                     android:layout_height="match_parent"
                     android:text="목 아픔이 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g4y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g4n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -216,22 +242,27 @@
                 <TextView
                     android:layout_height="match_parent"
                     android:text="호흡곤란이 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g5y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g5n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -250,22 +281,27 @@
                 <TextView
                     android:layout_height="match_parent"
                     android:text="복통이 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g6y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g6n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -285,56 +321,27 @@
                 <TextView
                     android:layout_height="match_parent"
                     android:text="두통이 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g7y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="아니오" />
-                </RadioGroup>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:orientation="horizontal"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-                <TextView
-                    android:layout_height="match_parent"
-                    android:text="고혈압이나 저혈압이 있나요?"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
-
-                <RadioGroup
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
-                    <RadioButton
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="네" />
-
-                    <RadioButton
+                        android:id="@+id/g7n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -353,22 +360,27 @@
                 <TextView
                     android:layout_height="match_parent"
                     android:text="당뇨가 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g8y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g8n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -386,23 +398,29 @@
 
                 <TextView
                     android:layout_height="match_parent"
-                    android:text="속이 더부룩하나요?"
+                    android:text="미각 또는 후각
+                    사실증상이 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g9y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g9n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -420,23 +438,28 @@
 
                 <TextView
                     android:layout_height="match_parent"
-                    android:text="콧물이 있나요?"
+                    android:text="가슴통증이 있나요?"
+                    android:textAlignment="center"
+                    android:gravity="center"
                     android:textSize="20sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"/>
 
                 <RadioGroup
+                    android:id="@+id/group10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
                     android:layout_weight="1">
                     <RadioButton
+                        android:id="@+id/g10y"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="네" />
 
                     <RadioButton
+                        android:id="@+id/g10n"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -453,6 +476,8 @@
                 android:layout_height="match_parent"
                 android:backgroundTint="#F8CBAD"
                 android:text=" 진 단 하 기"
+                android:textAlignment="center"
+                android:gravity="center"
                 android:textSize="25sp"
                 />
 
