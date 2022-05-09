@@ -6,12 +6,12 @@
     tools:context=".user_mypage"
     android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/mypageimagebutton"
+    <ImageView
+        android:id="@+id/mypageimage"
         android:layout_width="130dp"
         android:layout_height="137dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="58dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck"
@@ -24,7 +24,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="8dp"
         android:text="현재상태 :메르스 확진"
-        app:layout_constraintStart_toEndOf="@+id/mypageimagebutton"
+        app:layout_constraintStart_toEndOf="@+id/mypageimage"
         app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <TextView
@@ -34,7 +34,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="58dp"
         android:text="xxx님 안녕하세요"
-        app:layout_constraintStart_toEndOf="@+id/mypageimagebutton"
+        app:layout_constraintStart_toEndOf="@+id/mypageimage"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -44,7 +44,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="8dp"
         android:text="거주지 : 경기도 화성시 음봉면"
-        app:layout_constraintStart_toEndOf="@+id/mypageimagebutton"
+        app:layout_constraintStart_toEndOf="@+id/mypageimage"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <TextView
@@ -54,7 +54,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="8dp"
         android:text="전화번호 : 010-1234-1234"
-        app:layout_constraintStart_toEndOf="@+id/mypageimagebutton"
+        app:layout_constraintStart_toEndOf="@+id/mypageimage"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <TextView
@@ -64,7 +64,7 @@
         android:layout_marginStart="45dp"
         android:layout_marginTop="8dp"
         android:text="백신 : 3차(화이자)"
-        app:layout_constraintStart_toEndOf="@+id/mypageimagebutton"
+        app:layout_constraintStart_toEndOf="@+id/mypageimage"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button

@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/virustitle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
@@ -24,10 +24,13 @@
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="659dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
         android:layout_marginBottom="1dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="1dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/textView7"
@@ -41,21 +44,21 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="증상 : 발열, 권태감, 기침, 호흡곤란 및 폐렴 등 경증에서 중증까지 다양한 호흡기감염증이 나타남. 그 외 가래, 인후통, 두통, 객혈과 오심, 설사 등도 나타남."
-            android:textSize="18sp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="검사 : 필수검체는 상기도 검체이며, 하기도 검체는 가래가 있는 환자에서 채취. 검체는 의사, 간호사, 임상병리사가 지정된 장소(선별진료소 등)에서 채취함." />
+            android:text="검사 : 필수검체는 상기도 검체이며, 하기도 검체는 가래가 있는 환자에서 채취. 검체는 의사, 간호사, 임상병리사가 지정된 장소(선별진료소 등)에서 채취함."
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:text="백신 : 전 국민을 대상으로 접종하되, 접종순서 및 백신의 공급 상황에 맞춰 차례대로 접종." />
+            android:text="백신 : 전 국민을 대상으로 접종하되, 접종순서 및 백신의 공급 상황에 맞춰 차례대로 접종."
+            android:textSize="18sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

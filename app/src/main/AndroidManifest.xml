@@ -107,6 +107,7 @@
         <activity android:name=".user_nearhosfind" />
         <activity android:name=".user_announce" />
         <activity android:name=".user_addfamily" />
+        <activity android:name=".user_myfamily" />
         <activity android:name=".user_MainActivity" />
         <activity
             android:name=".joint_login"

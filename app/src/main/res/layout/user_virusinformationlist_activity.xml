@@ -21,11 +21,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="520dp"
-        android:layout_marginBottom="1dp"
+        android:layout_marginTop="47dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vaccineenroll_consttext2">
 
         <Button
             android:id="@+id/H1N1_button"
@@ -56,16 +56,4 @@
             android:textSize="34sp" />
     </LinearLayout>
 
-    <FrameLayout
-        android:id="@+id/frameLayout3"
-        android:layout_width="409dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

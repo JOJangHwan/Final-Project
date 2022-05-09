@@ -8,4 +8,27 @@
         <item>5차</item>
     </string-array>
 
+    <string-array name="self_temperature">
+        <item>36.5</item>
+        <item>36.6</item>
+        <item>36.7</item>
+        <item>36.8</item>
+        <item>36.9</item>
+        <item>37.0</item>
+        <item>37.1</item>
+        <item>37.2</item>
+        <item>37.3</item>
+        <item>37.4</item>
+        <item>37.5</item>
+        <item>37.6</item>
+        <item>37.7</item>
+        <item>37.8</item>
+        <item>37.9</item>
+        <item>38.0</item>
+        <item>38.1</item>
+        <item>38.2</item>
+
+
+    </string-array>
+
 </resources>
