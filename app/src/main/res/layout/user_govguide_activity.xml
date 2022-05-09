@@ -68,7 +68,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
         android:backgroundTint="#1DAC5C"
-        android:text="집단행사"
+        android:text="소상공인 및 기업"
         android:textColor="@android:color/white"></Button>
 
     <Button
@@ -79,7 +79,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
         android:backgroundTint="#1DAC5C"
-        android:text="장례관리"
+        android:text="기업 및 시장"
         android:textColor="@android:color/white"></Button>
 
 </LinearLayout>

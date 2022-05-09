@@ -6,10 +6,11 @@
     tools:context=".manager_activity_webview">
 
     <WebView
-        android:id="@+id/user_qanda_activity"
+        android:id="@+id/user_govguide_gogu2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout_editor_absolutrX="8dp"
-        tools:layout_editor_absolutrY="8dp" />
+        tools:layout_editor_absolutrY="8dp"
+        />
 
 </LinearLayout>

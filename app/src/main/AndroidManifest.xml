@@ -92,6 +92,11 @@
         <activity android:name=".user_virusinformationlist" />
         <activity android:name=".user_checkwirhlist" />
         <activity android:name=".user_checkwith" />
+        <activity android:name=".user_govguide_distanving" />
+        <activity android:name=".user_govguide_gogu2" />
+        <activity android:name=".user_govguide_gogu3" />
+        <activity android:name=".user_govguide_gogu4" />
+        <activity android:name=".user_govguide_gogu5" />
         <activity android:name=".user_govguide" />
         <activity android:name=".user_govguidepage" />
         <activity android:name=".user_gpsmap" />
@@ -103,12 +108,12 @@
         <activity android:name=".user_selftest" />
         <activity android:name=".user_vaccineenroll" />
         <activity android:name=".user_virusinformation" />
-        <activity android:name=".user_QandA" />
         <activity android:name=".user_nearhosfind" />
         <activity android:name=".user_announce" />
         <activity android:name=".user_addfamily" />
         <activity android:name=".user_myfamily" />
         <activity android:name=".user_MainActivity" />
+        <activity android:name=".user_QandA"/>
         <activity
             android:name=".joint_login"
             android:exported="true">
