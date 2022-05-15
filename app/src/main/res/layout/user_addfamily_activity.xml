@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F3F3F0"
     tools:context=".user_addfamily">
 
 
@@ -27,7 +28,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#9DD5DC"
+        android:background="#ADE7E7"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent">
 

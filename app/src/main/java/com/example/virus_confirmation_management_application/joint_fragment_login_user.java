@@ -11,6 +11,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import static com.example.virus_confirmation_management_application.user_Frag2.a;
+
 public class joint_fragment_login_user extends Fragment {
 
     private View view;
@@ -28,6 +30,7 @@ public class joint_fragment_login_user extends Fragment {
 
             public void onClick(View v) {
                 Intent intent =new Intent(getActivity(),user_bottomnavi.class);
+                a=0; //슬라이드 오류 해결 코드
                 startActivity(intent); // 액티비티 이동 구문
             }
         });

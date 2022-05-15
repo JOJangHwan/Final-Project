@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#C8D9E8"
+    android:background="#E4E4E4"
     android:layout_height="match_parent"
     tools:context=".user_checkwith">
 
@@ -56,7 +56,7 @@
         android:layout_marginBottom="30dp"
         android:text="문의하기"
         android:textSize="40dp"
-        android:backgroundTint="#039BE5"
+        android:backgroundTint="#008EDC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

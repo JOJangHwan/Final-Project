@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     tools:context=".user_virusinformation"
+    android:background="#C6D1D7"
     android:layout_height="match_parent">
 
     <FrameLayout

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     tools:context=".user_virusinformationlist"
+    android:background="#DDDDFF"
     android:layout_height="match_parent">
 
     <TextView
@@ -20,9 +21,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="520dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="47dp"
         android:orientation="vertical"
+        android:background="#DDDDDD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vaccineenroll_consttext2">

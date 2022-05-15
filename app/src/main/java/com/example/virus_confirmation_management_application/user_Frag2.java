@@ -39,7 +39,7 @@ public class user_Frag2 extends Fragment {
         mPager = getView().findViewById(R.id.viewpager);
         //Adapter
         pagerAdapter = new user_slider_Adapter(getActivity(), num_page);
-        if(a==0){
+       if(a==0){
             mPager.setAdapter(pagerAdapter); //충돌로 인한 스태틱값을 이용한 한번만 선언하기
         }
         a++;

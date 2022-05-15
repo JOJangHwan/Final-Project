@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".user_announce"
+    android:background="#EEEEEE"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/linearLayout"
+        android:background="#DDDDDD"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#9DD5DC"
         android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="1dp">

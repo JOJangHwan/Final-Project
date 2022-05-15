@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import static com.example.virus_confirmation_management_application.user_Frag2.a;
 
 public class user_bottomnavi extends AppCompatActivity {
 
@@ -47,6 +48,7 @@ public class user_bottomnavi extends AppCompatActivity {
                         setFrag(0);
                         break;
                     case R.id.action_main:
+                        a=0; //슬라이드 오류 해결
                         setFrag(1);
                         break;
                     case R.id.action_person:

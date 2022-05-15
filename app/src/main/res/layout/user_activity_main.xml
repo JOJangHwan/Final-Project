@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EEEEEE"
     tools:context=".user_bottomnavi">
 
     <FrameLayout
         android:id="@+id/frameLayout4"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="320dp"
         android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -40,10 +43,10 @@
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
         android:stretchColumns="0,1,2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout4">
+        app:layout_constraintStart_toStartOf="parent">
 
         <!--첫번째 Row-->
         <TableRow>
@@ -103,7 +106,7 @@
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_weight="1"
-                    android:background="@drawable/free_icon_vaccination_1843480"
+                    android:background="@drawable/ic_baseline_health_and_safety_24"
                     android:gravity="center"
                     android:padding="25dp"
                     tools:ignore="SpeakableTextPresentCheck" />
