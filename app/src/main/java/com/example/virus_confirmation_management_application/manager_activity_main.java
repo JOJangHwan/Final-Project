@@ -1,26 +1,37 @@
 package com.example.virus_confirmation_management_application;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class manager_activity_main extends AppCompatActivity {
 
     private Button button_move;
-
+    private Button button_move_se;
+    private Button button_jeju;
+    private ImageView image_jeju;
+    private ImageView image_seoul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_main);
 
+        button_jeju = findViewById(R.id.button_jeju);
+        button_jeju.setBackgroundColor(Color.parseColor("#00ff0000"));
+        image_jeju = findViewById(R.id.image_jeju);
+        image_jeju.setColorFilter(Color.parseColor("#55ff0000"));
 
-
-        button_move = findViewById(R.id.button_se); // 서울
-        button_move.setOnClickListener(new View.OnClickListener() {
+        button_move_se = findViewById(R.id.button_se); // 서울
+        button_move_se.setBackgroundColor(Color.parseColor("#00ff0000"));
+        image_seoul = findViewById(R.id.image_seoul);
+        image_seoul.setColorFilter(Color.parseColor("#55ff0000"));
+        button_move_se.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
