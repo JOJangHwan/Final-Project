@@ -112,6 +112,7 @@
         <activity android:name=".user_announce" />
         <activity android:name=".user_addfamily" />
         <activity android:name=".user_myfamily" />
+        <activity android:name=".user_select_country" />
         <activity android:name=".user_MainActivity" />
         <activity android:name=".user_QandA"/>
         <activity

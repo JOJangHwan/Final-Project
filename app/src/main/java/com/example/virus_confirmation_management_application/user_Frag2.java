@@ -107,7 +107,7 @@ public class user_Frag2 extends Fragment {
         govguid_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),user_govguide.class);
+                Intent intent = new Intent(getActivity(),user_select_country.class);
                 startActivity(intent);
             }
         });
