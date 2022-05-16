@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.virus_confirmation_management_application">
+    package="com.example.virus_confirmation_management_application" >
 
 
 
@@ -11,9 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Virus_Confirmation_Management_Application"
-        android:usesCleartextTraffic="true"
-        >
-
+        android:usesCleartextTraffic="true" >
         <activity
             android:name=".manager_activity_webview"
             android:exported="false" />
@@ -89,6 +87,14 @@
         <activity
             android:name=".manager_activity_gogu_5"
             android:exported="false" />
+        <activity
+            android:name=".manager_activity_main"
+            android:exported="false" />
+
+
+
+
+
         <activity android:name=".user_virusinformationlist" />
         <activity android:name=".user_checkwirhlist" />
         <activity android:name=".user_checkwith" />
@@ -117,7 +123,7 @@
         <activity android:name=".user_QandA"/>
         <activity
             android:name=".joint_login"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

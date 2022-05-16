@@ -7,13 +7,31 @@
     android:orientation="vertical"
     tools:context=".joint_login">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0073B1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="HOME"
+            android:textColor="@android:color/white"
+            android:textSize="12pt">
+
+        </TextView>
+
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/frame_home"
         android:layout_width="match_parent"
         android:layout_height="590dp"
-
-        android:background="#FFEB3B"
+        android:layout_marginTop="50dp"
+        android:background="#E3B3ED"
 
         >
 
@@ -21,7 +39,7 @@
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFC107"
+            android:background="#E3B3ED"
             android:orientation="horizontal">
 
             <TableRow>
@@ -34,7 +52,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="사용자관리"
                     android:textColor="@android:color/white"></Button>
 
@@ -44,7 +62,7 @@
                     android:layout_height="110dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="병원 추가"
                     android:textColor="@android:color/white"></Button>
 
@@ -54,7 +72,7 @@
                     android:layout_height="110dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="공지사항관리"
                     android:textColor="@android:color/white"></Button>
             </TableRow>
@@ -68,7 +86,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="바이러스    수정"
                     android:textColor="@android:color/white"></Button>
 
@@ -78,7 +96,7 @@
                     android:layout_height="110dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="Q and A"
                     android:textColor="@android:color/white"></Button>
 
@@ -88,7 +106,7 @@
                     android:layout_height="110dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="정부지침    수정 및 등록"
                     android:textColor="@android:color/white"></Button>
             </TableRow>
@@ -103,7 +121,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="바이러스    관리"
                     android:textColor="@android:color/white"></Button>
 
@@ -113,7 +131,7 @@
                     android:layout_height="110dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="문의사항    관리"
                     android:textColor="@android:color/white"></Button>
 
@@ -123,12 +141,24 @@
                     android:layout_height="110dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:backgroundTint="#1DAC5C"
+                    android:backgroundTint="#93C4EC"
                     android:text="병원 목록"
                     android:textColor="@android:color/white"></Button>
             </TableRow>
 
 
         </TableLayout>
+
+
     </LinearLayout>
+    <Button
+        android:id="@+id/button_pr"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="30dp"
+        android:backgroundTint="#93C4EC"
+        android:text="연습"
+        android:textColor="@android:color/white"></Button>
 </RelativeLayout>

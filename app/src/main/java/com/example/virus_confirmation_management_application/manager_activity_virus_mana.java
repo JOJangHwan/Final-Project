@@ -23,7 +23,7 @@ public class manager_activity_virus_mana extends AppCompatActivity {
             @Override
 
             public void onClick(View v) {
-                Intent intent = new Intent(manager_activity_virus_mana.this, manager_activity_viral_transmissin_power.class); //현재 위치와 이동할 위치의 인자
+                Intent intent = new Intent(manager_activity_virus_mana.this,manager_activity_viral_transmissin_power.class); //현재 위치와 이동할 위치의 인자
                 startActivity(intent); // 액티비티 이동 구문
             }
         });

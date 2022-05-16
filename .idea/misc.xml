@@ -78,7 +78,7 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_frag_con_case.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_frag_home.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_frag_peo_infor.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_activity_main.xml" value="0.22" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_addfamily_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_announce_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_bottomnavi.xml" value="0.36614583333333334" />
@@ -89,11 +89,6 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_frag3.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguide_activity.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguidepage_activity.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_distancing.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu2.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu3.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu4.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu5.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_gpsmap.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_hosinformation_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myfamily_activity.xml" value="0.36614583333333334" />
@@ -103,7 +98,6 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myvaccine_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_nearhosfind_activity.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_qanda_activity.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_select_country.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_selftest_activity.xml" value="0.22" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_1p.xml" value="0.1" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_2p.xml" value="0.1" />
@@ -116,6 +110,19 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/menu/user_bottom_menu.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/pc/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_webview.xml" value="0.1" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_activity_main.xml" value="0.29322916666666665" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_frag2.xml" value="0.24205128205128204" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguide_activity.xml" value="0.29322916666666665" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguidepage_activity.xml" value="0.29322916666666665" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_distancing.xml" value="0.29322916666666665" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu2.xml" value="0.1" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu3.xml" value="0.1" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu4.xml" value="0.1" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu5.xml" value="0.1" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_nearhosfind_activity.xml" value="0.2760416666666667" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_qanda_activity.xml" value="0.22784810126582278" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_selftest_activity.xml" value="0.34096692111959287" />
       </map>
     </option>
   </component>

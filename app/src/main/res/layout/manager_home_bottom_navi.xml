@@ -8,31 +8,13 @@
     android:orientation="vertical"
     tools:context=".joint_login">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#0073B1"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="전염성 확진자 관리 어플"
-            android:textColor="@android:color/white"
-            android:textSize="12pt">
-
-        </TextView>
-
-
-    </LinearLayout>
-
 
     <FrameLayout
         android:id="@+id/frame_home"
         android:layout_width="match_parent"
-        android:layout_height="610dp"
-        android:layout_marginTop="50dp"
-        android:background="#FFEB3B"
+        android:layout_height="match_parent"
+
+        android:background="#E3B3ED"
 
         >
 
