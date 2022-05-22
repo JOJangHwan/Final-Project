@@ -16,5 +16,11 @@ public class joint_activity_register_manager extends AppCompatActivity {
         setContentView(R.layout.joint_activity_register_manager);
 
 
+
+
+
+
     }
+
+
 }

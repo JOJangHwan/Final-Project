@@ -1,59 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".manager_activity_gogu_update">
-
+    android:padding="16dp"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#0073B1"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Q and A"
-            android:textColor="@android:color/white"
-            android:textSize="12pt">
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="제목"/>
 
-        </TextView>
-
-
+        <EditText
+            android:id="@+id/title_et"
+            android:padding="16dp"
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="제목을 입력하세요."
+            />
     </LinearLayout>
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="내용"/>
+
+    <EditText
+        android:id="@+id/content_et"
+        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:background="@color/cardview_shadow_start_color"
-        android:text="Q and A 내용이 들어갈 예정"
-        android:textSize="14pt"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#eeeeee"
+        android:hint="내용을 입력하세요."
         />
 
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="40dp"
-            android:text="수정하기"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:layout_marginLeft="280dp"
-
-            android:text="수정하기" />
-    </RelativeLayout>
+    <Button
+        android:id="@+id/reg_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등록하기"
+        android:textColor="#FFFFFF"
+        android:background="#C62828"/>
 
 
 

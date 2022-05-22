@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="#D6D1D1"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0073B1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="내정보"
+            android:textColor="@android:color/white"
+            android:textSize="12pt">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="#D6D1D1"
+        >
+
+        <ImageView
+            android:id="@+id/person_picture"
+            android:layout_width="170dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/person_name"
+            android:src="@drawable/man">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="60dp"
+            android:text="조장환"
+            android:textSize="14pt">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/person_virus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="105dp"
+            android:text="바이러스 이름"
+            android:textSize="11pt">
+
+        </TextView>
+
+
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="#D6D1D1">
+
+        <ImageButton
+            android:id="@+id/manager_button_virus"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_virus_24"
+            android:backgroundTint="@color/purple_500"
+            android:layout_marginRight="30dp"
+            >
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/manager_button_hosp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_local_hospital_24"
+            android:backgroundTint="#E91E63"
+            android:layout_marginRight="30dp"
+            >
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/manager_button_people"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_baseline_person_24"
+            android:backgroundTint="#4CAF50"
+            >
+
+        </ImageButton>
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="390dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button_manager_information"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+
+                android:text="내 정보"
+                android:textSize="15pt"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+
+                >
+
+            </Button>
+
+            <Button
+        android:id="@+id/button_manager_notice"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="공지사항"
+                android:textSize="15pt"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+        >
+
+    </Button>
+    <Button
+        android:id="@+id/button_manager_QandA"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="Q and A"
+        android:textSize="15pt"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_manager_question"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="문의사항"
+        android:textSize="15pt"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_manager_gogu"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="정부지침"
+        android:textSize="15pt"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        >
+
+    </Button>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

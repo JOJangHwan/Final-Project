@@ -21,7 +21,7 @@ public class manager_activity_home_bottom_navi extends AppCompatActivity {
     private final FragmentManager fragmentManager = getSupportFragmentManager();
     private final manager_frag_home ad_frag_home = new manager_frag_home();
     private final manager_frag_con_case frag_con_case=new manager_frag_con_case();
-    private final manager_frag_peo_infor frag_peo_infor=new manager_frag_peo_infor();
+    private final manager_frag_user_information frag_user_information=new manager_frag_user_information();
 
     private Button fp_info;
 
@@ -55,7 +55,7 @@ public class manager_activity_home_bottom_navi extends AppCompatActivity {
                     transaction.replace(R.id.frame_home, frag_con_case).commitAllowingStateLoss();
                     break;
                 case R.id.menu_people_in:
-                    transaction.replace(R.id.frame_home, frag_peo_infor).commitAllowingStateLoss();
+                    transaction.replace(R.id.frame_home, frag_user_information).commitAllowingStateLoss();
                     break;
 
 

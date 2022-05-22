@@ -8,63 +8,56 @@
     android:orientation="vertical"
     tools:context=".manager_activity_notice">
 
-    <LinearLayout
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_manager_people"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#0073B1"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:scrollbarFadeDuration="0"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:scrollbars="vertical"
+        android:layout_weight="1"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="확진자 명단"
-            android:textColor="@android:color/white"
-            android:textSize="12pt">
-
-        </TextView>
+        >
 
 
-    </LinearLayout>
+    </androidx.recyclerview.widget.RecyclerView>
 
-    <TextView
+    <Button
+        android:id="@+id/btn_rcpeople"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="확진자 1"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
+        android:text="등록하기"
+        >
 
-    </TextView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="확진자 2"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
+    </Button>
 
-    </TextView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="확진자 3"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
 
-    </TextView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="확진자 4"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
 
-    </TextView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

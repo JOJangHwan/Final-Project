@@ -6,9 +6,11 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     >
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="250dp">
+
 
         <ImageView
             android:id="@+id/person_picture"
@@ -16,82 +18,108 @@
             android:layout_height="200dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="20dp"
-            android:layout_toRightOf="@id/person_name"
+            android:layout_toRightOf="@id/spinner_vir"
             android:src="@drawable/virus">
 
         </ImageView>
 
-        <TextView
-            android:id="@+id/person_name"
+        <Spinner
+
+            android:id="@+id/spinner_vir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginLeft="50dp"
             android:layout_marginTop="70dp"
-            android:text="바이러스이름"
-            android:textSize="27dp">
-
-        </TextView>
 
 
+            android:entries="@array/virus_kind"
+
+
+            />
 
 
 
 
     </RelativeLayout>
 
-    <Button
-        android:id="@+id/button_vi_power"
-        android:layout_marginTop="30dp"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="전파력"
-        android:textSize="20dp"
-        >
 
-    </Button>
 
-    <Button
-        android:id="@+id/button_vi_iso"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="격리기간"
-        android:textSize="20dp"
-        >
 
-    </Button>
-    <Button
-        android:id="@+id/vi1"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="기타 정보"
-        android:textSize="20dp"
-        >
 
-    </Button>
 
-    <Button
-        android:id="@+id/vi2"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="기타 정보"
-        android:textSize="20dp"
-        >
 
-    </Button>
 
-    <Button
-        android:id="@+id/vi3"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="기타 정보"
-        android:textSize="20dp"
-        >
 
-    </Button>
+
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button_vi_power"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="30dp"
+                android:text="전파력"
+                android:textSize="20dp">
+
+            </Button>
+
+            <Button
+                android:id="@+id/button_vi_iso"
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="격리기간"
+                android:textSize="20dp"
+                >
+
+            </Button>
+            <Button
+                android:id="@+id/vi1"
+                android:layout_marginTop="170dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="기타 정보"
+                android:textSize="20dp"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/vi2"
+                android:layout_marginTop="250dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:text="기타 정보"
+                android:textSize="20dp"
+                >
+
+            </Button>
+
+            <Button
+                android:id="@+id/vi3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="720dp"
+                android:text="기타 정보"
+                android:textSize="20dp"></Button>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
 
 
 

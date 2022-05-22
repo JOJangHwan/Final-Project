@@ -20,51 +20,41 @@
             android:text="Q and A"
             android:textColor="@android:color/white"
             android:textSize="12pt">
-
         </TextView>
-
 
     </LinearLayout>
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_qaview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Q and A 내용"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:layout_weight="1"
+        >
 
-    </TextView>
 
-    <TextView
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:layout_weight="8"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Q and A 내용"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
+        android:layout_height="match_parent"
+        android:text="등록"
+        >
 
-    </TextView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Q and A 내용"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
+    </Button>
 
-    </TextView>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Q and A 내용"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
 
-    </TextView>
+
+
+
+
+
+
+
 
 
 

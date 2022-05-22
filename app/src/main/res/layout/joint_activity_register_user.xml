@@ -36,9 +36,10 @@
         android:id="@+id/register_pwd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_marginBottom="80dp"
         android:ems="10"
+
+
         android:hint="비밀번호를 재입력하세요"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/register_registerButton"

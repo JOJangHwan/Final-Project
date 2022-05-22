@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="virus_kind">
+        <item>코로나 19</item>
+        <item>메르스</item>
+        <item>사스</item>
+        <item>신종플루</item>
+
+    </string-array>
+
+
+</resources>

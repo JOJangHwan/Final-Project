@@ -65,7 +65,9 @@
             android:exported="false" />
         <activity
             android:name=".joint_activity_register_manager"
-            android:exported="false" />
+            android:exported="false"
+
+            />
         <activity
             android:name=".joint_activity_register_user"
             android:exported="false" />
@@ -90,6 +92,10 @@
         <activity
             android:name=".manager_activity_main"
             android:exported="false" />
+
+
+
+
 
 
 
