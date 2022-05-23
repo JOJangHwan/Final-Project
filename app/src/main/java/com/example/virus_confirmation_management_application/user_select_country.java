@@ -29,8 +29,8 @@ public class user_select_country extends AppCompatActivity {
         ImageView imageview2 = (ImageView)findViewById(R.id.anothercontury);
         imageview2.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                //Intent intent = new Intent(getApplicationContext(),.class);
-                //startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(),user_anothercontury.class);
+                startActivity(intent);
 
             }
         });

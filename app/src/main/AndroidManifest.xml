@@ -99,8 +99,7 @@
 
 
 
-
-
+        <activity android:name=".user_wishlista" />
         <activity android:name=".user_virusinformationlist" />
         <activity android:name=".user_checkwirhlist" />
         <activity android:name=".user_checkwith" />
@@ -127,6 +126,9 @@
         <activity android:name=".user_select_country" />
         <activity android:name=".user_MainActivity" />
         <activity android:name=".user_QandA"/>
+        <activity android:name=".user_anothercontury"/>
+        <activity android:name=".user_anotherconturywebview"/>
+
         <activity
             android:name=".joint_login"
             android:exported="true" >

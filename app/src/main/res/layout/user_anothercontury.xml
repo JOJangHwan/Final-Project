@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D1DDE5"
+    tools:context=".user_anothercontury">
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:paddingVertical="10dp"
+        android:stretchColumns="0,1,2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!--첫번째 Row-->
+        <TableRow>
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/America_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/us"
+                    android:gravity="center"
+                    android:padding="25dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="미국"
+                    android:textSize="15dp" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/china_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/cn"
+                    android:gravity="center"
+                    android:padding="25dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="중 국"
+                    android:textSize="15dp" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/japan_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/jp"
+                    android:gravity="center"
+                    android:padding="25dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="일본"
+                    android:textSize="15dp" />
+            </TableLayout>
+        </TableRow>
+
+        <!--두번쨰 Row-->
+        <TableRow android:layout_marginTop="20dp">
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/ph_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ph"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="필리핀"
+                    android:textSize="15dp" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/Myanmar_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/new_flag"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="미얀마"
+                    android:textSize="15dp" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/Indonesia_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/id"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="인도네시아"
+                    android:textSize="15dp" />
+            </TableLayout>
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/Vietnam_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/vn"
+                    android:gravity="center"
+                    android:padding="25dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="베트남"
+                    android:textSize="15dp" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/Canada_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ca"
+                    android:gravity="center"
+                    android:padding="25dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="캐나다"
+                    android:textSize="15dp" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="120dp"
+                android:paddingHorizontal="4dp">
+
+                <ImageButton
+                    android:id="@+id/India_button"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/in"
+                    android:gravity="center"
+                    android:padding="25dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="인도"
+                    android:textSize="15dp" />
+            </TableLayout>
+        </TableRow>
+
+
+    </TableLayout>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="332dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/plane_gfb2db0d35_1280" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

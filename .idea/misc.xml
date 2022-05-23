@@ -30,72 +30,15 @@
         <entry key="..\:/Fianl/app/src/main/res/layout/frag_con_case.xml" value="0.3260416666666667" />
         <entry key="..\:/Fianl/app/src/main/res/layout/frag_home.xml" value="0.25" />
         <entry key="..\:/Fianl/app/src/main/res/layout/frag_peo_infor.xml" value="0.3260416666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/item_qnalist.xml" value="0.34057971014492755" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/item_virpeoplelist.xml" value="0.34057971014492755" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/joint_activity_register_manager.xml" value="0.25" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/joint_activity_register_user.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/joint_findpwd_activity.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/joint_fragment_login_manager.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/joint_fragment_login_user.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/joint_login.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/joint_login_activity.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_1.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_2.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_3.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_4.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_5.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_update.xml" value="0.3619791666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gpsmap.xml" value="0.23867753623188406" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_hosp_add.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_hosp_list.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_main.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_matter_mana.xml" value="0.3619791666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_matter_update.xml" value="0.3619791666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_notice.xml" value="0.3619791666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_notice_update.xml" value="0.3619791666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_qanda.xml" value="0.21" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_qanda_update.xml" value="0.3619791666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_user_mana.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_viral_isolation_period.xml" value="0.3619791666666667" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_viral_transmissin_power.xml" value="0.33" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_virus_mana.xml" value="0.34271099744245526" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_webview.xml" value="0.2726449275362319" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_con_case.xml" value="0.33" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_home.xml" value="0.25" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_peo_infor.xml" value="0.2" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_user_information.xml" value="0.17027027027027028" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/manager_home_bottom_navi.xml" value="0.23867753623188406" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_peo_infor.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_activity_main.xml" value="0.38697916666666665" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_addfamily_activity.xml" value="0.23867753623188406" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_announce_activity.xml" value="0.38697916666666665" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_checkwith_activity.xml" value="0.2484375" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_frag1.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_frag2.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_frag3.xml" value="0.38697916666666665" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_govguude_activity_distancing.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_govguude_activity_gogu2.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_govguude_activity_gogu3.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_govguude_activity_gogu4.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_govguude_activity_gogu5.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_hosinformation_activity.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_myfamily_activity.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_mypage_activity.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_mystatereport_activity.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_mystatereportlist_activity.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_myvaccine_activity.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_nearhosfind_activity.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_qanda_activity.xml" value="0.25677083333333334" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_register_activity.xml" value="0.38697916666666665" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_select_country.xml" value="0.25677083333333334" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_selftest_activity.xml" value="0.38697916666666665" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_slider_frame_1p.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_slider_frame_2p.xml" value="0.25677083333333334" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_slider_frame_3p.xml" value="0.2484375" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_slider_frame_4p.xml" value="0.2484375" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_vaccineenroll_activity.xml" value="0.33" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_virusinformation_activity.xml" value="0.2484375" />
-        <entry key="..\:/Fianl/app/src/main/res/layout/user_virusinformationlist_activity.xml" value="0.25677083333333334" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/user_vaccineenroll_activity.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_menu.xml" value="0.246875" />
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_nav_manu.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/menu/bottom_nav_menu.xml" value="0.246875" />
@@ -105,6 +48,7 @@
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwirhlist_activity.xml" value="0.358695652173913" />
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwith_activity.xml" value="0.358695652173913" />
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_findpwd_activity.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/anothercontury.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_activity_register_user.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_findpwd_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_fragment_login_manager.xml" value="0.36614583333333334" />
@@ -135,9 +79,12 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_frag_con_case.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_frag_home.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_frag_peo_infor.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_activity_main.xml" value="0.33" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_addfamily_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_announce_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_announce_activity2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_anothercontury.xml" value="0.33" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_anotherconturywebview.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_bottomnavi.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwirhlist_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwith_activity.xml" value="0.33" />
@@ -146,6 +93,11 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_frag3.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguide_activity.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguidepage_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_distancing.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu2.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu3.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu4.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu5.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_gpsmap.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_hosinformation_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myfamily_activity.xml" value="0.36614583333333334" />
@@ -155,6 +107,7 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myvaccine_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_nearhosfind_activity.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_qanda_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_select_country.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_selftest_activity.xml" value="0.22" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_1p.xml" value="0.1" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_2p.xml" value="0.1" />
@@ -167,21 +120,6 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/menu/user_bottom_menu.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/pc/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_item.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_webview.xml" value="0.1" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_home_bottom_navi.xml" value="0.3151041666666667" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_activity_main.xml" value="0.29322916666666665" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_frag2.xml" value="0.24205128205128204" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguide_activity.xml" value="0.29322916666666665" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguidepage_activity.xml" value="0.29322916666666665" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_distancing.xml" value="0.29322916666666665" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu2.xml" value="0.1" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu3.xml" value="0.1" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu4.xml" value="0.1" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_govguude_activity_gogu5.xml" value="0.1" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_nearhosfind_activity.xml" value="0.2760416666666667" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_qanda_activity.xml" value="0.22784810126582278" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_selftest_activity.xml" value="0.34096692111959287" />
       </map>
     </option>
   </component>

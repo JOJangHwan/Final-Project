@@ -136,17 +136,6 @@
             android:textSize="30dp" />
 
         <Button
-            android:id="@+id/Idimformation_button"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginBottom="2dp"
-            android:backgroundTint="@color/white"
-            android:gravity="left"
-            android:text="내 정보관리"
-            android:textColor="#000000"
-            android:textSize="30dp" />
-
-        <Button
             android:id="@+id/wishlist_button"
             android:layout_width="match_parent"
             android:layout_height="70dp"
@@ -154,6 +143,17 @@
             android:backgroundTint="@color/white"
             android:gravity="left"
             android:text="찜 목록"
+            android:textColor="#000000"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/Idimformation_button"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="2dp"
+            android:backgroundTint="@color/white"
+            android:gravity="left"
+            android:text="이용약관"
             android:textColor="#000000"
             android:textSize="30dp" />
 
