@@ -1,13 +1,18 @@
 package com.example.virus_confirmation_management_application;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 
 public class manager_activity_main extends AppCompatActivity {
 
@@ -17,10 +22,16 @@ public class manager_activity_main extends AppCompatActivity {
     private ImageView image_jeju;
     private ImageView image_seoul;
 
+    ImageView imageView8;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_main);
+
+        View v = ((LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.manager_activity_main, null, false);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+
 
         button_jeju = findViewById(R.id.button_jeju);
         button_jeju.setBackgroundColor(Color.parseColor("#00ff0000"));

@@ -264,6 +264,11 @@
                         android:layout_marginLeft="207dp"
                         android:layout_marginTop="239dp"
                         app:srcCompat="@drawable/seoul" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
             </RelativeLayout>
         </ScrollView>
 </HorizontalScrollView>

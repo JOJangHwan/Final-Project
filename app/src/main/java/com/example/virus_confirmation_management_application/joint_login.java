@@ -1,6 +1,7 @@
 package com.example.virus_confirmation_management_application;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.Button;
 
@@ -10,6 +11,13 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
 
 public class joint_login extends AppCompatActivity {
 
@@ -50,14 +58,10 @@ public class joint_login extends AppCompatActivity {
                 case R.id.menu_login_manager:
                     transaction.replace(R.id.frame_login_home, joint_fragment_login_manager).commitAllowingStateLoss();
                     break;
-
-
-
             }
             return true;
         }
     }
-
 }
 
 

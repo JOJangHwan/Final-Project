@@ -2,6 +2,7 @@ package com.example.virus_confirmation_management_application;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,13 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
+
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
 
 public class joint_fragment_login_user extends Fragment {
 
@@ -45,10 +53,12 @@ public class joint_fragment_login_user extends Fragment {
             }
         });
 
-
-
-
-
         return view;
     }
+
+
+
+
+
+
 }
