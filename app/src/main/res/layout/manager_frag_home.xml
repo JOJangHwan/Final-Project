@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".joint_login">
+    tools:context=".joint_login"
+
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#0073B1"
+        android:background="#7C7575"
         android:orientation="horizontal">
 
         <TextView
@@ -27,14 +29,24 @@
 
     <HorizontalScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="65dp"
+
+        >
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+
+        >
+
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+
+            android:background="#24CCE1">
+
 
             <Button
                 android:id="@+id/button_jeju"
@@ -89,7 +101,6 @@
 
                 ></Button>
 
-
             <Button
                 android:id="@+id/button_gy"
                 android:layout_width="wrap_content"
@@ -116,6 +127,7 @@
                 tools:layout_editor_absoluteY="65dp">
 
             </Button>
+
             <Button
                 android:id="@+id/button_gang"
                 android:layout_width="wrap_content"
@@ -255,15 +267,14 @@
 
             <Button
                 android:id="@+id/button_daejeon"
-                android:layout_width="75dp"
+                android:layout_width="48dp"
                 android:layout_height="wrap_content"
 
-                android:layout_marginLeft="890dp"
+                android:layout_marginLeft="313dp"
 
-                android:layout_marginTop="540dp"
+                android:layout_marginTop="535dp"
                 android:background="@drawable/daejeon"
 
-                android:backgroundTint="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteX="49dp"
                 tools:layout_editor_absoluteY="606dp"
@@ -286,6 +297,41 @@
                 android:layout_marginLeft="207dp"
                 android:layout_marginTop="239dp"
                 app:srcCompat="@drawable/seoul" />
+
+
+            <Button
+                android:id="@+id/button_ul"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="850dp"
+                android:layout_marginTop="306dp"
+
+                android:background="@drawable/ulleung_do"
+
+
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="187dp">
+
+            </Button>
+
+
+            <Button
+                android:id="@+id/button_dokdo"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="900dp"
+                android:layout_marginTop="345dp"
+
+                android:background="@drawable/ulleung_do"
+
+
+                tools:layout_editor_absoluteX="132dp"
+                tools:layout_editor_absoluteY="187dp">
+
+            </Button>
+
+
+
         </RelativeLayout>
     </ScrollView>
 

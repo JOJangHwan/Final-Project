@@ -6,44 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".joint_login">
+    tools:context=".joint_login"
+    android:backgroundTint="#F6F6F6"
+    android:background="#ffff"
+
+    >
 
     <ImageView
-        android:layout_width="230dp"
-        android:layout_height="230dp"
-        android:layout_marginTop="66dp"
-        android:layout_marginLeft="100dp"
-
-        android:src="@drawable/covid_i" />
-
-    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="40dp" />
+        android:layout_marginBottom="330dp"
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#DE90EC"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="전염성 확진자 관리 어플"
-            android:textColor="@android:color/white"
-            android:textSize="12pt">
-
-        </TextView>
+        android:src="@drawable/main_image"
 
 
-    </LinearLayout>
+        />
+
 
     <FrameLayout
         android:id="@+id/frame_login_home"
         android:layout_width="match_parent"
         android:layout_height="700dp"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="520dp"
         android:background="#F8F8F8"
 
         >
@@ -57,10 +41,12 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
 
+        android:layout_marginBottom="310dp"
+        android:background="#7C7575"
 
-        android:layout_marginBottom="430dp"
-        android:background="#C7B3EC"
         app:itemIconSize="35dp"
+        app:itemIconTint="@drawable/manager_bottom_color"
+        app:itemTextColor="@drawable/manager_bottom_color"
         app:menu="@menu/joint_login_menu" />
 
 

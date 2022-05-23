@@ -29,7 +29,7 @@ public class manager_frag_user_information extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_webview.class);
+                Intent intent =new Intent(getActivity(), manager_activity_virus_mana.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -47,12 +47,12 @@ public class manager_frag_user_information extends Fragment {
             }
         });
 
-        imageButton_move = view.findViewById(R.id.manager_button_people); // 사용자관리
+        imageButton_move = view.findViewById(R.id.manager_button_people); // 사용자 관리
         imageButton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_virus_mana.class);
+                Intent intent =new Intent(getActivity(), manager_activity_user_mana.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -67,7 +67,7 @@ public class manager_frag_user_information extends Fragment {
             }
         });
 
-        button_move = view.findViewById(R.id.button_manager_notice); // 내정보
+        button_move = view.findViewById(R.id.button_manager_notice); // 공지사항
         button_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -77,7 +77,7 @@ public class manager_frag_user_information extends Fragment {
             }
         });
 
-        button_move = view.findViewById(R.id.button_manager_QandA); // 내정보
+        button_move = view.findViewById(R.id.button_manager_QandA); // qanda
         button_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -87,7 +87,7 @@ public class manager_frag_user_information extends Fragment {
             }
         });
 
-        button_move = view.findViewById(R.id.button_manager_question); // 내정보
+        button_move = view.findViewById(R.id.button_manager_question); // 문의사항
         button_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -97,7 +97,7 @@ public class manager_frag_user_information extends Fragment {
             }
         });
 
-        button_move = view.findViewById(R.id.button_manager_gogu); // 내정보
+        button_move = view.findViewById(R.id.button_manager_gogu); // 정부지침
         button_move.setOnClickListener(new View.OnClickListener() {
             @Override
 

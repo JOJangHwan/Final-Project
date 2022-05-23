@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#0073B1"
+        android:background="#7C7575"
         android:orientation="horizontal">
 
         <TextView
@@ -74,7 +74,7 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="80dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:orientation="horizontal"
         android:background="#D6D1D1">
@@ -83,10 +83,9 @@
             android:id="@+id/manager_button_virus"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_baseline_virus_24"
-            android:backgroundTint="@color/purple_500"
             android:layout_marginRight="30dp"
-            >
+            android:background="@drawable/joint_vrius"
+            android:backgroundTint="@color/purple_500">
 
         </ImageButton>
 
@@ -94,7 +93,7 @@
             android:id="@+id/manager_button_hosp"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_baseline_local_hospital_24"
+            android:background="@drawable/joint_hosp"
             android:backgroundTint="#E91E63"
             android:layout_marginRight="30dp"
             >
@@ -105,7 +104,7 @@
             android:id="@+id/manager_button_people"
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:background="@drawable/ic_baseline_person_24"
+            android:background="@drawable/joint_person"
             android:backgroundTint="#4CAF50"
             >
 

@@ -5,12 +5,17 @@
         android:id="@+id/menu_login_user"
         android:title="User Login"
         android:icon="@drawable/ic_baseline_person_24"
+
+
+
         />
 
     <item
         android:id="@+id/menu_login_manager"
         android:title="Manager Login"
         android:icon="@drawable/ic_baseline_engineering_24"
+
+
         />
 
 </menu>
