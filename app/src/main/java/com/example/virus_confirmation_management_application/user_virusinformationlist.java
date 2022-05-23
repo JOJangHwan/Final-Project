@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,7 +18,7 @@ public class user_virusinformationlist  extends AppCompatActivity {
         H1N1_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),user_virusinformation.class);
+                Intent intent = new Intent(getApplicationContext(), user_virusinformation_influ.class);
                 intent.putExtra("gettitle","신종플루");
                 startActivity(intent);
             }
@@ -29,7 +28,7 @@ public class user_virusinformationlist  extends AppCompatActivity {
         mers_button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),user_virusinformation.class);
+                Intent intent = new Intent(getApplicationContext(), user_virusinformation_mers.class);
                 intent.putExtra("gettitle","메르스");
                 startActivity(intent);
             }
@@ -39,11 +38,22 @@ public class user_virusinformationlist  extends AppCompatActivity {
         covid19_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),user_virusinformation.class);
+                Intent intent = new Intent(getApplicationContext(), user_virusinformation_covid.class);
                 intent.putExtra("gettitle","코로나");
                 startActivity(intent);
             }
         });
+
+        Button add_button = (Button)findViewById(R.id.button4);
+        add_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), user_virusinformation_add.class);
+                intent.putExtra("gettitle","추가예정");
+                startActivity(intent);
+            }
+        });
+
 
     }
 }

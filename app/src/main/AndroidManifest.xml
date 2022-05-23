@@ -117,7 +117,7 @@
         <activity android:name=".user_myvaccine" />
         <activity android:name=".user_selftest" />
         <activity android:name=".user_vaccineenroll" />
-        <activity android:name=".user_virusinformation" />
+        <activity android:name=".user_virusinformation_influ" />
         <activity android:name=".user_nearhosfind" />
         <activity android:name=".user_announce" />
         <activity android:name=".user_addfamily" />
@@ -125,6 +125,9 @@
         <activity android:name=".user_select_country" />
         <activity android:name=".user_MainActivity" />
         <activity android:name=".user_QandA"/>
+        <activity android:name=".user_virusinformation_mers"/>
+        <activity android:name=".user_virusinformation_covid"/>
+        <activity android:name=".user_virusinformation_add"/>
         <activity android:name=".hos"/>
         <activity
             android:name=".joint_login"
