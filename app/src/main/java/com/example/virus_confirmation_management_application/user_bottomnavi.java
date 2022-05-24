@@ -12,6 +12,14 @@ import androidx.fragment.app.FragmentTransaction;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
 
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserFactory;
+
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.util.ArrayList;
+
 public class user_bottomnavi extends AppCompatActivity {
 
 
@@ -35,6 +43,7 @@ public class user_bottomnavi extends AppCompatActivity {
         setContentView(R.layout.user_bottomnavi);
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.main_frame, frag1).commitAllowingStateLoss();
+
 
 
 
@@ -64,7 +73,6 @@ public class user_bottomnavi extends AppCompatActivity {
         setFrag(1);//첫화면
 
     }
-
 
 
     private  void setFrag(int n){
