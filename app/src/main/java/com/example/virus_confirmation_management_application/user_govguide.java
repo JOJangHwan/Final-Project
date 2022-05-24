@@ -58,6 +58,15 @@ public class user_govguide extends AppCompatActivity {
             }
         });
 
+        Button button_gogu6 = (Button) findViewById(R.id.button_gogu6);
+        button_gogu6.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), user_select_country.class);
+                startActivity(intent);
+            }
+        });
+
 
 
 
