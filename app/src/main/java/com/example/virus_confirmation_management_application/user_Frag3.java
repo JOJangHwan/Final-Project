@@ -92,6 +92,15 @@ public class user_Frag3 extends Fragment {
             }
         });
 
+        Button Tservice = (Button) view.findViewById(R.id.Tservice);
+        Tservice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), user_Tservice.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
 
     }

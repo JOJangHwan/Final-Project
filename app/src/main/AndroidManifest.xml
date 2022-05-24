@@ -128,6 +128,7 @@
         <activity android:name=".user_virusinformation_mers"/>
         <activity android:name=".user_virusinformation_covid"/>
         <activity android:name=".user_virusinformation_add"/>
+        <activity android:name=".user_Tservice"/>
         <activity android:name=".hos"/>
         <activity
             android:name=".joint_login"

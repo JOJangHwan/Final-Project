@@ -13,7 +13,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-
+    android:background="#D6D1D1"
     android:padding="10dp">
 
 
@@ -34,7 +34,6 @@
             android:textSize="30dp"
             android:textAlignment="center"
             android:gravity="center"
-            android:textColor="#000000"
             android:layout_width="250dp"
             android:layout_height="match_parent"
 
@@ -47,6 +46,7 @@
             android:clickable="true"
             android:onClick="buttonClicked"
             android:text="확인"
+            android:backgroundTint="#7C7575"
             android:textSize="20sp" />
 
 
@@ -58,6 +58,7 @@
     android:layout_height="60dp"
     android:textSize="20sp"
     android:onClick="mapClicked"
+    android:backgroundTint="#7C7575"
     android:enabled="false"
     android:text="지도 보러가기">
 </Button>

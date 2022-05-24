@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".user_selftest"
-    android:background="#EEEEEE"
+    android:background="#D6D1D1"
     android:layout_height="match_parent">
 
 
@@ -25,6 +25,7 @@
             android:textAlignment="center"
             android:gravity="center"
             android:text="자가진단"
+            android:background="#D6D1D1"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
             android:textSize="45sp"
             tools:layout_editor_absoluteX="0dp"
@@ -475,7 +476,7 @@
                 android:id="@+id/myselftest_button"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:backgroundTint="#F8CBAD"
+                android:backgroundTint="#7C7575"
                 android:text=" 진 단 하 기"
                 android:textAlignment="center"
                 android:gravity="center"

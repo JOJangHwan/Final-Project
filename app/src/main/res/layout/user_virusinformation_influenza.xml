@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DDDDDD"
+    android:background="#D6D1D1"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".user_virusinformation_influ">
 
@@ -21,6 +21,7 @@
             android:textSize="25dp"
             android:layout_height="67dp"
             android:onClick="onButton1Clicked"
+            android:backgroundTint="#7C7575"
             android:text="자세한 내용 확인하기" />
 
         <ImageView

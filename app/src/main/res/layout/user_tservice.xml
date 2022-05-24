@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6D1D1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="이용 약관"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="45sp"></TextView>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="\n\n\n\n\n\n\n\n\n\n\n제품(이하 '서비스)을 이용해 주셔서 감사합니다. \n 서비스 이용에 도움이 될 수 있는 \n유익한 정보를 포함하고 있습니다."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp">
+        </TextView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

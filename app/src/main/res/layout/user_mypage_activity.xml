@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     tools:context=".user_mypage"
-    android:background="#EEEEEE"
+    android:background="#D6D1D1"
     android:layout_height="match_parent">
 
     <ImageView
@@ -83,7 +83,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#EEEEEE"
+        android:background="#D6D1D1"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -95,10 +95,10 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="@color/white"
             android:gravity="left"
             android:text="공지사항"
-            android:textColor="#000000"
+            android:backgroundTint="#7C7575"
+            android:textColor="#ffffff"
             android:textSize="30dp" />
 
         <Button
@@ -106,10 +106,10 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="@color/white"
             android:text="나의 가족"
             android:gravity="left"
-            android:textColor="#000000"
+            android:backgroundTint="#7C7575"
+            android:textColor="#ffffff"
             android:textSize="30dp" />
 
         <Button
@@ -117,10 +117,10 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="@color/white"
             android:gravity="left"
             android:text="나의 상태 내역/보고하기"
-            android:textColor="#000000"
+            android:backgroundTint="#7C7575"
+            android:textColor="#ffffff"
             android:textSize="30dp" />
 
         <Button
@@ -128,11 +128,10 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="#7C7575"
+            android:textColor="#ffffff"
             android:text="1:1 문의 내역 / 문의하기"
             android:gravity="left"
-
-            android:textColor="#000000"
             android:textSize="30dp" />
 
         <Button
@@ -140,21 +139,21 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="@color/white"
             android:gravity="left"
             android:text="찜 목록"
-            android:textColor="#000000"
+            android:backgroundTint="#7C7575"
+            android:textColor="#ffffff"
             android:textSize="30dp" />
 
         <Button
-            android:id="@+id/Idimformation_button"
+            android:id="@+id/Tservice"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="@color/white"
             android:gravity="left"
             android:text="이용약관"
-            android:textColor="#000000"
+            android:backgroundTint="#7C7575"
+            android:textColor="#ffffff"
             android:textSize="30dp" />
 
     </LinearLayout>

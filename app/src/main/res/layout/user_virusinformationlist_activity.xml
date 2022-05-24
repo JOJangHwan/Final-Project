@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     tools:context=".user_virusinformationlist"
-    android:background="#DDDDFF"
+    android:background="#D6D1D1"
     android:layout_height="match_parent">
 
     <TextView
@@ -24,7 +24,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="47dp"
         android:orientation="vertical"
-        android:background="#DDDDDD"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vaccineenroll_consttext2">
@@ -33,6 +32,7 @@
             android:id="@+id/H1N1_button"
             android:layout_width="match_parent"
             android:layout_height="130dp"
+            android:backgroundTint="#7C7575"
             android:text="신종플루"
             android:textSize="34sp" />
 
@@ -40,6 +40,7 @@
             android:id="@+id/mers_button"
             android:layout_width="match_parent"
             android:layout_height="130dp"
+            android:backgroundTint="#7C7575"
             android:text="메르스"
             android:textSize="34sp" />
 
@@ -47,6 +48,7 @@
             android:id="@+id/covid19_button"
             android:layout_width="match_parent"
             android:layout_height="130dp"
+            android:backgroundTint="#7C7575"
             android:text="코로나19"
             android:textSize="34sp" />
 
@@ -54,6 +56,7 @@
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="130dp"
+            android:backgroundTint="#7C7575"
             android:text="추가예정"
             android:textSize="34sp" />
     </LinearLayout>
