@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="아이디를 입력하세요"
+        android:hint="관리자 아이디를 입력하세요"
         android:layout_marginTop="20dp"
         android:textSize="10pt"
 
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="이름을 입력하세요"
+        android:hint="관리자 이름을 입력하세요"
         android:layout_marginTop="20dp"
         android:textSize="10pt"
         android:inputType="textPersonName"
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="전화번호를 입력하세요"
+        android:hint="관리자 전화번호를 입력하세요"
         android:layout_marginTop="20dp"
         android:textSize="10pt"
         android:inputType="phone"/>
@@ -52,7 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="email을 입력하세요"
+        android:hint="관리자 email을 입력하세요"
         android:layout_marginTop="20dp"
         android:textSize="10pt"
         android:inputType="textEmailAddress"
@@ -72,7 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:hint="지역을 선택하세요"
+        android:hint="관리할 지역을 선택하세요"
         android:layout_marginTop="20dp"
         android:textSize="10pt"
         android:inputType="textPassword"
@@ -122,6 +122,7 @@
         android:text="회원가입 하기"
         android:layout_marginTop="20dp"
         android:textSize="10pt"
+        android:backgroundTint="@color/button_color"
 
         />
 

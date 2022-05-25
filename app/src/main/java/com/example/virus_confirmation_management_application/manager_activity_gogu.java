@@ -3,13 +3,13 @@ package com.example.virus_confirmation_management_application;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class manager_activity_gogu extends AppCompatActivity {
 
-    private Button button_move;
+    private ImageButton imagebutton_move;
 
 
 
@@ -18,8 +18,8 @@ public class manager_activity_gogu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_gogu);
 
-        button_move = findViewById(R.id.button_gogu1); // 1
-        button_move.setOnClickListener(new View.OnClickListener() {
+        imagebutton_move = findViewById(R.id.button_gogu1); // 1
+        imagebutton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
@@ -28,8 +28,8 @@ public class manager_activity_gogu extends AppCompatActivity {
             }
         });
 
-        button_move = findViewById(R.id.button_gogu2); // 2
-        button_move.setOnClickListener(new View.OnClickListener() {
+        imagebutton_move = findViewById(R.id.button_gogu2); // 2
+        imagebutton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
@@ -38,8 +38,8 @@ public class manager_activity_gogu extends AppCompatActivity {
             }
         });
 
-        button_move = findViewById(R.id.button_gogu3); // 3
-        button_move.setOnClickListener(new View.OnClickListener() {
+        imagebutton_move = findViewById(R.id.button_gogu3); // 3
+        imagebutton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
@@ -48,8 +48,8 @@ public class manager_activity_gogu extends AppCompatActivity {
             }
         });
 
-        button_move = findViewById(R.id.button_gogu4); // 4
-        button_move.setOnClickListener(new View.OnClickListener() {
+        imagebutton_move = findViewById(R.id.button_gogu4); // 4
+        imagebutton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
@@ -58,8 +58,8 @@ public class manager_activity_gogu extends AppCompatActivity {
             }
         });
 
-        button_move = findViewById(R.id.button_gogu5); // 5
-        button_move.setOnClickListener(new View.OnClickListener() {
+        imagebutton_move = findViewById(R.id.button_gogu5); // 5
+        imagebutton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {

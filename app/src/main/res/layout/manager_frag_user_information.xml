@@ -5,12 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_gravity="center"
-    android:background="#D6D1D1"
+    android:background="@drawable/main_background_color"
     >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#7C7575"
+        android:background="#94E8E8"
         android:orientation="horizontal">
 
         <TextView
@@ -30,7 +30,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:background="#D6D1D1"
+        android:background="@drawable/main_background_color"
         >
 
         <ImageView
@@ -77,7 +77,7 @@
         android:layout_height="100dp"
         android:layout_gravity="center"
         android:orientation="horizontal"
-        android:background="#D6D1D1">
+        >
 
         <ImageButton
             android:id="@+id/manager_button_virus"

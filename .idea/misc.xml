@@ -103,11 +103,9 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_2p.xml" value="0.1" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_3p.xml" value="0.1" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_4p.xml" value="0.15" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_tservice.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_vaccineenroll_activity.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_virusinformation_activity.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_virusinformationlist_activity.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_wishlista_activity.xml" value="0.3605128205128205" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/menu/joint_login_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/menu/user_bottom_menu.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/pc/AppData/Local/Android/Sdk/platforms/android-31/data/res/layout/simple_spinner_dropdown_item.xml" value="0.36614583333333334" />
@@ -116,9 +114,6 @@
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/drawable/ic_baseline_question_answer_24.xml" value="0.2895" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/item_qnalist.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/item_virpeoplelist.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_activity_register_manager.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_activity_register_user.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_findpwd_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_fragment_login_manager.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_fragment_login_user.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/joint_login.xml" value="0.3104166666666667" />
@@ -157,13 +152,12 @@
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_gpsmap.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_hos.xml" value="0.25" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_hosinformation_activity.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myfamily_activity.xml" value="0.33" />
+        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myfamily_activity.xml" value="0.1" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mypage_activity.xml" value="0.33" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mystatereport_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mystatereportlist_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myvaccine_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_nearhosfind_activity.xml" value="0.33" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_overseas.xml" value="0.24779086892488955" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_qanda_activity.xml" value="0.22784810126582278" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_select_country.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_selftest_activity.xml" value="0.34096692111959287" />
@@ -171,7 +165,6 @@
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_2p.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_3p.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_slider_frame_4p.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_tservice.xml" value="0.25" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_vaccineenroll_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_virusinformation_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_virusinformation_add.xml" value="0.30625" />
@@ -180,7 +173,6 @@
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_virusinformation_influenza.xml" value="0.33" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_virusinformation_mers.xml" value="0.30625" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_virusinformationlist_activity.xml" value="0.25" />
-        <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_wishlista_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/layout/zoom_activity_main.xml" value="0.1" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/menu/joint_login_menu.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/zaqxs/AndroidStudioProjects/Final-Project/app/src/main/res/menu/manager_home_bottom_nav_menu.xml" value="0.36614583333333334" />

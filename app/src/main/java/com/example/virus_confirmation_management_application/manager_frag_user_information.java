@@ -62,7 +62,7 @@ public class manager_frag_user_information extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_user_mana.class);
+                Intent intent =new Intent(getActivity(), manager_activity_myinformation.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -102,7 +102,7 @@ public class manager_frag_user_information extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_gogu.class);
+                Intent intent =new Intent(getActivity(), manager_activity_gogu_mainimg.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });

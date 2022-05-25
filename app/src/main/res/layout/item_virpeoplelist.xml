@@ -4,45 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/man"
+        >
 
-        <ImageView
-            android:id="@+id/img_viruslist_pelple"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/man"
-            >
-        </ImageView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_gravity="center"
-            >
+    </ImageView>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="24dp"
+        android:text="text">
 
-            <TextView
-                android:id="@+id/text_vruslist_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="이름"
-                >
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/text_vruslist_age"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="나이"
-                >
-
-            </TextView>
-
-        </LinearLayout>
-
-    </LinearLayout>
+    </TextView>
 
 </LinearLayout>

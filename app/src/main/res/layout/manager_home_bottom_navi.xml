@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        android:background="#D6D1D1"
+        android:background="@drawable/main_background_color"
 
         >
 
@@ -27,12 +27,11 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
 
-        android:background="#7C7575"
+        android:background="#71CCD8"
         app:itemIconSize="35dp"
-        app:menu="@menu/manager_home_bottom_nav_menu"
         app:itemIconTint="@drawable/manager_bottom_color"
         app:itemTextColor="@drawable/manager_bottom_color"
-        />
+        app:menu="@menu/manager_home_bottom_nav_menu" />
     // app:labelVisibilityMode="unlabeled" 바텀 네비게이션 그림만 나오게 하는 것
 
 

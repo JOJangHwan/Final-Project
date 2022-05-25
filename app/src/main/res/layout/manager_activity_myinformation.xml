@@ -1,24 +1,218 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".manager_activity_myinformation">
+    tools:context=".manager_activity_myinformation"
+    android:background="@drawable/main_background_color"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="아이디"
+
         >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="회원 정보 수정"
+            android:textSize="14pt"
+            android:background="#94E8E8"
+            android:textStyle="bold"
 
-    </TextView>
 
-    <TextView
+            >
+
+        </TextView>
+    </LinearLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="아이디"
-        ></TextView>
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="계정 정보"
+            android:textSize="8pt">
+
+        </TextView>
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:backgroundTint="@color/button_color"
+            android:text="로그아웃"
+            android:textColor="@color/white"
+            android:textSize="8pt"
+            android:textStyle="bold">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="아이디"
+            android:textSize="20pt">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="50dp"
+            android:text="Hwan"
+            android:textSize="20pt"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="비밀번호"
+            android:textSize="20pt">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/but_myinfor_pw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="@color/button_color"
+            android:text="변경하기"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+            android:text="e-mail"
+            android:textSize="20pt">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/but_myinfor_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="210dp"
+            android:backgroundTint="@color/button_color"
+            android:text="변경하기"
+            android:textColor="@color/white"
+            android:textStyle="bold"></Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="개인 설정"
+            android:textSize="8pt">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="이름"
+            android:textSize="20pt">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="50dp"
+            android:text="조장환"
+            android:textSize="20pt">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="130dp"
+            android:text="전화번호"
+            android:textSize="20pt">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="145dp"
+            android:text="010-0000-0000"
+            android:textSize="8pt"
+
+            >
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/but_myinfor_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="130dp"
+            android:backgroundTint="@color/button_color"
+            android:text="변경하기"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            ></Button>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="210dp"
+
+            android:text="관리 지역"
+            android:textSize="20pt"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="210dp"
+            android:text="평택"
+            android:textSize="20pt"></TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="210dp"
+            android:backgroundTint="@color/button_color"
+            android:text="변경하기"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            ></Button>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class manager_activity_gogu_3 extends AppCompatActivity {
 
     private WebView webView;
-    private String url = "http://ncov.mohw.go.kr/duBoardList.do?brdId=2&brdGubun=25";
+    private String url = "http://ncov.mohw.go.kr/duBoardList.do?brdId=2&brdGubun=25";//집단 및 다중 이용시설
 
     @Override
     protected  void onCreate(Bundle savedInstanceState){

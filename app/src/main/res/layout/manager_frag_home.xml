@@ -45,10 +45,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
-            android:background="#24CCE1">
+            android:background="#DEF2F6">
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_jeju"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -56,14 +56,16 @@
                 android:layout_marginTop="1130dp"
                 android:background="@drawable/jeju_do"
 
+                android:backgroundTint="#4CAF50"
+
 
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteX="49dp"
 
 
-                tools:layout_editor_absoluteY="606dp"></Button>
+                tools:layout_editor_absoluteY="606dp"></ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_in"
                 android:layout_width="wrap_content"
 
@@ -73,16 +75,17 @@
                 android:layout_marginTop="203dp"
 
                 android:background="@drawable/incheon"
+                android:backgroundTint="#FD35DC"
 
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteX="49dp"
                 tools:layout_editor_absoluteY="606dp"
 
 
-                ></Button>
+                ></ImageButton>
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_ch1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,15 +96,15 @@
                 android:background="@drawable/chungcheongnam_do"
 
 
-                android:backgroundTint="@color/teal_200"
+                android:backgroundTint="#FDD835"
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteX="49dp"
                 tools:layout_editor_absoluteY="606dp"
 
 
-                ></Button>
+                ></ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_gy"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -109,12 +112,13 @@
                 android:layout_marginTop="100dp"
 
                 android:background="@drawable/gyeonggi_do"
+                android:backgroundTint="#7656D8"
 
 
                 tools:layout_editor_absoluteX="132dp"
-                tools:layout_editor_absoluteY="187dp"></Button>
+                tools:layout_editor_absoluteY="187dp"></ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_se"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,12 +127,13 @@
 
 
                 android:background="@drawable/seoul"
+                android:backgroundTint="#AE2856"
                 tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="65dp">
 
-            </Button>
+            </ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_gang"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -136,15 +141,16 @@
                 android:layout_marginTop="30dp"
 
                 android:background="@drawable/gangwon_do"
+                android:backgroundTint="@color/teal_700"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_ch2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -152,15 +158,16 @@
                 android:layout_marginTop="344dp"
 
                 android:background="@drawable/chungcheongbuk_do"
+                android:backgroundTint="#FDD835"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_gy1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -168,14 +175,15 @@
                 android:layout_marginTop="366dp"
 
                 android:background="@drawable/gyeongsangbuk_do"
+                android:backgroundTint="#C81966"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_jeo1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -183,14 +191,15 @@
                 android:layout_marginTop="609dp"
 
                 android:background="@drawable/jeollabuk_do"
+                android:backgroundTint="#DD8809"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_gy2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -198,14 +207,15 @@
                 android:layout_marginTop="683dp"
 
                 android:background="@drawable/gyeongsangnam_do"
+                android:backgroundTint="#C81966"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_jeo2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -213,14 +223,15 @@
                 android:layout_marginTop="779dp"
 
                 android:background="@drawable/jeollanam_do"
+                android:backgroundTint="#DD8809"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_busan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -228,14 +239,15 @@
                 android:layout_marginTop="800dp"
 
                 android:background="@drawable/busan"
+                android:backgroundTint="#FD35DC"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_ulsan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -243,14 +255,15 @@
                 android:layout_marginTop="729dp"
 
                 android:background="@drawable/ulsan"
+                android:backgroundTint="#FD35DC"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_daegu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -258,14 +271,15 @@
                 android:layout_marginTop="647dp"
 
                 android:background="@drawable/daegu"
+                android:backgroundTint="#FD35DC"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_daejeon"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
@@ -274,32 +288,21 @@
 
                 android:layout_marginTop="535dp"
                 android:background="@drawable/daejeon"
+                android:backgroundTint="#FD35DC"
 
                 app:layout_constraintEnd_toEndOf="parent"
                 tools:layout_editor_absoluteX="49dp"
                 tools:layout_editor_absoluteY="606dp"
 
 
-                ></Button>
-
-            <ImageView
-                android:id="@+id/image_jeju"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="84dp"
-                android:layout_marginTop="1130dp"
-                app:srcCompat="@drawable/jeju_do" />
-
-            <ImageView
-                android:id="@+id/image_seoul"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="207dp"
-                android:layout_marginTop="239dp"
-                app:srcCompat="@drawable/seoul" />
+                ></ImageButton>
 
 
-            <Button
+
+
+
+
+            <ImageButton
                 android:id="@+id/button_ul"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
@@ -307,15 +310,16 @@
                 android:layout_marginTop="306dp"
 
                 android:background="@drawable/ulleung_do"
+                android:backgroundTint="#EA0317"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/button_dokdo"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
@@ -323,12 +327,13 @@
                 android:layout_marginTop="345dp"
 
                 android:background="@drawable/ulleung_do"
+                android:backgroundTint="#083ACF"
 
 
                 tools:layout_editor_absoluteX="132dp"
                 tools:layout_editor_absoluteY="187dp">
 
-            </Button>
+            </ImageButton>
 
 
 

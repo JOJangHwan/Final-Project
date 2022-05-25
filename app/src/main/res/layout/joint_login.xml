@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="330dp"
 
-        android:src="@drawable/main_image"
+        android:src="@drawable/covid_19_main_img"
 
 
         />
@@ -42,7 +42,7 @@
         android:layout_alignParentBottom="true"
 
         android:layout_marginBottom="310dp"
-        android:background="#7C7575"
+        android:background="#71CCD8"
 
         app:itemIconSize="35dp"
         app:itemIconTint="@drawable/manager_bottom_color"

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
 
     android:layout_height="match_parent"
-    android:background="#D6D1D1"
+    android:background="@drawable/main_background_color"
 
     >
 
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
         android:layout_marginTop="140dp"
-        android:backgroundTint="#7C7575"
+        android:backgroundTint="#71CCD8"
         android:text="로그인"
         android:textSize="20dp" />
 
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="230dp"
         android:layout_marginTop="140dp"
-        android:backgroundTint="#7C7575"
+        android:backgroundTint="#71CCD8"
         android:text="회원가입"
         android:textSize="20dp" />
 
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="200dp"
-        android:backgroundTint="#7C7575"
+        android:backgroundTint="#71CCD8"
         android:text="아이디 찾기"
         android:textSize="20dp" />
 
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="210dp"
         android:layout_marginTop="200dp"
-        android:backgroundTint="#7C7575"
+        android:backgroundTint="#71CCD8"
         android:text="비밀번호 찾기"
         android:textSize="20dp" />
 
