@@ -28,76 +28,87 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button_gogu1"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:backgroundTint="#7C7575"
-        android:textSize="25dp"
-        android:text="거리두기"
-        android:textColor="@android:color/white"></Button>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button_gogu2"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:backgroundTint="#7C7575"
-        android:textSize="25dp"
-        android:text="의료기관"
-        android:textColor="@android:color/white"></Button>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <Button
-        android:id="@+id/button_gogu3"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:backgroundTint="#7C7575"
-        android:textSize="25dp"
-        android:text="집단시설, 다중이용시설"
-        android:textColor="@android:color/white"></Button>
+            <Button
+                android:id="@+id/button_gogu1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#7C7575"
+                android:text="거리두기"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"></Button>
 
-    <Button
-        android:id="@+id/button_gogu4"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:backgroundTint="#7C7575"
-        android:textSize="25dp"
-        android:text="소상공인 및 기업"
-        android:textColor="@android:color/white"></Button>
+            <Button
+                android:id="@+id/button_gogu2"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#7C7575"
+                android:text="의료기관"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"></Button>
 
-    <Button
-        android:id="@+id/button_gogu5"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:backgroundTint="#7C7575"
-        android:textSize="25dp"
-        android:text="기업 및 시장"
-        android:textColor="@android:color/white"></Button>
+            <Button
+                android:id="@+id/button_gogu3"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#7C7575"
+                android:text="집단시설, 다중이용시설"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"></Button>
 
-    <Button
-        android:id="@+id/button_gogu6"
-        android:layout_width="match_parent"
-        android:layout_height="110dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="15dp"
-        android:backgroundTint="#7C7575"
-        android:textSize="25dp"
-        android:text="해외 출입국시 규정"
-        android:textColor="@android:color/white"></Button>
+            <Button
+                android:id="@+id/button_gogu4"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#7C7575"
+                android:text="소상공인 및 기업"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"></Button>
+
+            <Button
+                android:id="@+id/button_gogu5"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#7C7575"
+                android:text="기업 및 시장"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"></Button>
+
+            <Button
+                android:id="@+id/button_gogu6"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:backgroundTint="#7C7575"
+                android:text="해외 출입국시 규정"
+                android:textColor="@android:color/white"
+                android:textSize="25dp"></Button>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
