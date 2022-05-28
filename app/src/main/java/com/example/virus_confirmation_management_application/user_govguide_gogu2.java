@@ -23,6 +23,7 @@ public class user_govguide_gogu2 extends AppCompatActivity {
         webView.loadUrl(url);
         webView.setWebChromeClient(new WebChromeClient());
         webView.setWebViewClient(new WebViewClientClass());
+
     }
 
     @Override
