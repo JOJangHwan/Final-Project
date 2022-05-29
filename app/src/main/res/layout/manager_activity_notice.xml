@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#0073B1"
+        android:background="#94E8E8"
         android:orientation="horizontal">
 
         <TextView
@@ -25,46 +25,52 @@
 
 
     </LinearLayout>
-
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="공지 사항 관리"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
+
+        android:text="공지사항 내용"
+        android:textSize="13pt"
+        >
 
     </TextView>
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/notice_revise_but"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="공지 사항 관리"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
+        android:layout_marginLeft="300dp"
+        android:backgroundTint="@color/button_color"
+        android:text="수정하기">
 
-    </TextView>
+    </Button>
+</RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="공지 사항 관리"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-    </TextView>
+<androidx.recyclerview.widget.RecyclerView
+android:id="@+id/rc_notice_view"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:scrollbars="vertical"
+android:scrollbarThumbVertical="@android:color/darker_gray"
+android:layout_weight="1"
+    >
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="공지 사항 관리"
-        android:textColor="@android:color/black"
-        android:textSize="17pt">
 
-    </TextView>
+</androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>
+
+
+
 
 
 

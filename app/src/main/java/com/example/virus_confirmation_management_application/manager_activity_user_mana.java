@@ -1,28 +1,47 @@
 package com.example.virus_confirmation_management_application;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.ArrayList;
 
 public class manager_activity_user_mana extends AppCompatActivity {
 
-    //private ListView list;
+    private Button button_move;
+
+    private ArrayList<Manager_User_Data> Main_dataList;   /// 데이터를 담기위한 어레이 리스트
+    private Manager_User_Adapter Main_adapter; //어댑터
+    private RecyclerView recyclerview;
+    private LinearLayoutManager linearLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_user_mana);
 
-       // list = (ListView)findViewById(R.id.list);
+        recyclerview = (RecyclerView) findViewById(R.id.rc_user_view);  /// 리사이클러뷰 초기화
+        recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
+        linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
+        recyclerview.setLayoutManager(linearLayoutManager); // 리사이클러뷰에 set 해준다 .
+        Main_dataList = new ArrayList<>(); // 어댑터 선언
+        Main_adapter = new Manager_User_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
+        recyclerview.setAdapter((RecyclerView.Adapter) Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
 
-        //List<String> data = new ArrayList<>(); // 배열선언
+        load();
 
-        //ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,data); //중간다리인 adapter 생성
-       // list.setAdapter(adapter); //연결 위에 21번줄
 
-        //data.add("최우식");
-       // data.add("김다미");
-        //data.add("박서준");
-        //adapter.notifyDataSetChanged();
+    }
+
+    private void load() {
+        for (int i =0; i<10; i++) {
+            Manager_User_Data data = new Manager_User_Data(R.drawable.man, i + "번째 User");
+            Main_dataList.add(0, data);
+            Main_adapter.notifyDataSetChanged();
+        }
     }
 }

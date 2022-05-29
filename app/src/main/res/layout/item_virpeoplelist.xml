@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/manager_imageView_virus_people"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@drawable/man"
@@ -14,13 +19,16 @@
 
     </ImageView>
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/manager_textView_virus_people"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
+       android:layout_marginLeft="50dp"
+
         android:textSize="24dp"
         android:text="text">
 
     </TextView>
+
+</LinearLayout>
 
 </LinearLayout>
