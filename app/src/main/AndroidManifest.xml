@@ -102,6 +102,7 @@
         <activity android:name=".user_virusinformationlist" />
         <activity android:name=".user_checkwirhlist" />
         <activity android:name=".user_checkwith" />
+        <activity android:name=".user_checkwith1" />
         <activity android:name=".user_govguide_distanving" />
         <activity android:name=".user_govguide_gogu2" />
         <activity android:name=".user_govguide_gogu3" />
@@ -114,6 +115,7 @@
         <activity android:name=".user_mypage" />
         <activity android:name=".user_mystatereportlist" />
         <activity android:name=".user_mystatereport" />
+        <activity android:name=".user_mystatereport1" />
         <activity android:name=".user_myvaccine" />
         <activity android:name=".user_selftest" />
         <activity android:name=".user_vaccineenroll" />
@@ -124,6 +126,8 @@
         <activity android:name=".user_myfamily" />
         <activity android:name=".user_select_country" />
         <activity android:name=".user_MainActivity" />
+        <activity android:name=".user_wishlista" />
+        <activity android:name=".user_Tservice" />
         <activity android:name=".user_QandA"/>
         <activity android:name=".user_virusinformation_mers"/>
         <activity android:name=".user_virusinformation_covid"/>
