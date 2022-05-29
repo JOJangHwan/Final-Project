@@ -19,22 +19,42 @@ public class manager_activity_virus_mana extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_virus_mana);
 
-        button_move = findViewById(R.id.button_vi_power); // 전파력
+        button_move = findViewById(R.id.button_vi_power); // 신종플루
         button_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
-                Intent intent = new Intent(manager_activity_virus_mana.this, manager_activity_viral_transmissin_power.class); //현재 위치와 이동할 위치의 인자
+                Intent intent = new Intent(manager_activity_virus_mana.this, user_virusinformation_influ.class); //현재 위치와 이동할 위치의 인자
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
 
-        button_move = findViewById(R.id.button_vi_iso); // 전파력
+        button_move = findViewById(R.id.button_vi_iso); // 메르스
         button_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
-                Intent intent = new Intent(manager_activity_virus_mana.this, manager_activity_virus_isolation_period.class); //현재 위치와 이동할 위치의 인자
+                Intent intent = new Intent(manager_activity_virus_mana.this, user_virusinformation_mers.class); //현재 위치와 이동할 위치의 인자
+                startActivity(intent); // 액티비티 이동 구문
+            }
+        });
+
+        button_move = findViewById(R.id.vi1); // 코로나19
+        button_move.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View v) {
+                Intent intent = new Intent(manager_activity_virus_mana.this, user_virusinformation_covid.class); //현재 위치와 이동할 위치의 인자
+                startActivity(intent); // 액티비티 이동 구문
+            }
+        });
+
+        button_move = findViewById(R.id.vi2); // 예정
+        button_move.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(View v) {
+                Intent intent = new Intent(manager_activity_virus_mana.this, user_virusinformation_add.class); //현재 위치와 이동할 위치의 인자
                 startActivity(intent); // 액티비티 이동 구문
             }
         });

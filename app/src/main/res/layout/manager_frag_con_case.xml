@@ -8,21 +8,65 @@
     android:orientation="vertical"
     tools:context=".manager_activity_notice">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#94E8E8"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="확진자 관리"
+            android:textColor="@android:color/white"
+            android:textSize="12pt">
+        </TextView>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+
+            android:text="확진자"
+            android:textSize="13pt">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/qandA_revise_but"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:backgroundTint="@color/button_color"
+            android:text="수정하기">
+
+        </Button>
+
+    </RelativeLayout>
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rc_manager_people"
+        android:id="@+id/rc_virus_people_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@android:color/darker_gray"
+        android:layout_weight="1"
         >
 
 
     </androidx.recyclerview.widget.RecyclerView>
 
     <Button
-        android:id="@+id/btn_rcpeople"
+        android:layout_weight="8"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="등록하기"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:text="등록"
         >
 
 
@@ -41,21 +85,4 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </LinearLayout>
-

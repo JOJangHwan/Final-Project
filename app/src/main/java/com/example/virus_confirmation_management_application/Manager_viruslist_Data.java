@@ -36,4 +36,12 @@ public class Manager_viruslist_Data {
     public void setImg_viruslist_pelple(int img_viruslist_pelple) {
         this.img_viruslist_pelple = img_viruslist_pelple;
     }
+
+    public int getMessage() {
+        return 0;
+    }
+
+    public int getResourceId() {
+        return 0;
+    }
 }

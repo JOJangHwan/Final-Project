@@ -13,6 +13,9 @@ public class Manager_viruslist_adapter extends RecyclerView.Adapter<Manager_viru
 
     private ArrayList<Manager_viruslist_Data> localDataSet;
 
+    public Manager_viruslist_adapter(ArrayList<Manager_virus_people_Adapter> main_dataList) {
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

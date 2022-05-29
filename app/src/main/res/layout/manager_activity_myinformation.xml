@@ -59,7 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="아이디"
+            android:text="아이디 : "
             android:textSize="20pt">
 
         </TextView>
@@ -135,7 +135,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="이름"
+            android:text="이름 : "
             android:textSize="20pt">
 
         </TextView>
@@ -154,8 +154,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="130dp"
-            android:text="전화번호"
-            android:textSize="20pt">
+            android:text="전화번호 : "
+            android:textSize="19pt">
 
         </TextView>
 
@@ -163,7 +163,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="170dp"
-            android:layout_marginTop="145dp"
+            android:layout_marginTop="147dp"
             android:text="010-0000-0000"
             android:textSize="8pt"
 
@@ -190,7 +190,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="210dp"
 
-            android:text="관리 지역"
+            android:text="관리 지역 : "
             android:textSize="20pt"></TextView>
 
         <TextView
