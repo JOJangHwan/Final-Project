@@ -3,8 +3,8 @@
     <item
         android:id="@+id/action_map"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_map_24"
-        android:title="지도"/>
+        android:icon="@drawable/ic_baseline_bar_chart_24"
+        android:title="차트"/>
     <item
         android:id="@+id/action_main"
         android:enabled="true"

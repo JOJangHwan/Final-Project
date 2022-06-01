@@ -45,6 +45,18 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
+        android:id="@+id/myvaccine_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="80dp"
+        android:text="화이자 "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myvaccine_textView"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
         android:id="@+id/myvaccine_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -52,6 +64,19 @@
         android:layout_marginTop="30dp"
 
         android:text="접종일 : "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myvaccine_name"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/myvaccine_date4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="30dp"
+
+        android:text="2022.02.26"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myvaccine_name"
@@ -70,6 +95,18 @@
         app:layout_constraintTop_toBottomOf="@+id/myvaccine_date" />
 
     <TextView
+        android:id="@+id/myvaccine_elapseddays2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="28dp"
+
+        android:text="D+96"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myvaccine_date" />
+
+    <TextView
         android:id="@+id/myvaccine_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,13 +119,37 @@
         app:layout_constraintTop_toBottomOf="@+id/myvaccine_elapseddays" />
 
     <TextView
+        android:id="@+id/myvaccine_num2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="236dp"
+        android:layout_marginTop="28dp"
+        android:text="3차"
+        android:textSize="25sp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myvaccine_elapseddays" />
+
+    <TextView
         android:id="@+id/myvaccine_hos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
         android:layout_marginTop="30dp"
 
-        android:text="백신 접종 기관 : "
+        android:text="접종 기관 : "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myvaccine_num" />
+
+    <TextView
+        android:id="@+id/myvaccine_hos4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="204dp"
+        android:layout_marginTop="28dp"
+
+        android:text="미래365연합의원 "
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myvaccine_num" />
@@ -101,6 +162,18 @@
         android:layout_marginTop="30dp"
 
         android:text="다음 접종 적정 시기 : "
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myvaccine_hos" />
+
+    <TextView
+        android:id="@+id/myvaccine_nexttime2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="28dp"
+
+        android:text="미정"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/myvaccine_hos" />

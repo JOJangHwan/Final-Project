@@ -7,13 +7,13 @@
     android:orientation="vertical">
 
     <TextView
-        android:text="2"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:text="오늘의 뉴스 \n확인하러가기"
+        android:layout_width="410dp"
+        android:layout_height="300dp"
         android:textSize="50dp"
         android:gravity="center"
         android:textColor="#000000"
-        android:background="#F8BBD0"
+        android:background="#7C7575"
         />
 
 </LinearLayout>

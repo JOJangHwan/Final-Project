@@ -135,17 +135,6 @@
             android:textSize="30dp" />
 
         <Button
-            android:id="@+id/wishlist_button"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginBottom="2dp"
-            android:gravity="left"
-            android:text="찜 목록"
-            android:backgroundTint="#7C7575"
-            android:textColor="#ffffff"
-            android:textSize="30dp" />
-
-        <Button
             android:id="@+id/Tservice"
             android:layout_width="match_parent"
             android:layout_height="70dp"

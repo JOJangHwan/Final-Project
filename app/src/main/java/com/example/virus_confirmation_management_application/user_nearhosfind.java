@@ -9,6 +9,7 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Looper;
 import android.util.Log;
@@ -111,13 +112,10 @@ public class user_nearhosfind extends AppCompatActivity implements OnMapReadyCal
 
         MarkerOptions markerOptions = new MarkerOptions();
 
-        Log.d("test123123123", String.valueOf(hdata.array.size()));
-
-        for(int i = 0; i<hdata.array.size()/6; i++){
+      for(int i = 0; i<hdata.array.size()/6; i++){
 
             currentLatLng = new LatLng(Double.valueOf(hdata.array.get(i*6+4)), Double.valueOf(hdata.array.get(i*6+5)));
-            mMap.addMarker(markerOptions.position(currentLatLng).title(hdata.array.get(i*6+2)));
-
+            mMap.addMarker(markerOptions.position(currentLatLng).title(hdata.array.get(i*6+2)).snippet(hdata.array.get(i*6) +"/" + hdata.array.get(i*6+3)).icon(BitmapDescriptorFactory.fromResource(R.drawable.markerline_blue)));
         }
         setDefaultLocation();
 
@@ -196,9 +194,22 @@ public class user_nearhosfind extends AppCompatActivity implements OnMapReadyCal
         @Override
         public boolean onMarkerClick(Marker marker) {
             String markerId = marker.getTitle();
-            // 선택한 타겟의 위치
+            String address = marker.getSnippet();
             LatLng location = marker.getPosition();
-            Toast.makeText(user_nearhosfind.this, "Marker ID : " + markerId, Toast.LENGTH_SHORT).show();
+
+            String[] array = address.split("/");
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(user_nearhosfind.this);
+            builder.setTitle("병원 정보");
+            builder.setMessage("이름 : " + markerId + "\n주소 : " + array[0] + "\n병원전화번호 : " + array[1]);
+            builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                }
+            });
+
+            AlertDialog alertDialog = builder.create();
+            alertDialog.show();
             return false;
         }
     };

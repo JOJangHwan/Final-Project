@@ -10,10 +10,8 @@ import androidx.fragment.app.Fragment;
 public class user_slider_Fragment_1 extends Fragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.user_slider_frame_1p, container, false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.user_slider_frame_1p, container, false);
 
         return rootView;
     }

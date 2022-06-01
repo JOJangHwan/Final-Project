@@ -18,17 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-
-        <Button
-            android:id="@+id/btn_draw_State"
-            android:layout_width="114dp"
-            android:layout_height="59dp"
-            android:onClick="mOnClick1"
-            android:layout_gravity="right|top"
-            android:text="search"
-            android:layout_marginTop="720dp"
-            android:clickable="true"
-            android:layout_marginRight="1dp" />
     </FrameLayout>
 
 

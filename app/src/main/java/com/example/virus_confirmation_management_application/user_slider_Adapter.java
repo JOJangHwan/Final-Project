@@ -21,8 +21,7 @@ public class user_slider_Adapter extends FragmentStateAdapter {
 
         if(index==0) return new user_slider_Fragment_1();
         else if(index==1) return new user_slider_Fragment_2();
-        else if(index==2) return new user_slider_Fragment_3();
-        else return new user_slider_Fragment_4();
+        else return new user_slider_Fragment_3();
     }
 
     @Override

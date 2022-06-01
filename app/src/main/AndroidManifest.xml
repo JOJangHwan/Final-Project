@@ -210,6 +210,7 @@
         <activity android:name=".user_mystatereport1" />
         <activity android:name=".user_myvaccine" />
         <activity android:name=".user_selftest" />
+        <activity android:name=".user_BarChartActivity"/>
         <activity android:name=".user_vaccineenroll" />
         <activity android:name=".user_virusinformation_influ" />
         <activity android:name=".user_nearhosfind" />

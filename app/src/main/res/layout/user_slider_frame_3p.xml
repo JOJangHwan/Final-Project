@@ -7,13 +7,13 @@
     android:orientation="vertical">
 
     <TextView
-        android:text="3"
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:text="앱 사용 가이드"
+        android:layout_width="410dp"
+        android:layout_height="300dp"
         android:textSize="50dp"
         android:gravity="center"
         android:textColor="#000000"
-        android:background="#E1BEE7"
+        android:background="#7C7575"
         />
 
 </LinearLayout>

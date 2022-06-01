@@ -1,93 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    >
 
-    <TableLayout
-        android:layout_width="160dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:stretchColumns="0,1,2"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <TableRow>
 
-            <TableLayout
-                android:layout_width="40dp"
-                android:paddingHorizontal="4dp">
+        <LinearLayout
+            android:id="@+id/chart_bar"
+            android:layout_width="fill_parent"
 
-                <ImageButton
-                    android:id="@+id/mystar_button"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:background="@drawable/ic_baseline_star_24"
-                    android:gravity="center"
-                    android:padding="25dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="즐겨찾기"
-                    android:textSize="10dp" />
-            </TableLayout>
-
-            <TableLayout
-                android:layout_width="40dp"
-                android:paddingHorizontal="4dp">
-
-                <ImageButton
-                    android:id="@+id/nearhosfind_button"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/ic_baseline_local_hospital_24"
-                    android:gravity="center"
-                    android:padding="25dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="근처 병원"
-                    android:textSize="10dp" />
-            </TableLayout>
-
-            <TableLayout
-                android:layout_width="40dp"
-                android:paddingHorizontal="4dp">
-
-                <ImageButton
-                    android:id="@+id/myvaccine_button"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/free_icon_medicine_2785749"
-                    android:gravity="center"
-                    android:padding="25dp"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="10dp"
-                    android:gravity="center"
-                    android:text="약국"
-                    android:textSize="10dp" />
-            </TableLayout>
-
-
-
-        </TableRow>
-    </TableLayout>
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

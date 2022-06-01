@@ -2,14 +2,18 @@ package com.example.virus_confirmation_management_application;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.bumptech.glide.Glide;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -31,11 +35,14 @@ public class hos extends AppCompatActivity {
     EditText editText;
     TextView textView;
 
+    private ImageView LoadGif;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_hos);
+
 
         textView = (TextView) findViewById(R.id.editText);
         textView = (TextView) findViewById(R.id.textView);
@@ -56,7 +63,7 @@ public class hos extends AppCompatActivity {
                                     @Override
                                     public void run() {
                                         // TODO Auto-generated method stub
-                                        textView.setText(data); //TextView에 문자열  data 출력
+
                                     }
                                 });
                             }
@@ -65,20 +72,35 @@ public class hos extends AppCompatActivity {
 
                 }
 
-                Log.d("test0", String.valueOf(array.size()));
+                LoadGif = (ImageView)findViewById(R.id.load);
+                Glide.with(this).load(R.raw.load).into(LoadGif);
 
+                TextView text = findViewById(R.id.textView5);
+                text.setText("지도를 불러오고 있습니다.\n 잠시만 기다려 주세요.");
 
-                Button mapClicked = (Button) findViewById(R.id.mapbutton);
-                mapClicked.setEnabled(true);
-                mapClicked.setOnClickListener(new View.OnClickListener() {
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
                     @Override
-                    public void onClick(View view) {
-                        Log.d("test1", String.valueOf(array.size()));
+                    public void run() {
 
-                        Intent intent = new Intent(getApplicationContext(), user_nearhosfind.class);
-                        startActivity(intent);
+                        LoadGif.setImageResource(0);
+                        text.setText("");
+                        Button mapClicked = (Button) findViewById(R.id.mapbutton);
+                        mapClicked.setEnabled(true);
+                        mapClicked.setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                Log.d("test1", String.valueOf(array.size()));
+
+                                Intent intent = new Intent(getApplicationContext(), user_nearhosfind.class);
+                                startActivity(intent);
+                            }
+                        });
+
                     }
-                });
+                },10000);	//700밀리 초 동안 딜레이
+
+
 
 
     }//mOnClick method..
@@ -90,7 +112,7 @@ public class hos extends AppCompatActivity {
         StringBuffer buffer = new StringBuffer();
 
 
-         String queryUrl = "http://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncLcinfoInqire?WGS84_LON=126.8269679&WGS84_LAT=37.5410559&pageNo=1&numOfRows=200&ServiceKey=1YlW0QVRfpVBzSDpza%2FFoWL0WpN817YpMoPtXuT3dYmQSpBVUT6X974ETi2OVyxWp3nDg4R8GB0CttiGBl7n%2Fw%3D%3D";
+         String queryUrl = "http://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncLcinfoInqire?WGS84_LON=" + "127.07584097261743"+"&WGS84_LAT="+"36.798547089307185"+"&pageNo=1&numOfRows=200&ServiceKey=1YlW0QVRfpVBzSDpza%2FFoWL0WpN817YpMoPtXuT3dYmQSpBVUT6X974ETi2OVyxWp3nDg4R8GB0CttiGBl7n%2Fw%3D%3D";
         try {
 
             URL url = new URL(queryUrl); // 문자열로 된 요청 url을 URL 객체로 생성.
