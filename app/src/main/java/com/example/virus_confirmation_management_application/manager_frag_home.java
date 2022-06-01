@@ -29,7 +29,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_seoul.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_seoul.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -39,7 +39,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_gyeonggi_do.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_gyeonggi_do.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -49,7 +49,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_incheon.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_incheon.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -59,7 +59,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_ganwon_do.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_ganwon_do.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -69,7 +69,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_chungnam.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_chungnam.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -79,7 +79,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_chungbuk.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_chungbuk.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -89,7 +89,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_daejeon.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_daejeon.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -99,7 +99,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_gyeongbuk.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_gyeongbuk.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -109,7 +109,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_gyeognam.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_gyeognam.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -119,7 +119,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_daegu.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_daegu.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -129,7 +129,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_busan.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_busan.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -139,7 +139,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_ulsan.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_ulsan.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -149,7 +149,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_jeonbuk.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_jeonbuk.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -159,7 +159,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_jeonnam.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_jeonnam.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -169,7 +169,7 @@ public class manager_frag_home extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_jeju.class);
+                Intent intent =new Intent(getActivity(), manager_activity_map_bulletin_board_jeju.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });

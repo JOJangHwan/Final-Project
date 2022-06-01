@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manager_activity_map_bulletin_board_gyeognam"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/button_bulletin_board_gyeongnam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_color"
+        android:text="경남 확진자 확인하러 가기"
+        >
+
+    </Button>
+
+    <Button
+        android:id="@+id/button_map_write_gyeonnam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="등록하기"
+        android:backgroundTint="@color/button_color"
+        >
+
+    </Button>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_map_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

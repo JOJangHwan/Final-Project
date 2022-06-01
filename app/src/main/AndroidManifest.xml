@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.virus_confirmation_management_application" >
+    package="com.example.virus_confirmation_management_application">
 
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="false"
@@ -11,13 +14,108 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Virus_Confirmation_Management_Application"
-        android:usesCleartextTraffic="true" >
-        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".manager_map_write"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_gyeonggi_do"
+            android:exported="false" />
 
         <meta-data
-        android:name="com.google.android.geo.API_KEY"
-        android:value="AIzaSyC6H98Mk7sZXTA4O_qbVFjIgstT4oTsiJw" />
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyC6H98Mk7sZXTA4O_qbVFjIgstT4oTsiJw" />
 
+        <activity
+            android:name=".manager_activity_map_chungbuk"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_chungnam"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_ulsan"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_busan"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_incheon"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_daejeon"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_daegu"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_jeonbuk"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_jeonnam"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_jeju"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_gyeognam"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_gyeongbuk"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_gyeonggi_do"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_seoul"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_ganwon_do"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_chungbuk"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_chungnam"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_ulsan"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_busan"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_incheon"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_daejeon"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_daegu"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_jeonbuk"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_jeonnam"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_jeju"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_gyeognam"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_gyeongbuk"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_seoul"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_bulletin_board_ganwon_do"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_myinformation"
+            android:exported="false" />
         <activity
             android:name=".manager_activity_webview"
             android:exported="false" />
@@ -55,7 +153,7 @@
             android:name=".manager_activity_matter_update"
             android:exported="false" />
         <activity
-            android:name=".manager_avtivity_matter_mana"
+            android:name=".manager_activity_matter_mana"
             android:exported="false" />
         <activity
             android:name=".manager_activity_gogu_update"
@@ -71,9 +169,7 @@
             android:exported="false" />
         <activity
             android:name=".joint_activity_register_manager"
-            android:exported="false"
-
-            />
+            android:exported="false" />
         <activity
             android:name=".joint_activity_register_user"
             android:exported="false" />
@@ -95,10 +191,6 @@
         <activity
             android:name=".manager_activity_gogu_5"
             android:exported="false" />
-        <activity
-            android:name=".manager_activity_main"
-            android:exported="false" />
-
         <activity android:name=".user_virusinformationlist" />
         <activity android:name=".user_checkwirhlist" />
         <activity android:name=".user_checkwith" />
@@ -128,14 +220,14 @@
         <activity android:name=".user_MainActivity" />
         <activity android:name=".user_wishlista" />
         <activity android:name=".user_Tservice" />
-        <activity android:name=".user_QandA"/>
-        <activity android:name=".user_virusinformation_mers"/>
-        <activity android:name=".user_virusinformation_covid"/>
-        <activity android:name=".user_virusinformation_add"/>
-        <activity android:name=".hos"/>
+        <activity android:name=".user_QandA" />
+        <activity android:name=".user_virusinformation_mers" />
+        <activity android:name=".user_virusinformation_covid" />
+        <activity android:name=".user_virusinformation_add" />
+        <activity android:name=".hos" />
         <activity
             android:name=".joint_login"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -143,10 +235,5 @@
             </intent-filter>
         </activity>
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 </manifest>
