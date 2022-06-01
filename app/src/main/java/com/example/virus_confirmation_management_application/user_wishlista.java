@@ -76,8 +76,14 @@ public class user_wishlista extends AppCompatActivity {
 
                 Intent intent = new Intent(getBaseContext(), user_hosinformation.class);
 
-                intent.putExtra("td_num", dict.getImage());
-                intent.putExtra( "td_tittle", dict.getName());
+
+                intent.putExtra("image", dict.getImage());
+                intent.putExtra("name", dict.getName());
+                intent.putExtra("general", dict.getGeneral());
+                intent.putExtra("number", dict.getNumber());
+                intent.putExtra("time", dict.getTime());
+                intent.putExtra( "address", dict.getAddress());
+                intent.putExtra( "hos_med", "진료과 : ");
 
                 startActivity(intent);
 
@@ -100,8 +106,13 @@ public class user_wishlista extends AppCompatActivity {
 
                 Intent intent = new Intent(getBaseContext(), user_hosinformation.class);
 
-                intent.putExtra("td_num", dict.getImage());
-                intent.putExtra( "td_tittle", dict.getName());
+                intent.putExtra("image", dict.getImage());
+                intent.putExtra("name", dict.getName());
+                intent.putExtra("general", dict.getGeneral());
+                intent.putExtra("number", dict.getNumber());
+                intent.putExtra("time", dict.getTime());
+                intent.putExtra( "address", dict.getAddress());
+                intent.putExtra( "hos_med", "업종 : ");
 
                 startActivity(intent);
 
