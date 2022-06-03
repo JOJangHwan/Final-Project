@@ -93,6 +93,15 @@ public class user_Frag3 extends Fragment {
             }
         });
 
+        Button user_wishlista = (Button) view.findViewById(R.id.wishlist_button);
+        user_wishlista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), user_wishlista.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
 
     }

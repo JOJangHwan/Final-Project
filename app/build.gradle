@@ -42,7 +42,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'com.google.android.gms:play-services-location:17.0.0'
-    implementation files('libs\\achartengine-1.2.0.jar')
 
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
 

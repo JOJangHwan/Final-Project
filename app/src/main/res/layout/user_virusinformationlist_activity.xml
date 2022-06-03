@@ -31,7 +31,7 @@
         <Button
             android:id="@+id/H1N1_button"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="115dp"
             android:backgroundTint="#7C7575"
             android:text="신종플루"
             android:textSize="34sp" />
@@ -39,7 +39,7 @@
         <Button
             android:id="@+id/mers_button"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="115dp"
             android:backgroundTint="#7C7575"
             android:text="메르스"
             android:textSize="34sp" />
@@ -47,7 +47,7 @@
         <Button
             android:id="@+id/covid19_button"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="115dp"
             android:backgroundTint="#7C7575"
             android:text="코로나19"
             android:textSize="34sp" />
@@ -55,10 +55,21 @@
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="115dp"
             android:backgroundTint="#7C7575"
             android:text="추가예정"
             android:textSize="34sp" />
     </LinearLayout>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/user_bottom_menu" />
 </androidx.constraintlayout.widget.ConstraintLayout>

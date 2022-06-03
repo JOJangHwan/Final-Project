@@ -11,11 +11,10 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/state_recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="561dp"
-        android:layout_marginTop="80dp"
+        android:layout_height="520dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/addreportButton" />
 
 
     <TextView
@@ -37,5 +36,17 @@
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_baseline_add_24" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/user_bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

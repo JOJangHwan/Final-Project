@@ -23,7 +23,7 @@ import java.util.ArrayList;
 public class user_bottomnavi extends AppCompatActivity {
 
 
-
+    static int pagedata =-1;
     private Button button_move; // intend
     private BottomNavigationView bottomNavigationView; // 바텀 네비게이션 뷰
     private FragmentManager fm;
@@ -70,7 +70,11 @@ public class user_bottomnavi extends AppCompatActivity {
         frag1= new user_Frag1();
         frag2= new user_Frag2();
         frag3= new user_Frag3();
-        setFrag(1);//첫화면
+        if(pagedata==-1){
+            setFrag(1);//첫화면
+        }else{
+            setFrag(pagedata);
+        }
 
     }
 

@@ -35,10 +35,11 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="669dp"
+        android:layout_height="550dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
         android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -47,26 +48,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:orientation="horizontal"
                 android:layout_weight="2"
+                android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
                     android:id="@+id/textView14"
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textAlignment="center"
+                    android:layout_weight="1"
                     android:gravity="center"
                     android:text="체온을 입력해주세요"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
 
                 <Spinner
                     android:id="@+id/selftest_C_ComboBox"
@@ -85,13 +86,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="기침을 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group1"
@@ -125,20 +126,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="가래가 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g2y"
                         android:layout_width="match_parent"
@@ -164,20 +166,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="오한이 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g3y"
                         android:layout_width="match_parent"
@@ -203,20 +206,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="목 아픔이 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g4y"
                         android:layout_width="match_parent"
@@ -242,20 +246,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="호흡곤란이 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g5y"
                         android:layout_width="match_parent"
@@ -281,20 +286,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="복통이 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g6y"
                         android:layout_width="match_parent"
@@ -321,20 +327,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="두통이 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g7y"
                         android:layout_width="match_parent"
@@ -360,20 +367,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="당뇨가 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g8y"
                         android:layout_width="match_parent"
@@ -399,21 +407,22 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="미각 또는 후각
                     사실증상이 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g9y"
                         android:layout_width="match_parent"
@@ -439,20 +448,21 @@
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
                 <TextView
+                    android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
                     android:text="가슴통증이 있나요?"
                     android:textAlignment="center"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    android:layout_weight="1"
-                    android:layout_width="match_parent"/>
+                    android:textSize="20sp" />
 
                 <RadioGroup
                     android:id="@+id/group10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
                     <RadioButton
                         android:id="@+id/g10y"
                         android:layout_width="match_parent"
@@ -469,7 +479,7 @@
                 </RadioGroup>
 
             </LinearLayout>
-<!--끝부분-->
+            <!--끝부분-->
 
 
             <Button
@@ -477,15 +487,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:backgroundTint="#7C7575"
+                android:gravity="center"
                 android:text=" 진 단 하 기"
                 android:textAlignment="center"
-                android:gravity="center"
-                android:textSize="25sp"
-                />
+                android:textSize="25sp" />
 
         </LinearLayout>
 
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:menu="@menu/user_bottom_menu"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

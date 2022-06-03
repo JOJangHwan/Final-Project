@@ -18,6 +18,9 @@ public class user_anotherconturywebview extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_anotherconturywebview);
 
+
+
+
         String user_AC_UrlData = getIntent().getStringExtra("user_AC_Url");
 
         webView = (WebView) findViewById(R.id.user_anotherconturywebview);

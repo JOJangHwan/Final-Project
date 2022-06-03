@@ -27,7 +27,7 @@
         android:id="@+id/frame_login_home"
         android:layout_width="match_parent"
         android:layout_height="700dp"
-        android:layout_marginTop="520dp"
+        android:layout_marginTop="400dp"
         android:background="#F8F8F8"
 
         >

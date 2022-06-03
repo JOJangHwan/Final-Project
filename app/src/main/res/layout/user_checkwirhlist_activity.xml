@@ -30,10 +30,22 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/checkwith_recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="642dp"
-        android:layout_marginTop="30dp"
+        android:layout_height="520dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/addcheckwithButton" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="2dp"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/user_bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

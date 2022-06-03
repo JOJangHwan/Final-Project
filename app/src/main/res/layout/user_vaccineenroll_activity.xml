@@ -14,7 +14,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="#F8CBAD"
         android:text="뒤로가기"
         android:textSize="20sp"
@@ -29,7 +29,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="5dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="#F8CBAD"
         android:text="등록하기"
         android:textSize="20sp"
@@ -110,7 +110,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="60dp"
-        android:layout_marginBottom="189dp"
+        android:layout_marginBottom="149dp"
         android:text="접종 차수 : "
 
         android:textSize="25sp"
@@ -123,7 +123,7 @@
         android:layout_width="130dp"
         android:layout_height="35dp"
         android:layout_marginStart="30dp"
-        android:layout_marginBottom="187dp"
+        android:layout_marginBottom="147dp"
         android:layout_weight="1"
         android:spinnerMode="dropdown"
 
@@ -141,5 +141,17 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/Date"
         app:layout_constraintStart_toEndOf="@+id/vaccineenroll_name" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/user_bottom_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

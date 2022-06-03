@@ -5,1677 +5,1620 @@
     android:layout_width="match_parent"
     tools:context=".user_select_country" android:background="#D6D1D1"
     android:layout_height="match_parent">
-   <ScrollView
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:orientation="vertical">
 
-        <TextView
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:gravity="center"
-            android:text="해외 출입국 규정"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="45sp">
-        </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="18dp"
-            android:text="작성 일자 22.5.25"
-            android:textAlignment="textEnd"
-            android:textColor="#000000"
-            android:textSize="15dp">
-        </TextView>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="#아시아"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="32dp">
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:gravity="center"
-                android:text="일본"
+                android:text="해외 출입국 규정"
                 android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
+                android:textColor="#000000"
+                android:textSize="45sp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="18dp"
+                android:text="작성 일자 22.5.25"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="#아시아"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="32dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="코로나 완치 여부 상관없이 전원 PCR+백신증명서 제출 \n3차 백신 접종 완료자는 자가격리 7일 면제"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="일본"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="코로나 완치 여부 상관없이 전원 PCR+백신증명서 제출 \n3차 백신 접종 완료자는 자가격리 7일 면제"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="태국"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="2차 백신 접종 완료자는 격리&amp;도착 후 PCR면제\n미접종자는 72시간 전 PCR or 격리해제 확인서 제출"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="태국"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="2차 백신 접종 완료자는 격리&amp;도착 후 PCR면제\n미접종자는 72시간 전 PCR or 격리해제 확인서 제출"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="싱가포르"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="백신 미접종자는 관광 금지, 사전입국 승인자만 7일 격리\n코로나 완치자는 2차 접종 후 부스터샷 없이도 여행 가능"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="싱가포르"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="백신 미접종자는 관광 금지, 사전입국 승인자만 7일 격리\n코로나 완치자는 2차 접종 후 부스터샷 없이도 여행 가능"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="필리핀"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="백신 미 접종자는 PCR 음성, 코로나 완치자도 입국 불가\n코로나 완치 여부 상관없이 전원 PCR+백신증명서 제출"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="필리핀"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="백신 미 접종자는 PCR 음성, 코로나 완치자도 입국 불가\n코로나 완치 여부 상관없이 전원 PCR+백신증명서 제출"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="베트남"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="5월 15일부터 코로나 관련 검사, 증명서 필요 없어짐\n접종, 미접종, 완치 여부 상관 없이 전면 개방됨"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="베트남"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="5월 15일부터 코로나 관련 검사, 증명서 필요 없어짐\n접종, 미접종, 완치 여부 상관 없이 전면 개방됨"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="말레이시아"
-                android:textSize="13dp"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="출발 6~60일 전까지 확진 이력 있으면 출/도착 PCR 면제\n백신 2차 접종자는 격리 면제, 미접종자는 5일 자가격리"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="말레이시아"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="출발 6~60일 전까지 확진 이력 있으면 출/도착 PCR 면제\n백신 2차 접종자는 격리 면제, 미접종자는 5일 자가격리"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="#아메리카+α"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="32dp">
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="미국"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
+                android:text="#아메리카+α"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="32dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="백신 미접종자는 입국 제한, 접종자는 자가격리 면제\n확진 이력이 있을 경우 격리헤제 확인서로 PCR 대체 가능"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="미국"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="백신 미접종자는 입국 제한, 접종자는 자가격리 면제\n확진 이력이 있을 경우 격리헤제 확인서로 PCR 대체 가능"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="캐나다"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="백신 미접종자는 관광 목적 입국 금지(14일 자가격리)\n입국 시 무작위로 코로나 검사 실시(격리X)"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="캐나다"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="백신 미접종자는 관광 목적 입국 금지(14일 자가격리)\n입국 시 무작위로 코로나 검사 실시(격리X)"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="멕시코"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="PCR 음성확인서, 백신접종증명서 필요X\n입국 후 발열체크 및 문진표 작성만 진행함"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="멕시코"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="PCR 음성확인서, 백신접종증명서 필요X\n입국 후 발열체크 및 문진표 작성만 진행함"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="호주"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="2차 백신까지 맞았다면 호주 입국이 허용됨\n4월부터 출발 전 코로나 PCR 검사결과서 제출 요건 폐지"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="호주"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="2차 백신까지 맞았다면 호주 입국이 허용됨\n4월부터 출발 전 코로나 PCR 검사결과서 제출 요건 폐지"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="하와이"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="백신접종증명서, 출발 1일 전 PCR 음성확인서 제출\n미접종자는 코로나 완치 여부와 상관없이 출입 불가능"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="하와이"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="백신접종증명서, 출발 1일 전 PCR 음성확인서 제출\n미접종자는 코로나 완치 여부와 상관없이 출입 불가능"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="괌·사이판"
-                android:textSize="13dp"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="코로나 백신증명서 소지 필수 (미접종자는 출입 불가)\n한국 출국 1일 전에 검사한 PCR 음성확인서도 필요함"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="괌·사이판"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="코로나 백신증명서 소지 필수 (미접종자는 출입 불가)\n한국 출국 1일 전에 검사한 PCR 음성확인서도 필요함"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="#서유럽"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="32dp">
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="프랑스"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
+                android:text="#서유럽"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="32dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="백신 접종자는 출발 전 PCR 음성확인서 제출 의무 면제\n미접종자는 PCR, 신속항원검사 결과 제출, 격리X"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="프랑스"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="백신 접종자는 출발 전 PCR 음성확인서 제출 의무 면제\n미접종자는 PCR, 신속항원검사 결과 제출, 격리X"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="영국"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 3월 18일부터 코로나 방역지침 준수 의무 종료\n영국에서 한국으로 돌아올 때만 PCR 검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="영국"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 3월 18일부터 코로나 방역지침 준수 의무 종료\n영국에서 한국으로 돌아올 때만 PCR 검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="아일랜드"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 3월 7일부터 코로나 관련 증명서 제출 필요X\n아일랜드에서 한국으로 돌아올 때만 PCR 검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="아일랜드"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 3월 7일부터 코로나 관련 증명서 제출 필요X\n아일랜드에서 한국으로 돌아올 때만 PCR 검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="벨기에"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n입국 전, 도착 후 PCR검사를 시행하지 않음"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="벨기에"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n입국 전, 도착 후 PCR검사를 시행하지 않음"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="네덜란드"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="한국에서 출발한 사람은 코로나 관련 서류 제출 불필요\n다른 나라에서 육로로 들어갈 떄는 요구가능성 있음"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="네덜란드"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="한국에서 출발한 사람은 코로나 관련 서류 제출 불필요\n다른 나라에서 육로로 들어갈 떄는 요구가능성 있음"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="룩셈부르크"
-                android:textSize="13dp"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="접종 완료일부터 9개월 이내의 백신접종 증명서 또는\n확진일로부터 11~180일 이내의 격리해제 증명서 제출"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="룩셈부르크"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="접종 완료일부터 9개월 이내의 백신접종 증명서 또는\n확진일로부터 11~180일 이내의 격리해제 증명서 제출"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="#남유럽"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="32dp">
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="포르투칼"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
+                android:text="#남유럽"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="32dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n음성확인서는 PCR, 신속항원검사 상관 없음"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="포르투칼"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n음성확인서는 PCR, 신속항원검사 상관 없음"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="스페인"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n회복증명서는 확진 후 11일~180일까지 유효함"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="스페인"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n회복증명서는 확진 후 11일~180일까지 유효함"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="이탈리아"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n미지참시 입국 후 5일 자가격리, 음성시 해제"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="이탈리아"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n미지참시 입국 후 5일 자가격리, 음성시 해제"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="그리스"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 5월 1일부터 코로나 관련 증명서 제출 필요X\n그리스에서 한국으로 돌아올 때만 PCR 검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="그리스"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 5월 1일부터 코로나 관련 증명서 제출 필요X\n그리스에서 한국으로 돌아올 때만 PCR 검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="불가리아"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 5월 1일부터 코로나 관련 증명서 제출 필요X\n불가리아에서 한국으로 돌아올 때만 PCR 검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="불가리아"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 5월 1일부터 코로나 관련 증명서 제출 필요X\n불가리아에서 한국으로 돌아올 때만 PCR 검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="크로아티아"
-                android:textSize="13dp"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 5월 1일부터 코로나 관련 증명서 제출 필요X\n크로아티아에서 한국으로 돌아올 때만 PCR 검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="크로아티아"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 5월 1일부터 코로나 관련 증명서 제출 필요X\n크로아티아에서 한국으로 돌아올 때만 PCR 검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="#동유럽"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="32dp">
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="독일"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
+                android:text="#동유럽"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="32dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="음성확인서, 백신접종증명서, 완치확인서 중 1개 제출\n완치확인서는 확진 후 28일~180일까지 유효함"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="독일"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="음성확인서, 백신접종증명서, 완치확인서 중 1개 제출\n완치확인서는 확진 후 28일~180일까지 유효함"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="스위스"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 4월 1일부터 모든 입국제한, 격리조치 폐지\n스위스에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="스위스"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 4월 1일부터 모든 입국제한, 격리조치 폐지\n스위스에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="폴란드"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 3월 28일부터 코로나 관련 증명서 제출 필요X\n폴란드에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="폴란드"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 3월 28일부터 코로나 관련 증명서 제출 필요X\n폴란드에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="헝가리"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 3월 7일부터 코로나 관련 증명서 제출 필요X\n헝가리에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="헝가리"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 3월 7일부터 코로나 관련 증명서 제출 필요X\n헝가리에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="체코"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 4월 9일부터 모든 입국제한, 격리조치 폐지\n체코에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="체코"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 4월 9일부터 모든 입국제한, 격리조치 폐지\n체코에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="슬로바키아"
-                android:textSize="13dp"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 4월 6일부터 모든 입국제한, 격리조치 폐지\n슬로바키아에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="슬로바키아"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 4월 6일부터 모든 입국제한, 격리조치 폐지\n슬로바키아에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="#북유럽"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="32dp">
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="스페인"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
+                android:text="#북유럽"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="32dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 4월 1일부터 코로나 관련 증명서 제출 필요X\n스웨덴에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="스페인"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 4월 1일부터 코로나 관련 증명서 제출 필요X\n스웨덴에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="노르웨이"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 2월 12일부터 모든 입국제한, 격리조치 폐지\n노르웨이에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="노르웨이"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 2월 12일부터 모든 입국제한, 격리조치 폐지\n노르웨이에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="필란드"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n입국 전, 도착 후 PCR검사를 시행하지 않음"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="필란드"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="음성확인서, 백신접종증명서, 회복증명서 중 1개 제출\n입국 전, 도착 후 PCR검사를 시행하지 않음"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="덴마크"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 3월 29일부터 코로나 관련 증명서 제출 필요X\n덴마크에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="덴마크"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 3월 29일부터 코로나 관련 증명서 제출 필요X\n덴마크에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="라트비아"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 4월 1일부터 모든 입국제한, 격리조치 폐지\n고위험국가에서 입국자는 접종증명서or음성확인서 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="라트비아"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 4월 1일부터 모든 입국제한, 격리조치 폐지\n고위험국가에서 입국자는 접종증명서or음성확인서 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="아이슬란드"
-                android:textSize="13dp"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 2월 25일부터 코로나 관련 증명서 제출 필요X\n아이슬란드에서 한국으로 돌아올 때만 PCR검사 필요"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="아이슬란드"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 2월 25일부터 코로나 관련 증명서 제출 필요X\n아이슬란드에서 한국으로 돌아올 때만 PCR검사 필요"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="#중동/아프리카"
-            android:textAlignment="textStart"
-            android:textColor="#000000"
-            android:textSize="32dp">
-        </TextView>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="60dp"
+                android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="터키"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
+                android:text="#중동/아프리카"
+                android:textAlignment="textStart"
+                android:textColor="#000000"
+                android:textSize="32dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="PCR 음성확인서 또는 신속항원검사 결과지 제출\n회복증명서는 확진 후 28일~180일까지 유효함"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="터키"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="PCR 음성확인서 또는 신속항원검사 결과지 제출\n회복증명서는 확진 후 28일~180일까지 유효함"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="카타르"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="PCR 음성확인서 제출 및 접종완료, 완치자는 격리 면제\n코로나 확진일로부터 1년까지 접종자와 동일하게 간주함"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="카타르"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="PCR 음성확인서 제출 및 접종완료, 완치자는 격리 면제\n코로나 확진일로부터 1년까지 접종자와 동일하게 간주함"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="요르단"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="22년 3월 1일부터 코로나 관련 증명서 제출 필요X\n단, 코로나 치료비를 보장하는 여행자보험 가입 필수"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="요르단"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="22년 3월 1일부터 코로나 관련 증명서 제출 필요X\n단, 코로나 치료비를 보장하는 여행자보험 가입 필수"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="이란"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="백신접종증명서 또는 PCR 음성확인서 중 1개 제출\n공항에서 코로나 의심 증상 관찰 시 PCR 검사 진행"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="이란"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="백신접종증명서 또는 PCR 음성확인서 중 1개 제출\n공항에서 코로나 의심 증상 관찰 시 PCR 검사 진행"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="모로코"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="백신접종증명서와 PCR 음성확인서 모두 제출해야 함\n입국 후 랜덤 PCR검사에서 양성일 경우만 자가격리"
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="모로코"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="백신접종증명서와 PCR 음성확인서 모두 제출해야 함\n입국 후 랜덤 PCR검사에서 양성일 경우만 자가격리"
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
 
-            <TextView
-                android:layout_width="60dp"
-                android:layout_height="40dp"
-                android:background="#7C7575"
-                android:gravity="center"
-                android:text="에티오피아"
-                android:textSize="13dp"
-                android:textAlignment="center"
-                android:textColor="@android:color/white">
-            </TextView>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="45dp"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
                     android:background="#7C7575"
-                    android:text="PCR 음성확인서 또는 신속항원검사 결과지 제출\n완치 후 90일이내 or 백신접종증명서 제출 OK "
-                    android:textAlignment="textStart"
-                    android:textSize="15dp"
-                    android:textColor="@android:color/white">
-                </TextView>
+                    android:gravity="center"
+                    android:text="에티오피아"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="13dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:background="#7C7575"
+                        android:text="PCR 음성확인서 또는 신속항원검사 결과지 제출\n완치 후 90일이내 or 백신접종증명서 제출 OK "
+                        android:textAlignment="textStart"
+                        android:textColor="@android:color/white"
+                        android:textSize="15dp"></TextView>
+                </LinearLayout>
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"></LinearLayout>
+
+
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="#000000">
-        </LinearLayout>
 
+    </ScrollView>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/user_bottom_menu" />
 
-
-    </LinearLayout>
-
-
-   </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

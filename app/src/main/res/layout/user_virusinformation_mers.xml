@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D6D1D1"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".user_virusinformation_influ">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-    <LinearLayout
-        android:id="@+id/Layout"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#ffffff"
-        android:orientation="vertical">
+        android:layout_marginBottom="50dp"
+        android:background="#D6D1D1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".user_virusinformation_influ">
 
-        <Button
-            android:id="@+id/mers_btn"
+
+        <LinearLayout
+            android:id="@+id/Layout"
             android:layout_width="match_parent"
-            android:layout_height="67dp"
-            android:textSize="25dp"
-            android:onClick="onButton1Clicked"
-            android:backgroundTint="#7C7575"
-            android:text="자세한 내용 확인하기" />
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
 
-        <ImageView
-            android:id="@+id/Influenza_qna1"
-            android:layout_width="match_parent"
-            android:layout_height="946dp"
-            android:layout_marginTop="11dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:srcCompat="@drawable/mers_qna1" />
+            <Button
+                android:id="@+id/mers_btn"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:backgroundTint="#7C7575"
+                android:onClick="onButton1Clicked"
+                android:text="자세한 내용 확인하기"
+                android:textSize="25dp" />
+
+            <ImageView
+                android:id="@+id/Influenza_qna1"
+                android:layout_width="match_parent"
+                android:layout_height="946dp"
+                android:layout_marginTop="11dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:srcCompat="@drawable/mers_qna1" />
 
 
-        />
-    </LinearLayout>
-</ScrollView>
+            />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        app:itemIconTint="#000000"
+        app:itemTextColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/user_bottom_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
