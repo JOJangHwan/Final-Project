@@ -38,7 +38,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_seoul.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "seoul");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -48,7 +49,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_gyeonggi_do.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "gyeonggi_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -58,7 +60,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_incheon.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "incheon");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -68,7 +71,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_ganwon_do.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "gangwon_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -78,7 +82,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_chungnam.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "chungcheongnam_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -88,7 +93,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_chungbuk.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "chungcheongbuk_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -98,7 +104,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_daejeon.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "daejeon");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -108,7 +115,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_gyeongbuk.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "gyeongsangbuk_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -118,7 +126,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_gyeognam.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "gyeongsangnam_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -128,7 +137,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_daegu.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "daegu");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -138,7 +148,8 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_busan.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "busan");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
@@ -148,37 +159,41 @@ public class user_Frag1 extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_ulsan.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "ulsan");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
 
-        imageButton_move = view.findViewById(R.id.button_jeo1); // 전북
+        imageButton_move = view.findViewById(R.id.button_jeo1); // 전라북도
         imageButton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_jeonbuk.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "jeollabuk_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
 
-        imageButton_move = view.findViewById(R.id.button_jeo2); // 전북
+        imageButton_move = view.findViewById(R.id.button_jeo2); // 전라남도
         imageButton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_jeonnam.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "jeollanam_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
 
-        imageButton_move = view.findViewById(R.id.button_jeju); // 전북
+        imageButton_move = view.findViewById(R.id.button_jeju); // 제주
         imageButton_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_map_jeju.class);
+                Intent intent =new Intent(getActivity(), user_map_boardlist.class);
+                intent.putExtra("tittle", "jeju_do");
                 startActivity(intent); // 액티비티 이동 구문
             }
         });

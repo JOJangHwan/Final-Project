@@ -242,6 +242,8 @@
         <activity android:name=".user_virusinformation_covid" />
         <activity android:name=".user_virusinformation_add" />
         <activity android:name=".hos" />
+        <activity android:name=".user_map_boardlist" />
+        <activity android:name=".user_map_board_webview" />
         <activity
             android:name=".joint_login"
             android:exported="true">
