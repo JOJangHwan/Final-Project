@@ -108,6 +108,20 @@
         android:textColor="@color/black"
         android:text="변경하기"></Button>
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="#71CCD8"
+        app:itemIconSize="35dp"
+        app:itemIconTint="@drawable/manager_bottom_color"
+        app:itemTextColor="@drawable/manager_bottom_color"
+        app:menu="@menu/manager_home_bottom_nav_menu"
+
+        />
+
 </LinearLayout>
 
 

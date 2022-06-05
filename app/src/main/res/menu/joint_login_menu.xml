@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/menu_login_user"
-        android:title="User Login"
+        android:title="일반 회원 로그인"
         android:icon="@drawable/ic_baseline_person_24"
 
 
@@ -12,7 +12,7 @@
 
     <item
         android:id="@+id/menu_login_manager"
-        android:title="Manager Login"
+        android:title="관리자 로그인"
         android:icon="@drawable/ic_baseline_engineering_24"
 
 

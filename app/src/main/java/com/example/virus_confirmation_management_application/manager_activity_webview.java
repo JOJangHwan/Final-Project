@@ -19,6 +19,8 @@ public class manager_activity_webview extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_webview);
 
+
+
         webView = (WebView) findViewById(R.id.manager_web_view);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(url);

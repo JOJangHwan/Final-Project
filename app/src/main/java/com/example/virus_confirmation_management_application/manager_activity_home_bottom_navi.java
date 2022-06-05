@@ -21,6 +21,8 @@ public class manager_activity_home_bottom_navi extends AppCompatActivity {
     private final FragmentManager fragmentManager = getSupportFragmentManager();
     private final manager_frag_home ad_frag_home = new manager_frag_home();
     private final manager_frag_con_case frag_con_case=new manager_frag_con_case();
+    private final manager_activity_virus_mana manager_activity_virus_mana=new manager_activity_virus_mana();
+
     private final manager_frag_user_information frag_user_information=new manager_frag_user_information();
 
     private Button fp_info;
@@ -34,6 +36,7 @@ public class manager_activity_home_bottom_navi extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_menu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new ItemSelectedListener());
+
 
 
 
@@ -57,6 +60,8 @@ public class manager_activity_home_bottom_navi extends AppCompatActivity {
                 case R.id.menu_people_in:
                     transaction.replace(R.id.frame_home, frag_user_information).commitAllowingStateLoss();
                     break;
+
+
 
 
             }

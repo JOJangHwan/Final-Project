@@ -6,40 +6,43 @@ import static com.example.virus_confirmation_management_application.user_bottomn
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class manager_activity_hosp_add extends AppCompatActivity {
+public class manager_qna_detail extends AppCompatActivity {
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.manager_activity_hosp_add);
+        setContentView(R.layout.manager_qna_detail);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_menu);
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
-                    case R.id.menu_home:
+                    case R.id.action_map:
                         pagedata=0;
-                        Intent intent = new Intent(getApplicationContext(), manager_activity_home_bottom_navi.class);
+                        Intent intent = new Intent(getApplicationContext(), user_bottomnavi.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent); // 액티비티 이동 구문
                         break;
-                    case R.id.menu_confirmed_case:
+                    case R.id.action_main:
                         pagedata=1;
                         a=0;
-                        intent = new Intent(getApplicationContext(), manager_activity_home_bottom_navi.class);
+                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent); // 액티비티 이동 구문
                         break;
-                    case R.id.menu_people_in:
+                    case R.id.action_person:
                         pagedata=2;
-                        intent = new Intent(getApplicationContext(), manager_activity_home_bottom_navi.class);
+                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                         startActivity(intent); // 액티비티 이동 구문
                         break;
@@ -47,5 +50,21 @@ public class manager_activity_hosp_add extends AppCompatActivity {
                 return true;
             }
         });
+
+
+
+        Bundle extras = getIntent().getExtras();
+
+        String qnamessage = extras.getString("qnamessage");
+
+
+
+        TextView tv_qnamessage = (TextView) findViewById(R.id.qna_textview_detail);
+
+
+
+        tv_qnamessage.setText(qnamessage);
+
+
     }
 }

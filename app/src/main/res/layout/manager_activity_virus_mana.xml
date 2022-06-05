@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_gravity="center"
     android:background="@drawable/main_background_color"
@@ -106,7 +106,7 @@
                 android:layout_height="70dp"
                 android:layout_marginTop="250dp"
                 android:backgroundTint="@color/button_color"
-                android:text="기타 정보"
+                android:text="추가될 예정"
                 android:textSize="20dp">
 
             </Button>
@@ -115,7 +115,7 @@
                 android:id="@+id/vi3"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:layout_marginTop="720dp"
+                android:layout_marginTop="420dp"
                 android:backgroundTint="@color/button_color"
                 android:text="기타 정보"
                 android:textSize="20dp"></Button>
@@ -126,6 +126,22 @@
 
 
     </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="#71CCD8"
+        app:itemIconSize="35dp"
+        app:itemIconTint="@drawable/manager_bottom_color"
+        app:itemTextColor="@drawable/manager_bottom_color"
+        app:menu="@menu/manager_home_bottom_nav_menu"
+
+        />
+
+
 
 
 

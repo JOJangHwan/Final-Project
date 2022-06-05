@@ -31,7 +31,9 @@
         app:itemIconSize="35dp"
         app:itemIconTint="@drawable/manager_bottom_color"
         app:itemTextColor="@drawable/manager_bottom_color"
-        app:menu="@menu/manager_home_bottom_nav_menu" />
+        app:menu="@menu/manager_home_bottom_nav_menu"
+
+        />
     // app:labelVisibilityMode="unlabeled" 바텀 네비게이션 그림만 나오게 하는 것
 
 

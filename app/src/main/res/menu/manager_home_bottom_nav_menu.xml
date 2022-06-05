@@ -2,20 +2,20 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/menu_home"
-        android:title="home"
+        android:title="홈"
         android:icon="@drawable/ic_baseline_home_24"
 
         />
 
     <item
         android:id="@+id/menu_confirmed_case"
-        android:title="confirmed case"
+        android:title="확진자"
         android:icon="@drawable/ic_baseline_airline_seat_individual_suite_24"
         />
 
     <item
         android:id="@+id/menu_people_in"
-        android:title="people information"
+        android:title="내 정보"
         android:icon="@drawable/ic_baseline_people_24"
         />
 

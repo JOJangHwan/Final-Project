@@ -16,6 +16,9 @@
         android:theme="@style/Theme.Virus_Confirmation_Management_Application"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".manager_activity_userlist_detail"
+            android:exported="false" />
+        <activity
             android:name=".manager_map_write"
             android:exported="false" />
         <activity
@@ -190,6 +193,18 @@
             android:exported="false" />
         <activity
             android:name=".manager_activity_gogu_5"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_myinformation_pw"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_myinformation_email"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_myinformation_phonenumber"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_gogu_mainimg"
             android:exported="false" />
         <activity android:name=".user_virusinformationlist" />
         <activity android:name=".user_checkwirhlist" />

@@ -34,6 +34,10 @@ public class Manager_User_Adapter extends RecyclerView.Adapter<Manager_User_Adap
         holder.text_user_list.setText(Data_arrayList.get(position).getMessage());
         holder.img_user_list.setImageResource(Data_arrayList.get(position).getResourceId());
 
+
+
+
+
     }
 
     @Override
