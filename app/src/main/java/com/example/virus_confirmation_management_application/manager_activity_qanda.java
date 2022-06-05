@@ -25,8 +25,8 @@ import java.util.ArrayList;
 
 public class manager_activity_qanda extends AppCompatActivity {
     private Button button_move;
-
     private ArrayList<Manager_QnA_Data> Main_dataList;   /// 데이터를 담기위한 어레이 리스트
+
     private Manager_QnA_Adapter Main_adapter; //어댑터
     private RecyclerView recyclerview;
     private LinearLayoutManager linearLayoutManager;
@@ -37,12 +37,12 @@ public class manager_activity_qanda extends AppCompatActivity {
         setContentView(R.layout.manager_activity_qanda);
 
         recyclerview = (RecyclerView) findViewById(R.id.rc_qaview);  /// 리사이클러뷰 초기화
-        recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
+        //recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
         linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
         recyclerview.setLayoutManager(linearLayoutManager); // 리사이클러뷰에 set 해준다 .
         Main_dataList = new ArrayList<>(); // 어댑터 선언
         Main_adapter = new Manager_QnA_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
-        recyclerview.setAdapter((RecyclerView.Adapter) Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
+        recyclerview.setAdapter(Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
 
         load();
 
@@ -81,14 +81,14 @@ public class manager_activity_qanda extends AppCompatActivity {
         recyclerview.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerview, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
-                com.example.virus_confirmation_management_application.item_qna_list dict = item_qna_list.get(position);
+                com.example.virus_confirmation_management_application.Manager_QnA_Data dict = Main_dataList.get(position);
                 //아이템화면전환
-                Toast.makeText(getApplicationContext(), dict.getQnAmessage(), Toast.LENGTH_LONG).show();
+                //Toast.makeText(getApplicationContext(), dict.getQnAmessage(), Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(getBaseContext(), item_qna_list.class);
+                Intent intent = new Intent(getBaseContext(), manager_qna_detail.class); //여기는 이동할 창을 넣어주는곳
 
 
-                intent.putExtra("qnamessage", dict.getQnAmessage());
+                intent.putExtra("qnamessage", dict.getMessage());
 
 
                 startActivity(intent);
@@ -105,51 +105,9 @@ public class manager_activity_qanda extends AppCompatActivity {
 
 
 
-        public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
-
-            private GestureDetector gestureDetector;
-            private ClickListener clickListener;
-
-            public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final ClickListener clickListener) {
-                this.clickListener = clickListener;
-                gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
-                    @Override
-                    public boolean onSingleTapUp(MotionEvent e) {
-                        return true;
-                    }
-
-                    @Override
-                    public void onLongPress(MotionEvent e) {
-                        View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
-                        if (child != null && clickListener != null) {
-                            clickListener.onLongClick(child, recyclerView.getChildAdapterPosition(child));
-                        }
-                    }
-                });
-            }
-
-            @Override
-            public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
-                View child = rv.findChildViewUnder(e.getX(), e.getY());
-                if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
-                    clickListener.onClick(child, rv.getChildAdapterPosition(child));
-                }
-                return false;
-            }
-
-            @Override
-            public void onTouchEvent(RecyclerView rv, MotionEvent e) {
-            }
-
-            @Override
-            public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
-            }
-        }
 
 
-        
-        
-        
+
         
         
         
@@ -165,9 +123,49 @@ public class manager_activity_qanda extends AppCompatActivity {
         });
     }
 
-    private RecyclerView.OnItemTouchListener RecyclerTouchListener(Context applicationContext, RecyclerView recyclerview, user_wishlista.ClickListener clickListener) {
 
+    public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+
+        private GestureDetector gestureDetector;
+        private ClickListener clickListener;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final ClickListener clickListener) {
+            this.clickListener = clickListener;
+            gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+                    if (child != null && clickListener != null) {
+                        clickListener.onLongClick(child, recyclerView.getChildAdapterPosition(child));
+                    }
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+            View child = rv.findChildViewUnder(e.getX(), e.getY());
+            if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
+                clickListener.onClick(child, rv.getChildAdapterPosition(child));
+            }
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+        }
     }
+
+
 
     private void load() {
         for (int i =0; i<10; i++) {

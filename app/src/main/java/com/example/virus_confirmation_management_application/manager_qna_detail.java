@@ -22,7 +22,7 @@ public class manager_qna_detail extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
-
+/*
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -52,6 +52,7 @@ public class manager_qna_detail extends AppCompatActivity {
         });
 
 
+*/
 
         Bundle extras = getIntent().getExtras();
 

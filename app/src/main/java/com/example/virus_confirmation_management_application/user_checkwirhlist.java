@@ -82,7 +82,7 @@ public class user_checkwirhlist extends AppCompatActivity {
 
 
 
-        mRecyclerView.addOnItemTouchListener(new user_mystatereportlist.RecyclerTouchListener(getApplicationContext(), mRecyclerView, new user_mystatereportlist.ClickListener() {
+        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), mRecyclerView, new user_mystatereportlist.ClickListener() {
             @Override
             public void onClick(View view, int position) {
                 com.example.virus_confirmation_management_application.user_stateItem dict = user_stateItem.get(position);

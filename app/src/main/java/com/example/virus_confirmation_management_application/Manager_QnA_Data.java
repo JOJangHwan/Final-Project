@@ -8,6 +8,12 @@ class Manager_QnA_Data {
     String QnAmessage;    //item에 넣어질 메세지
     int resourceId;        //item에 넣어질 사진
 
+    //constructor 만들기
+    public Manager_QnA_Data(int resourceId,String message) {
+        this.QnAmessage = message;
+        this.resourceId = resourceId;
+
+    }
 
     public int getResourceId() {
         return resourceId;
@@ -32,10 +38,5 @@ class Manager_QnA_Data {
 
 
 
-    //constructor 만들기
-    public Manager_QnA_Data(int resourceId,String message) {
-        this.QnAmessage = message;
-        this.resourceId = resourceId;
 
-    }
 }

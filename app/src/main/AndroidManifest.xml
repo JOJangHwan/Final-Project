@@ -111,6 +111,9 @@
             android:name=".manager_activity_map_bulletin_board_gyeongbuk"
             android:exported="false" />
         <activity
+            android:name=".manager_qna_detail"
+            android:exported="false" />
+        <activity
             android:name=".manager_activity_map_bulletin_board_seoul"
             android:exported="false" />
         <activity
