@@ -58,7 +58,8 @@ public class user_nearhosfind extends AppCompatActivity implements OnMapReadyCal
     private static final int UPDATE_INTERVAL_MS = 1000;  // 1초
     private static final int FASTEST_UPDATE_INTERVAL_MS = 500; // 0.5초
 
-    hos hdata = new hos();
+//    hos hdata = new hos();
+    joint_fragment_login_user fjlu = new joint_fragment_login_user();
 
     private static final int PERMISSIONS_REQUEST_CODE = 100;
     boolean needRequest = false;
@@ -82,7 +83,7 @@ public class user_nearhosfind extends AppCompatActivity implements OnMapReadyCal
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_nearhosfind_activity);
-        Log.d("test2", String.valueOf(hdata.array.size()));
+        Log.d("test2", String.valueOf(fjlu.array.size()));
 
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
@@ -151,10 +152,10 @@ public class user_nearhosfind extends AppCompatActivity implements OnMapReadyCal
 
         MarkerOptions markerOptions = new MarkerOptions();
 
-      for(int i = 0; i<hdata.array.size()/6; i++){
+      for(int i = 0; i<fjlu.array.size()/6; i++){
 
-            currentLatLng = new LatLng(Double.valueOf(hdata.array.get(i*6+4)), Double.valueOf(hdata.array.get(i*6+5)));
-            mMap.addMarker(markerOptions.position(currentLatLng).title(hdata.array.get(i*6+2)).snippet(hdata.array.get(i*6) +"/" + hdata.array.get(i*6+3)).icon(BitmapDescriptorFactory.fromResource(R.drawable.markerline_blue)));
+            currentLatLng = new LatLng(Double.valueOf(fjlu.array.get(i*6+4)), Double.valueOf(fjlu.array.get(i*6+5)));
+            mMap.addMarker(markerOptions.position(currentLatLng).title(fjlu.array.get(i*6+2)).snippet(fjlu.array.get(i*6) +"/" + fjlu.array.get(i*6+3)).icon(BitmapDescriptorFactory.fromResource(R.drawable.markerline_blue)));
         }
         setDefaultLocation();
 
@@ -406,7 +407,7 @@ public class user_nearhosfind extends AppCompatActivity implements OnMapReadyCal
 
 
         //디폴트 위치, Seoul
-        LatLng DEFAULT_LOCATION = new LatLng(37.56, 126.97);
+        LatLng DEFAULT_LOCATION = new LatLng(37.5410613, 126.826968);
         String markerTitle = "위치정보 가져올 수 없음";
         String markerSnippet = "위치 퍼미션과 GPS 활성 요부 확인하세요";
 

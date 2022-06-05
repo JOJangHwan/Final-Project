@@ -124,7 +124,7 @@ public class user_Frag2 extends Fragment {
         nearhosfind_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(),hos.class);
+                Intent intent = new Intent(getActivity(),user_nearhosfind.class);
                 startActivity(intent);
             }
         });
