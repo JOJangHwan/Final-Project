@@ -48,6 +48,7 @@
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwirhlist_activity.xml" value="0.358695652173913" />
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_checkwith_activity.xml" value="0.358695652173913" />
         <entry key="..\:/Users/410-40/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_findpwd_activity.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/item_hosp_list.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/item_notice_list.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/item_qna_list.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/item_qnalist.xml" value="0.36614583333333334" />
@@ -74,6 +75,7 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_main.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_map_bulletin_board_busan.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_map_bulletin_board_chungbuk.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_map_bulletin_board_jeonnam.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_map_busan.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_map_chungbuk.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/manager_activity_map_ganwon_do.xml" value="0.36614583333333334" />
@@ -127,8 +129,12 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_hos.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_hos_med_information_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_hosinformation_activity.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_board.xml" value="0.3651041666666667" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_board_add.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_board_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_board_webview.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_boardlist.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_boardlist_item.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myfamily_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mypage_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mystatereport1_activity.xml" value="0.33" />

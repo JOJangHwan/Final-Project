@@ -26,7 +26,7 @@
         </Button>
 
         <Button
-            android:id="@+id/button_map_write_busan"
+            android:id="@+id/button_board_add"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
@@ -39,7 +39,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rc_map_View"
+        android:id="@+id/user_map_bord_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="50dp"

@@ -4,20 +4,33 @@ import static com.example.virus_confirmation_management_application.user_Frag2.a
 import static com.example.virus_confirmation_management_application.user_bottomnavi.pagedata;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.GestureDetector;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.ArrayList;
+
 public class user_map_boardlist  extends AppCompatActivity {
+
+    private RecyclerView mRecyclerView;
+    private user_map_boardlist_CustomAdapter mboardlistCustomAdapter;
+    private ArrayList<user_map_boardlist_item> user_map_boardlist_item;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -148,8 +161,110 @@ public class user_map_boardlist  extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button button_board_add = (Button)findViewById(R.id.button_board_add);
+        button_board_add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),user_map_board_add.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.user_map_bord_recyclerview);
+
+        /* initiate adapter */
+        mboardlistCustomAdapter= new user_map_boardlist_CustomAdapter();
+        /* initiate recyclerview */
+        mRecyclerView.setAdapter(mboardlistCustomAdapter);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        /* adapt data */
+        user_map_boardlist_item = new ArrayList<>();
+        for(int i=1;i<=10;i++){
+            user_map_boardlist_item.add(new user_map_boardlist_item(tittlename,i,i+"번째 제목",i+"번째아이디",i+"번째 날짜",i,i));
+
+        }
+        mboardlistCustomAdapter.setMboardlistIteArrayList(user_map_boardlist_item);
+
+
+        mRecyclerView.addOnItemTouchListener(new user_mystatereportlist.RecyclerTouchListener(getApplicationContext(), mRecyclerView, new user_mystatereportlist.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                com.example.virus_confirmation_management_application.user_map_boardlist_item dict = user_map_boardlist_item.get(position);
+                //Toast.makeText(getApplicationContext(), dict.getNum()+' '+dict.getTittle()+' '+dict.getAnswercheck(), Toast.LENGTH_LONG).show();
+                //아이템화면전환
+                Intent intent = new Intent(getBaseContext(), user_map_board.class);
+
+                intent.putExtra("Boardlocation", dict.getBoardlocation());
+                intent.putExtra( "Board_tittle", dict.getBoard_tittle());
+                intent.putExtra( "Board_date", dict.getBoard_date());
+                intent.putExtra( "User_id", dict.getUser_id());
+                startActivity(intent);
+
+
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+            }
+        }));
+
+
+
+
+
+
     }
 
+
+    public interface ClickListener {
+        void onClick(View view, int position);
+
+        void onLongClick(View view, int position);
+    }
+
+    public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+
+        private GestureDetector gestureDetector;
+        private user_mystatereportlist.ClickListener clickListener;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final user_mystatereportlist.ClickListener clickListener) {
+            this.clickListener = clickListener;
+            gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+                    if (child != null && clickListener != null) {
+                        clickListener.onLongClick(child, recyclerView.getChildAdapterPosition(child));
+                    }
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+            View child = rv.findChildViewUnder(e.getX(), e.getY());
+            if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
+                clickListener.onClick(child, rv.getChildAdapterPosition(child));
+            }
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+        }
+    }
 
 
 }
