@@ -54,6 +54,7 @@ public class Manager_User_Adapter extends RecyclerView.Adapter<Manager_User_Adap
             super(itemView);
             img_user_list = (ImageView) itemView.findViewById(R.id.img_user_list);
             text_user_list = itemView.findViewById(R.id.text_user_list);
+
         }
 
 

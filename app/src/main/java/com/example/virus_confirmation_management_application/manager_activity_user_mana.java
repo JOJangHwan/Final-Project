@@ -36,6 +36,25 @@ public class manager_activity_user_mana extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_user_mana);
 
+        recyclerview =(RecyclerView) findViewById(R.id.rc_user_view);  /// 리사이클러뷰 초기화
+        //recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
+        linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
+        recyclerview.setLayoutManager(linearLayoutManager); // 리사이클러뷰에 set 해준다 .
+        Main_dataList = new ArrayList<>(); // 어댑터 선언
+        Main_adapter = new Manager_User_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
+        recyclerview.setAdapter(Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
+        load();
+
+        /*
+        recyclerview = (RecyclerView) findViewById(R.id.rc_user_view);  /// 리사이클러뷰 초기화
+        Main_adapter = new Manager_User_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
+        recyclerview.setAdapter(Main_adapter);
+        recyclerview.setLayoutManager(new LinearLayoutManager(this));
+        Main_dataList = new ArrayList<>(); //
+        Main_adapter = new Manager_User_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
+        recyclerview.setAdapter(Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
+      */
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_menu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -65,7 +84,7 @@ public class manager_activity_user_mana extends AppCompatActivity {
             }
         });
 
-        recyclerview.addOnItemTouchListener(new manager_activity_user_mana.RecyclerTouchListener(getApplicationContext(), recyclerview, new manager_activity_user_mana.ClickListener() {
+        recyclerview.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerview, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
                 com.example.virus_confirmation_management_application.Manager_User_Data dict = Main_dataList.get(position);
@@ -92,15 +111,18 @@ public class manager_activity_user_mana extends AppCompatActivity {
             }
         }));
 
-        recyclerview = (RecyclerView) findViewById(R.id.rc_user_view);  /// 리사이클러뷰 초기화
+
+
+
+        /*
         recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
         linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
-        recyclerview.setLayoutManager(linearLayoutManager); // 리사이클러뷰에 set 해준다 .
+        recyclerview.setLayoutManager(new LinearLayoutManager(this)); // 리사이클러뷰에 set 해준다 .
         Main_dataList = new ArrayList<>(); // 어댑터 선언
         Main_adapter = new Manager_User_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
         recyclerview.setAdapter((RecyclerView.Adapter) Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
+*/
 
-        load();
 
 
     }
@@ -108,7 +130,7 @@ public class manager_activity_user_mana extends AppCompatActivity {
     public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
 
         private GestureDetector gestureDetector;
-        private manager_activity_user_mana.ClickListener clickListener;
+        private ClickListener clickListener;
 
         public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final manager_activity_user_mana.ClickListener clickListener) {
             this.clickListener = clickListener;
