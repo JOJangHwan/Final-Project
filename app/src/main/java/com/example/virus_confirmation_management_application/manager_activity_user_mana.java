@@ -3,9 +3,13 @@ package com.example.virus_confirmation_management_application;
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
 import static com.example.virus_confirmation_management_application.user_bottomnavi.pagedata;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.GestureDetector;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
@@ -61,6 +65,33 @@ public class manager_activity_user_mana extends AppCompatActivity {
             }
         });
 
+        recyclerview.addOnItemTouchListener(new manager_activity_user_mana.RecyclerTouchListener(getApplicationContext(), recyclerview, new manager_activity_user_mana.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                com.example.virus_confirmation_management_application.Manager_User_Data dict = Main_dataList.get(position);
+                //아이템화면전환
+                //Toast.makeText(getApplicationContext(), dict.getQnAmessage(), Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(getBaseContext(), manager_user_detail.class); //여기는 이동할 창을 넣어주는곳
+
+
+                intent.putExtra("image", dict.getMessage());
+                intent.putExtra("name", dict.getUser_name());
+                intent.putExtra("age", dict.getUser_age());
+                intent.putExtra("area", dict.getUser_area());
+                intent.putExtra("ph_number", dict.getUser_ph_number());
+
+
+                startActivity(intent);
+
+
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+            }
+        }));
+
         recyclerview = (RecyclerView) findViewById(R.id.rc_user_view);  /// 리사이클러뷰 초기화
         recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
         linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
@@ -74,11 +105,58 @@ public class manager_activity_user_mana extends AppCompatActivity {
 
     }
 
+    public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+
+        private GestureDetector gestureDetector;
+        private manager_activity_user_mana.ClickListener clickListener;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final manager_activity_user_mana.ClickListener clickListener) {
+            this.clickListener = clickListener;
+            gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+                    if (child != null && clickListener != null) {
+                        clickListener.onLongClick(child, recyclerView.getChildAdapterPosition(child));
+                    }
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+            View child = rv.findChildViewUnder(e.getX(), e.getY());
+            if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
+                clickListener.onClick(child, rv.getChildAdapterPosition(child));
+            }
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+        }
+    }
+
     private void load() {
         for (int i =0; i<10; i++) {
             Manager_User_Data data = new Manager_User_Data(R.drawable.man, i + "번째 User");
             Main_dataList.add(0, data);
             Main_adapter.notifyDataSetChanged();
         }
+    }
+
+    public interface ClickListener {
+        void onClick(View view, int position);
+
+        void onLongClick(View view, int position);
     }
 }

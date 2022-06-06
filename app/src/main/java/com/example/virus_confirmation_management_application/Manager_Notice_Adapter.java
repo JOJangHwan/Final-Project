@@ -1,6 +1,5 @@
 package com.example.virus_confirmation_management_application;
 
-import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,15 +14,13 @@ import java.util.ArrayList;
 public class Manager_Notice_Adapter extends RecyclerView.Adapter<Manager_Notice_Adapter.ViewHolder> {
 
     private ArrayList<Manager_Notice_Data> Data_arrayList;
-    private Context context;
+    //private Context context;
 
-    public Manager_Notice_Adapter(ArrayList<Manager_Notice_Data>arrayList, Context context){
+    public Manager_Notice_Adapter(ArrayList<Manager_Notice_Data>arrayList){
         this.Data_arrayList= arrayList;
-        this.context =context;
+
     }
 
-    public Manager_Notice_Adapter(ArrayList<Manager_Notice_Data> main_dataList) {
-    }
 
     @NonNull
     @Override
@@ -39,19 +36,9 @@ public class Manager_Notice_Adapter extends RecyclerView.Adapter<Manager_Notice_
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.text_notice_list.setText(Data_arrayList.get(position).getMessage());
         holder.img_notice_list.setImageResource(Data_arrayList.get(position).getResourceId());
-/*
-        holder.itemView.setOnClickListener(new View.OnClickListener(){
 
 
-            @Override
-            public void onClick(View v) {
-                String mname = holder.img_notice_list.getText().toString();
 
-                Intent intent;
-                intent = new Intent(context, look_momo.class);
-            }
-        });
-*/
     }
 
     @Override

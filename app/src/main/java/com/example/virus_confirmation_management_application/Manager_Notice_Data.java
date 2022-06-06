@@ -5,12 +5,18 @@ class Manager_Notice_Data {
 //item_layout에 들어갈 데이터
 
 
-    String Notice_message;    //item에 넣어질 메세지
-    int Notice_resourceId;        //item에 넣어질 사진
+    String Noticemessage;    //item에 넣어질 메세지
+    int resourceId;        //item에 넣어질 사진
 
+    //constructor 만들기
+    public Manager_Notice_Data(int resourceId,String message) {
+        this.Noticemessage = message;
+        this.resourceId = resourceId;
+
+    }
 
     public int getResourceId() {
-        return Notice_resourceId;
+        return resourceId;
     }
 
     public Manager_Notice_Data(int i) {
@@ -18,24 +24,15 @@ class Manager_Notice_Data {
 
 
     public String getMessage() {
-        return Notice_message;
+        return Noticemessage;
     }
 
 
     public void setMessage(String message) {
-        this.Notice_message = message;
+        this.Noticemessage = message;
     }
 
     public void setResourceId(int resourceId) {
-        this.Notice_resourceId = resourceId;
-    }
-
-
-
-    //constructor 만들기
-    public Manager_Notice_Data(int resourceId, String message) {
-        this.Notice_message = message;
-        this.Notice_resourceId = resourceId;
-
+        this.resourceId = resourceId;
     }
 }

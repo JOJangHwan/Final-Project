@@ -15,6 +15,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Virus_Confirmation_Management_Application"
         android:usesCleartextTraffic="true">
+
+
+
+        <activity
+            android:name=".manager_user_detail"
+            android:exported="false" />
+
+        <activity
+            android:name=".manager_activity_user_mana"
+            android:exported="false" />
+
+        <activity
+            android:name=".manager_activity_matter_mana"
+            android:exported="false" />
+
+        <activity
+            android:name=".manager_matter_detail"
+            android:exported="false" />
+
+        <activity
+            android:name=".manager_notice_detail"
+            android:exported="false" />
+
         <activity
             android:name=".manager_activity_userlist_detail"
             android:exported="false" />
