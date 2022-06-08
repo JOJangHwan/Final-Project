@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E4E4E4"
+    android:background="#DEF2F6"
     tools:context=".user_checkwith1">
 
     <LinearLayout
@@ -29,6 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
         android:orientation="vertical"
+        android:background="#DEF2F6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +38,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FDFCFC"
+            android:background="#DEF2F6"
             android:orientation="vertical">
 
             <TextView
@@ -100,7 +101,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FDFCFC"
+            android:background="#DEF2F6"
             android:orientation="vertical">
 
             <TextView
