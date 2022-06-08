@@ -27,7 +27,7 @@
         android:id="@+id/frame_login_home"
         android:layout_width="match_parent"
         android:layout_height="700dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="510dp"
         android:background="#F8F8F8"
 
         >
@@ -41,7 +41,7 @@
         android:layout_height="70dp"
         android:layout_alignParentBottom="true"
 
-        android:layout_marginBottom="310dp"
+        android:layout_marginBottom="308dp"
         android:background="#71CCD8"
 
         app:itemIconSize="35dp"

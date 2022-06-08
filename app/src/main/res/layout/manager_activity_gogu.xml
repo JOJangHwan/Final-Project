@@ -11,10 +11,10 @@
 
     <ImageButton
         android:id="@+id/button_gogu1"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/gogu5"
 
@@ -22,8 +22,8 @@
 
     <ImageButton
         android:id="@+id/button_gogu2"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="210dp"
         android:layout_marginTop="100dp"
         android:layout_marginRight="15dp"
@@ -33,9 +33,9 @@
 
     <ImageButton
         android:id="@+id/button_gogu3"
-        android:layout_width="190dp"
-        android:layout_height="190dp"
-        android:layout_marginLeft="230dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="260dp"
         android:layout_marginTop="500dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/gogu2"
@@ -44,10 +44,10 @@
 
     <ImageButton
         android:id="@+id/button_gogu4"
-        android:layout_width="190dp"
-        android:layout_height="190dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="620dp"
+        android:layout_marginTop="550dp"
         android:layout_marginRight="15dp"
         android:background="@drawable/gogu1"
 
@@ -55,8 +55,8 @@
 
     <ImageButton
         android:id="@+id/button_gogu5"
-        android:layout_width="180dp"
-        android:layout_height="180dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="250dp"
         android:layout_marginRight="15dp"

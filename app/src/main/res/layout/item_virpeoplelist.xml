@@ -23,22 +23,14 @@
         android:id="@+id/manager_textView_virus_people"
         android:layout_width="210dp"
         android:layout_height="80dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="50dp"
 
         android:text="text"
         android:textSize="24dp">
 
     </TextView>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="조회하기"
-        android:textSize="12dp"
-        android:backgroundTint="@color/button_color"
-        >
 
-    </Button>
 
 </LinearLayout>
 

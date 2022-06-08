@@ -16,28 +16,37 @@
         android:theme="@style/Theme.Virus_Confirmation_Management_Application"
         android:usesCleartextTraffic="true">
 
+        <activity
+            android:name=".joint_activity_register_manager"
+            android:exported="false" />
+
+        <activity
+            android:name=".joint_activity_register_user"
+            android:exported="false" />
+
+        <activity
+            android:name=".joint_findpwd"
+            android:exported="false" />
 
 
+        <activity
+            android:name=".user_anothercontury"
+            android:exported="false" />
         <activity
             android:name=".manager_user_detail"
             android:exported="false" />
-
         <activity
             android:name=".manager_activity_user_mana"
             android:exported="false" />
-
         <activity
             android:name=".manager_activity_matter_mana"
             android:exported="false" />
-
         <activity
             android:name=".manager_matter_detail"
             android:exported="false" />
-
         <activity
             android:name=".manager_notice_detail"
             android:exported="false" />
-
         <activity
             android:name=".manager_activity_userlist_detail"
             android:exported="false" />
@@ -160,9 +169,7 @@
         <activity
             android:name=".manager_activity_hosp_list"
             android:exported="false" />
-        <activity
-            android:name=".manager_activity_user_mana"
-            android:exported="false" />
+
         <activity
             android:name=".manager_activity_virus_mana"
             android:exported="false" />
@@ -181,9 +188,7 @@
         <activity
             android:name=".manager_activity_matter_update"
             android:exported="false" />
-        <activity
-            android:name=".manager_activity_matter_mana"
-            android:exported="false" />
+
         <activity
             android:name=".manager_activity_gogu_update"
             android:exported="false" />
@@ -196,12 +201,7 @@
         <activity
             android:name=".manager_activity_home_bottom_navi"
             android:exported="false" />
-        <activity
-            android:name=".joint_activity_register_manager"
-            android:exported="false" />
-        <activity
-            android:name=".joint_activity_register_user"
-            android:exported="false" />
+
         <activity
             android:name=".user_bottomnavi"
             android:exported="false" />
@@ -269,7 +269,6 @@
         <activity android:name=".user_map_board_webview" />
         <activity android:name=".user_map_board_add" />
         <activity android:name=".user_map_board" />
-
         <activity
             android:name=".joint_login"
             android:exported="true">
