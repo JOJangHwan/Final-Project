@@ -27,6 +27,9 @@ import java.util.ArrayList;
 
 public class user_map_board extends AppCompatActivity {
 
+    private RecyclerView mRecyclerView;
+    private user_map_board_comment_CustomAdapter mboardcommentCustomAdapter;
+    private ArrayList<user_map_board_comment_item> user_map_board_comment_item;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,6 +89,23 @@ public class user_map_board extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "좋아요을 눌르셧습니다..", Toast.LENGTH_SHORT).show();
             }
         });
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.comment_recyclerView);
+
+        /* initiate adapter */
+        mboardcommentCustomAdapter= new user_map_board_comment_CustomAdapter();
+        /* initiate recyclerview */
+        mRecyclerView.setAdapter(mboardcommentCustomAdapter);
+        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        /* adapt data */
+        user_map_board_comment_item = new ArrayList<>();
+        for(int i=1;i<=3;i++){
+            user_map_board_comment_item.add(new user_map_board_comment_item(i,i+"번째 내용",i+"번째아이디",i+"번째 날짜"));
+
+        }
+        mboardcommentCustomAdapter.setMboardcommentIteArrayList(user_map_board_comment_item);
+
+
 
     }
 

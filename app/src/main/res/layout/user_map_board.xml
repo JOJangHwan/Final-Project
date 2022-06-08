@@ -122,12 +122,13 @@
                     android:padding="16dp"
                     android:text="댓글" />
 
-                <LinearLayout
-                    android:id="@+id/comment_layout"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/comment_recyclerView"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="8dp" />
+                    android:layout_height="match_parent"
+
+                     />
+
             </LinearLayout>
         </ScrollView>
 
