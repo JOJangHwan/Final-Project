@@ -6,6 +6,7 @@ import static com.example.virus_confirmation_management_application.user_bottomn
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +21,7 @@ public class user_map_board_add extends AppCompatActivity {
     private RecyclerView mRecyclerView;
     private user_map_boardlist_CustomAdapter mboardlistCustomAdapter;
     private ArrayList<user_map_boardlist_item> user_map_boardlist_item;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
