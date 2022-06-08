@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     tools:context=".user_mypage"
-    android:background="#D6D1D1"
+    android:background="#DEF2F6"
     android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/mypageimage"
         android:layout_width="130dp"
-        android:layout_height="137dp"
+        android:layout_height="130dp"
         android:layout_marginStart="40dp"
         android:layout_marginTop="56dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,8 +83,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#D6D1D1"
+        android:background="#DEF2F6"
         android:orientation="vertical"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
 
@@ -97,7 +98,7 @@
             android:layout_marginBottom="2dp"
             android:gravity="left"
             android:text="공지사항"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
             android:textColor="#ffffff"
             android:textSize="30dp" />
 
@@ -108,7 +109,7 @@
             android:layout_marginBottom="2dp"
             android:text="나의 가족"
             android:gravity="left"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
             android:textColor="#ffffff"
             android:textSize="30dp" />
 
@@ -119,7 +120,7 @@
             android:layout_marginBottom="2dp"
             android:gravity="left"
             android:text="나의 상태 내역/보고하기"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
             android:textColor="#ffffff"
             android:textSize="30dp" />
 
@@ -128,7 +129,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
             android:textColor="#ffffff"
             android:text="1:1 문의 내역 / 문의하기"
             android:gravity="left"
@@ -139,7 +140,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginBottom="2dp"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
             android:gravity="left"
             android:text="찜목록"
             android:textColor="#ffffff"
@@ -152,7 +153,7 @@
             android:layout_marginBottom="2dp"
             android:gravity="left"
             android:text="이용약관"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
             android:textColor="#ffffff"
             android:textSize="30dp" />
 

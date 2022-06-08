@@ -54,7 +54,7 @@
         android:id="@+id/rc_virus_people_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="70dp"
+        android:layout_marginBottom="0dp"
         android:scrollbars="vertical"
         android:scrollbarThumbVertical="@android:color/darker_gray"
         android:layout_weight="1"

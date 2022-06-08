@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#D6DCE5"
+    android:background="#DEF2F6"
     tools:context=".user_vaccineenroll"
     android:layout_height="match_parent">
 
@@ -15,7 +15,7 @@
         android:layout_marginStart="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="60dp"
-        android:backgroundTint="#F8CBAD"
+        android:backgroundTint="#71CCD8"
         android:text="뒤로가기"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="60dp"
-        android:backgroundTint="#F8CBAD"
+        android:backgroundTint="#71CCD8"
         android:text="등록하기"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

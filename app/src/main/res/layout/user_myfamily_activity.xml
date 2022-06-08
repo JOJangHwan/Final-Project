@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#F3F3F0"
+    android:background="#DEF2F6"
     tools:context=".user_myfamily"
 
     android:layout_height="match_parent">
@@ -15,7 +15,7 @@
         android:layout_marginStart="105dp"
         android:layout_marginEnd="106dp"
         android:layout_marginBottom="50dp"
-        android:backgroundTint="#F8CBAD"
+        android:backgroundTint="#71CCD8"
         android:text="가족추가하기"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -38,6 +38,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="나의가족"
+            android:background="#71CCD8"
+            android:gravity="center"
+            android:textColor="#000000"
             android:textSize="45sp" />
     </LinearLayout>
 

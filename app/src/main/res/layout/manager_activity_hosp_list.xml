@@ -57,7 +57,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rc_matter_view"
             android:layout_width="match_parent"
-            android:layout_height="650dp"
+            android:layout_height="600dp"
             android:scrollbars="vertical"
             android:scrollbarThumbVertical="@android:color/darker_gray"
             android:layout_weight="1"
@@ -79,8 +79,8 @@
         android:id="@+id/bottom_nav_menu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:layout_marginTop="0dp"
         android:layout_alignParentBottom="true"
-
         android:background="#71CCD8"
         app:itemIconSize="35dp"
         app:itemIconTint="@drawable/manager_bottom_color"

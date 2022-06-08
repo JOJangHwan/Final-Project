@@ -10,7 +10,7 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-    }
+        }
 }
 rootProject.name = "Virus_Confirmation_Management_Application"
 include ':app'

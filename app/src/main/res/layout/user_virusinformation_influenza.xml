@@ -30,7 +30,7 @@
                 android:id="@+id/influ_btn"
                 android:layout_width="match_parent"
                 android:layout_height="67dp"
-                android:backgroundTint="#7C7575"
+                android:backgroundTint="#71CCD8"
                 android:onClick="onButton1Clicked"
                 android:text="자세한 내용 확인하기"
                 android:textSize="25dp" />

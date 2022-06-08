@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".user_govguide"
-    android:background="#D6D1D1"
+    android:background="#DEF2F6"
     >
 
     <LinearLayout
@@ -34,7 +34,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="523dp"
+        android:layout_height="600dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +56,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#7C7575"
+                    android:backgroundTint="#71CCD8"
                     android:text="거리두기"
                     android:textColor="@android:color/white"
                     android:textSize="25dp"></Button>
@@ -68,7 +68,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#7C7575"
+                    android:backgroundTint="#71CCD8"
                     android:text="의료기관"
                     android:textColor="@android:color/white"
                     android:textSize="25dp"></Button>
@@ -80,7 +80,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#7C7575"
+                    android:backgroundTint="#71CCD8"
                     android:text="집단시설, 다중이용시설"
                     android:textColor="@android:color/white"
                     android:textSize="25dp"></Button>
@@ -92,7 +92,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#7C7575"
+                    android:backgroundTint="#71CCD8"
                     android:text="소상공인 및 기업"
                     android:textColor="@android:color/white"
                     android:textSize="25dp"></Button>
@@ -104,7 +104,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#7C7575"
+                    android:backgroundTint="#71CCD8"
                     android:text="기업 및 시장"
                     android:textColor="@android:color/white"
                     android:textSize="25dp"></Button>
@@ -116,7 +116,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="15dp"
-                    android:backgroundTint="#7C7575"
+                    android:backgroundTint="#71CCD8"
                     android:text="해외 출입국시 규정"
                     android:textColor="@android:color/white"
                     android:textSize="25dp"></Button>

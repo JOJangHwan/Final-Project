@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#C6D1D7"
+    android:background="#DEF2F6"
     tools:context=".user_mystatereport1"
     android:layout_height="match_parent">
 
@@ -35,7 +35,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#EDEDED"
+            android:background="#DEF2F6"
 
             android:orientation="vertical">
 
@@ -43,7 +43,7 @@
                 android:id="@+id/state_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:gravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:layout_marginBottom="10dp"
@@ -98,14 +98,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#EDEDED"
+            android:background="#DEF2F6"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/answer_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:gravity="center"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="20dp"

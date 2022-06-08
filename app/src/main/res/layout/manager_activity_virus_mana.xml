@@ -104,13 +104,21 @@
                 android:id="@+id/vi2"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:layout_marginTop="240dp"
+                android:layout_marginTop="250dp"
                 android:backgroundTint="@color/button_color"
                 android:text="추가될 예정"
                 android:textSize="20dp">
 
             </Button>
 
+            <Button
+                android:id="@+id/vi3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="420dp"
+                android:backgroundTint="@color/button_color"
+                android:text="기타 정보"
+                android:textSize="20dp"></Button>
 
 
 
@@ -123,7 +131,6 @@
         android:id="@+id/bottom_nav_menu"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:layout_marginTop="205dp"
         android:layout_alignParentBottom="true"
 
         android:background="#71CCD8"

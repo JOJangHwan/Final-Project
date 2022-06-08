@@ -31,8 +31,6 @@ public class user_Frag1 extends Fragment {
 
         view= inflater.inflate(R.layout.user_frag_map, container, false);
 
-
-
         imageButton_move = view.findViewById(R.id.button_se); // 서울
         imageButton_move.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -202,6 +200,7 @@ public class user_Frag1 extends Fragment {
 
         return view;
     }
+
 
 }
 

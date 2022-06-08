@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EEEEEE"
+    android:background="#DEF2F6"
     tools:context=".user_bottomnavi">
 
     <FrameLayout
@@ -41,11 +41,12 @@
         android:id="@+id/tableLayout2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
         android:paddingVertical="10dp"
         android:stretchColumns="0,1,2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <!--첫번째 Row-->
@@ -61,6 +62,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     android:background="@drawable/ic_baseline_question_answer_24"
+                    android:backgroundTint="#71CCD8"
                     android:gravity="center"
                     android:padding="25dp"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -84,6 +86,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     android:background="@drawable/ic_baseline_local_hospital_24"
+                    android:backgroundTint="#71CCD8"
                     android:gravity="center"
                     android:padding="25dp"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -107,6 +110,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     android:background="@drawable/ic_baseline_health_and_safety_24"
+                    android:backgroundTint="#71CCD8"
                     android:gravity="center"
                     android:padding="25dp"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -134,6 +138,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     android:background="@drawable/ic_baseline_coronavirus_24"
+                    android:backgroundTint="#71CCD8"
                     android:gravity="center"
                     android:padding="20dp"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -157,6 +162,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     android:background="@drawable/ic_baseline_playlist_add_check_24"
+                    android:backgroundTint="#71CCD8"
                     android:gravity="center"
                     android:padding="20dp"
                     tools:ignore="SpeakableTextPresentCheck" />
@@ -180,6 +186,7 @@
                     android:layout_height="120dp"
                     android:layout_weight="1"
                     android:background="@drawable/ic_baseline_menu_book_24"
+                    android:backgroundTint="#71CCD8"
                     android:gravity="center"
                     android:padding="20dp"
                     tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />

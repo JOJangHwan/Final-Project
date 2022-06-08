@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".user_wishlista"
-    android:background="#EEEEEE"
+    android:background="#DEF2F6"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -21,6 +21,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="찜목록"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:background="#DEF2F6"
             android:textSize="45sp" />
     </LinearLayout>
 

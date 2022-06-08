@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#D6D1D1"
+    android:background="#DEF2F6"
     tools:context=".user_myvaccine"
     android:layout_height="match_parent">
 
@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginBottom="80dp"
-        android:backgroundTint="#7C7575"
+        android:backgroundTint="#71CCD8"
         android:text=" 백신 정보 등록 하기"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"

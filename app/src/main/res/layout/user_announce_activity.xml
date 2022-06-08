@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".user_announce"
-    android:background="#D6D1D1"
+    android:background="#DEF2F6"
     android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:background="#D6D1D1"
+        android:background="#DEF2F6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:textSize="30dp"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
             android:text="공지 22.05.22 ver1.0">
         </Button>
     </LinearLayout>

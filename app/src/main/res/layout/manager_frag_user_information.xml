@@ -14,9 +14,10 @@
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="내정보"
+            android:gravity="center"
             android:textColor="@android:color/white"
             android:textSize="12pt">
 
@@ -117,7 +118,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="390dp"
+        android:layout_height="290dp"
         >
 
         <LinearLayout
@@ -129,11 +130,10 @@
                 android:id="@+id/button_manager_information"
                 android:layout_width="match_parent"
                 android:layout_height="90dp"
-
                 android:text="내 정보"
+                android:backgroundTint="#71CCD8"
+                android:textColor="@color/white"
                 android:textSize="15pt"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
                 android:textStyle="bold"
 
                 >
@@ -147,8 +147,8 @@
         android:layout_height="90dp"
         android:text="공지사항"
                 android:textSize="15pt"
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
+                android:backgroundTint="#71CCD8"
+                android:textColor="@color/white"
                 android:textStyle="bold"
         >
 
@@ -160,8 +160,8 @@
         android:layout_height="90dp"
         android:text="Q and A"
         android:textSize="15pt"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
+        android:backgroundTint="#71CCD8"
+        android:textColor="@color/white"
         android:textStyle="bold"
         >
 
@@ -174,8 +174,8 @@
         android:layout_height="90dp"
         android:text="문의사항"
         android:textSize="15pt"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
+        android:backgroundTint="#71CCD8"
+        android:textColor="@color/white"
         android:textStyle="bold"
         >
 
@@ -188,10 +188,9 @@
         android:layout_height="90dp"
         android:text="정부지침"
         android:textSize="15pt"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
         android:textStyle="bold"
-        >
+        android:backgroundTint="#71CCD8"
+        android:textColor="@color/white">
 
     </Button>
 

@@ -72,7 +72,7 @@ public class joint_fragment_login_user extends Fragment {
                         if(task.isSuccessful()){
 
 
-                            Toast.makeText(getActivity(), "로그인 성공" ,Toast.LENGTH_SHORT).show();
+                           // Toast.makeText(getActivity(), "로그인 성공" ,Toast.LENGTH_SHORT).show();
                             Intent intent =new Intent(getActivity(),user_bottomnavi.class);
                             a=0; //슬라이드 오류 해결 코드
                             startActivity(intent); // 액티비티 이동 구문

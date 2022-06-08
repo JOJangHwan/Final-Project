@@ -9,7 +9,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".user_Tservice"
-    android:background="#D6D1D1">
+    android:background="#DEF2F6">
 
 
     <LinearLayout

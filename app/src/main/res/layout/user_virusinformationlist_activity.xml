@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     tools:context=".user_virusinformationlist"
-    android:background="#D6D1D1"
+    android:background="#DEF2F6"
     android:layout_height="match_parent">
 
     <TextView
@@ -14,6 +14,7 @@
         android:layout_marginTop="30dp"
         android:text="바이러스 선택"
         android:textSize="38sp"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +33,8 @@
             android:id="@+id/H1N1_button"
             android:layout_width="match_parent"
             android:layout_height="115dp"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
+            android:textColor="#ffffff"
             android:text="신종플루"
             android:textSize="34sp" />
 
@@ -40,7 +42,8 @@
             android:id="@+id/mers_button"
             android:layout_width="match_parent"
             android:layout_height="115dp"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
+            android:textColor="#ffffff"
             android:text="메르스"
             android:textSize="34sp" />
 
@@ -48,7 +51,8 @@
             android:id="@+id/covid19_button"
             android:layout_width="match_parent"
             android:layout_height="115dp"
-            android:backgroundTint="#7C7575"
+            android:backgroundTint="#71CCD8"
+            android:textColor="#ffffff"
             android:text="코로나19"
             android:textSize="34sp" />
 
@@ -56,7 +60,8 @@
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="115dp"
-            android:backgroundTint="#7C7575"
+            android:textColor="#ffffff"
+            android:backgroundTint="#71CCD8"
             android:text="추가예정"
             android:textSize="34sp" />
     </LinearLayout>

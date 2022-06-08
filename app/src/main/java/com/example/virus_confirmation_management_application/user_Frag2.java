@@ -22,7 +22,7 @@ public class user_Frag2 extends Fragment {
     static int a =0;
     private ViewPager2 mPager;
     private FragmentStateAdapter pagerAdapter;
-    private int num_page = 4;
+    private int num_page = 3;
     private CircleIndicator3 mIndicator;
 
 
@@ -57,7 +57,7 @@ public class user_Frag2 extends Fragment {
          */
 
         mPager.setCurrentItem(1000); //시작 지점
-        mPager.setOffscreenPageLimit(4); //최대 이미지 수
+        mPager.setOffscreenPageLimit(3); //최대 이미지 수
 
         mPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override

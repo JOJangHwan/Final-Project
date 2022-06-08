@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="410dp"
         android:layout_height="300dp"
-        android:background="#7C7575"
+        android:background="#71CCD8"
         android:gravity="center"
         android:text="코로나 현황 \n확인하러가기"
         android:textColor="#000000"
