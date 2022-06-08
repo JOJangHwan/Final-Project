@@ -93,7 +93,7 @@ public class manager_frag_user_information extends Fragment {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_qanda_webView.class);
+                Intent intent =new Intent(getActivity(), manager_activity_qanda_webview.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });

@@ -17,6 +17,10 @@
         android:usesCleartextTraffic="true">
 
         <activity
+            android:name=".manager_activity_qanda_webview"
+            android:exported="false" />
+
+        <activity
             android:name=".joint_activity_register_manager"
             android:exported="false" />
 
