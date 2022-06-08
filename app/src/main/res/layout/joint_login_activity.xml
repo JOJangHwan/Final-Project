@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <EditText
-        android:id="@+id/register_pwd"
+        android:id="@+id/register_login_pwd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp"
@@ -21,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/register_email"
+        android:id="@+id/register_login_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
@@ -29,7 +29,7 @@
         android:ems="10"
         android:hint="아이디를 입력하세요"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/register_pwd"
+        app:layout_constraintBottom_toTopOf="@+id/register_login_pwd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 

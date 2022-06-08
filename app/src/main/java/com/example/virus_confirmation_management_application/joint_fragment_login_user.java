@@ -7,12 +7,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -25,43 +34,79 @@ import java.util.ArrayList;
 public class joint_fragment_login_user extends Fragment {
 
     private View view;
-    private Button button_move;
+    private Button button_move, bt_login;
+    private EditText user_id, user_pwd;
+    private FirebaseAuth mFirebaseAuth; //  파베인증
+    private DatabaseReference databaseReference; // 실시간 DB
 
     static ArrayList<String> array = new ArrayList<String>();
     String data;
+
+
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.joint_fragment_login_user,container, false);
 
-        button_move = view.findViewById(R.id.btn_login_user); // 메인으로 이동
-        button_move.setOnClickListener(new View.OnClickListener() {
+        mFirebaseAuth = FirebaseAuth.getInstance();
+        databaseReference = FirebaseDatabase.getInstance().getReference("final_project");
+
+        user_id = view.findViewById(R.id.user_login_id);
+        user_pwd = view.findViewById(R.id.user_login_pwd);
+
+
+
+        bt_login = view.findViewById(R.id.btn_login_user); // 메인으로 이동
+        bt_login.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(),user_bottomnavi.class);
-                a=0; //슬라이드 오류 해결 코드
-                startActivity(intent); // 액티비티 이동 구문
 
-                new Thread(new Runnable() {
+                String login_user_id = user_id.getText().toString();
+                String login_user_pwd = user_pwd.getText().toString();
+
+                mFirebaseAuth.signInWithEmailAndPassword(login_user_id,login_user_pwd).addOnCompleteListener(getActivity(), new OnCompleteListener<AuthResult>() {
                     @Override
-                    public void run() {
-                        // TODO Auto-generated method stub
-                        data = getData();//아래 메소드를 호출하여 XML data를 파싱해서 String 객체로 얻어오기
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()){
 
-                        runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                // TODO Auto-generated method stub
 
-                            }
-                        });
+                            Toast.makeText(getActivity(), "로그인 성공" ,Toast.LENGTH_SHORT).show();
+                            Intent intent =new Intent(getActivity(),user_bottomnavi.class);
+                            a=0; //슬라이드 오류 해결 코드
+                            startActivity(intent); // 액티비티 이동 구문
+
+
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    // TODO Auto-generated method stub
+                                    data = getData();//아래 메소드를 호출하여 XML data를 파싱해서 String 객체로 얻어오기
+
+                                    runOnUiThread(new Runnable() {
+                                        @Override
+                                        public void run() {
+                                            // TODO Auto-generated method stub
+
+                                        }
+                                    });
+                                }
+
+                                private void runOnUiThread(Runnable runnable) {
+                                }
+                            }).start();
+
+                        }else{
+                            Toast.makeText(getActivity(), "로그인 실패" ,Toast.LENGTH_LONG).show();
+
+                        }
                     }
+                });
 
-                    private void runOnUiThread(Runnable runnable) {
-                    }
-                }).start();
+
+
+
 
             }
         });

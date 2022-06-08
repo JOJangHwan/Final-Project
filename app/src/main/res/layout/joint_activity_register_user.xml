@@ -6,18 +6,6 @@
     tools:context=".joint_activity_register_user"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <Button
-        android:id="@+id/register_registerButton2"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="80dp"
-        android:backgroundTint="#F8CBAD"
-        android:text="회원가입 하기"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="#631D1D" />
 
     <Button
         android:id="@+id/register_registerButton"
@@ -38,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="80dp"
         android:ems="10"
-
 
         android:hint="비밀번호를 재입력하세요"
         android:inputType="textPassword"
