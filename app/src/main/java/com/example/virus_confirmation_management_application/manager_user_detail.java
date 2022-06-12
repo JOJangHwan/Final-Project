@@ -52,24 +52,41 @@ public class manager_user_detail extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
 
         int userimage = extras.getInt("userimage");
-        ImageView tv_userimage = (ImageView) findViewById(R.id.userimage_imageview_detail);
-        tv_userimage.setImageResource(userimage);
-
-        String userage = extras.getString("userage");
-        TextView tv_userage = (TextView) findViewById(R.id.userage_textview_detail);
-        tv_userage.setText(userage);
+        ImageView ig_userimage = (ImageView) findViewById(R.id.userimage_imageview_detail);
+        //tv_userimage.setImageResource(userimage);
 
         String username = extras.getString("username");
         TextView tv_username = (TextView) findViewById(R.id.username_textview_detail);
-        tv_username.setText(username);
+        //tv_userage.setText(userage);
 
-        String userarea = extras.getString("userarea");
-        TextView tv_userarea = (TextView) findViewById(R.id.userarea_textview_detail);
-        tv_userarea.setText(userarea);
+        String userage = extras.getString("userage");
+        TextView tv_userage = (TextView) findViewById(R.id.userage_textview_detail);
+        //tv_username.setText(username);
 
-        String userphnumber = extras.getString("userphnumber");
-        TextView tv_userphnumber = (TextView) findViewById(R.id.userphnumber_textview_detail);
-        tv_userphnumber.setText(userphnumber);
+        String userph_number = extras.getString("userph_number");
+        TextView tv_userph_number = (TextView) findViewById(R.id.userphnumber_textview_detail);
+        //tv_userarea.setText(userarea);
+
+        String usersex = extras.getString("usersex");
+        TextView tv_usersex = (TextView) findViewById(R.id.usersex_textview_detail);
+        //tv_userarea.setText(userarea);
+
+        String useraddress = extras.getString("useraddress");
+        TextView tv_useraddress = (TextView) findViewById(R.id.useraddress_textview_detail);
+        //tv_userphnumber.setText(userphnumber);
+
+
+        ig_userimage.setImageResource(userimage);
+        tv_username.setText("이름 : "+username);
+        tv_userage.setText("나이 : "+userage);
+        tv_userph_number.setText("전화번호 : "+userph_number);
+        tv_usersex.setText("성별 : "+usersex);
+        tv_useraddress.setText("주소 : "+useraddress);
+
+        //tv_usergeneral.setText(hos_med+general);
+        //tv_usernumber.setText("전화번호 : "+number);
+        //tv_usertime.setText("영업시간 : "+time);
+        //tv_useraddress.setText("주소 : "+address);
 
 
 

@@ -54,7 +54,8 @@ public class manager_frag_con_case extends Fragment {
     private void load() {
 
         for (int i =0; i<10; i++) {
-            Manager_virus_people_Data data= new Manager_virus_people_Data(R.drawable.man, i + "확진자");
+            Manager_virus_people_Data data= new Manager_virus_people_Data(R.drawable.man, i+"번째 이름",i+"번째 나이",i+"번째 전화번호",
+                    i+"번째 성별",i+"번째 주소");
             Main_dataList.add(0, data);
             Main_adapter.notifyDataSetChanged();
         }

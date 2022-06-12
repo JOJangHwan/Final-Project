@@ -31,8 +31,12 @@ public class Manager_Hosp_Adapter extends RecyclerView.Adapter<Manager_Hosp_Adap
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.text_hosp_list.setText(Data_arrayList.get(position).getMessage());
-        holder.img_hosp_list.setImageResource(Data_arrayList.get(position).getResourceId());
+        holder.manager_hosp_name.setText(Data_arrayList.get(position).getHosp_name());
+        holder.manager_hosp_address.setText(Data_arrayList.get(position).getHosp_address());
+        holder.manager_hosp_number.setText(Data_arrayList.get(position).getHosp_number());
+        holder.manager_hosp_ing.setText(Data_arrayList.get(position).getHosp_ing());
+        holder.manager_hosp_target.setText(Data_arrayList.get(position).getHosp_target());
+        holder.manager_hosp_image.setImageResource(Data_arrayList.get(position).getHosp_image());
 
     }
 
@@ -43,13 +47,25 @@ public class Manager_Hosp_Adapter extends RecyclerView.Adapter<Manager_Hosp_Adap
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView img_hosp_list;
-        TextView text_hosp_list;
+
+        ImageView manager_hosp_image;
+        TextView manager_hosp_name;
+        TextView manager_hosp_ing;
+        TextView manager_hosp_number;
+        TextView manager_hosp_target;
+        TextView manager_hosp_address;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            img_hosp_list = (ImageView) itemView.findViewById(R.id.img_hosp_list);
-            text_hosp_list = itemView.findViewById(R.id.text_hosp_list);
+            //img_hosp_list = (ImageView) itemView.findViewById(R.id.img_hosp_list);
+            //text_hosp_list = itemView.findViewById(R.id.text_hosp_list);
+            manager_hosp_image = (ImageView) itemView.findViewById(R.id.manager_hosp_image);
+
+            manager_hosp_name = itemView.findViewById(R.id.manager_hosp_name);
+            manager_hosp_ing = itemView.findViewById(R.id.manager_hosp_ing);
+            manager_hosp_number = itemView.findViewById(R.id.manager_hosp_number);
+            manager_hosp_target = itemView.findViewById(R.id.manager_hosp_target);
+            manager_hosp_address = itemView.findViewById(R.id.manager_hosp_address);
         }
 
 

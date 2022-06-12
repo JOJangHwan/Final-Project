@@ -14,7 +14,6 @@ import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -45,15 +44,7 @@ public class manager_activity_user_mana extends AppCompatActivity {
         recyclerview.setAdapter(Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
         load();
 
-        /*
-        recyclerview = (RecyclerView) findViewById(R.id.rc_user_view);  /// 리사이클러뷰 초기화
-        Main_adapter = new Manager_User_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
-        recyclerview.setAdapter(Main_adapter);
-        recyclerview.setLayoutManager(new LinearLayoutManager(this));
-        Main_dataList = new ArrayList<>(); //
-        Main_adapter = new Manager_User_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
-        recyclerview.setAdapter(Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
-      */
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_menu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -94,10 +85,11 @@ public class manager_activity_user_mana extends AppCompatActivity {
                 Intent intent = new Intent(getBaseContext(), manager_user_detail.class); //여기는 이동할 창을 넣어주는곳
 
 
-                intent.putExtra("image", dict.getMessage());
+                intent.putExtra("image", dict.getUser_image());
                 intent.putExtra("name", dict.getUser_name());
                 intent.putExtra("age", dict.getUser_age());
-                intent.putExtra("area", dict.getUser_area());
+                intent.putExtra("area", dict.getUser_address());
+                intent.putExtra("sex", dict.getUser_sex());
                 intent.putExtra("ph_number", dict.getUser_ph_number());
 
 
@@ -114,14 +106,6 @@ public class manager_activity_user_mana extends AppCompatActivity {
 
 
 
-        /*
-        recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
-        linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
-        recyclerview.setLayoutManager(new LinearLayoutManager(this)); // 리사이클러뷰에 set 해준다 .
-        Main_dataList = new ArrayList<>(); // 어댑터 선언
-        Main_adapter = new Manager_User_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
-        recyclerview.setAdapter((RecyclerView.Adapter) Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
-*/
 
 
 
@@ -170,7 +154,8 @@ public class manager_activity_user_mana extends AppCompatActivity {
 
     private void load() {
         for (int i =0; i<10; i++) {
-            Manager_User_Data data = new Manager_User_Data(R.drawable.man, i + "번째 User");
+            Manager_User_Data data = new Manager_User_Data(R.drawable.man, i+"번째 이름",i+"번째 나이",i+"번째 전화번호",
+                    i+"번째 성별",i+"번째 주소");
             Main_dataList.add(0, data);
             Main_adapter.notifyDataSetChanged();
         }

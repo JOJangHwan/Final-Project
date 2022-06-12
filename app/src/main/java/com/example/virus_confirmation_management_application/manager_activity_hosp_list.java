@@ -3,9 +3,13 @@ package com.example.virus_confirmation_management_application;
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
 import static com.example.virus_confirmation_management_application.user_bottomnavi.pagedata;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.GestureDetector;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.annotation.NonNull;
@@ -30,6 +34,16 @@ public class manager_activity_hosp_list extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_hosp_list);
+
+        recyclerview = (RecyclerView) findViewById(R.id.rc_matter_view);  /// 리사이클러뷰 초기화
+        recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
+        linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
+        recyclerview.setLayoutManager(linearLayoutManager); // 리사이클러뷰에 set 해준다 .
+        Main_dataList = new ArrayList<>(); // 어댑터 선언
+        Main_adapter = new Manager_Hosp_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
+        recyclerview.setAdapter((RecyclerView.Adapter) Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
+
+        load();
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_nav_menu);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -60,21 +74,84 @@ public class manager_activity_hosp_list extends AppCompatActivity {
             }
         });
 
-        recyclerview = (RecyclerView) findViewById(R.id.rc_matter_view);  /// 리사이클러뷰 초기화
-        recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
-        linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
-        recyclerview.setLayoutManager(linearLayoutManager); // 리사이클러뷰에 set 해준다 .
-        Main_dataList = new ArrayList<>(); // 어댑터 선언
-        Main_adapter = new Manager_Hosp_Adapter(Main_dataList); // 어댑터에 어레이리스트 넣어준다.
-        recyclerview.setAdapter((RecyclerView.Adapter) Main_adapter);// 리사이클러뷰에 어댑터 set 해준다.
+        recyclerview.addItemDecoration(new RecyclerTouchListener(getApplicationContext(), recyclerview, new ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                com.example.virus_confirmation_management_application.Manager_Hosp_Data dict = Main_dataList.get(position);
+                Intent intent = new Intent(getApplicationContext(), manager_hosp_detail.class);
 
-        load();
+                intent.putExtra("image", dict.getHosp_image());
+                intent.putExtra("name", dict.getHosp_name());
+                intent.putExtra("address", dict.getHosp_address());
+                intent.putExtra("number", dict.getHosp_number());
+                intent.putExtra("ing", dict.getHosp_ing());
+                intent.putExtra("target", dict.getHosp_target());
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+
+            }
+        }));
+
+
+
+
+
+    }
+
+    public static class RecyclerTouchListener extends RecyclerView.ItemDecoration implements RecyclerView.OnItemTouchListener {
+
+        private GestureDetector gestureDetector;
+        private ClickListener clickListener;
+
+        public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final manager_activity_hosp_list.ClickListener clickListener) {
+            this.clickListener = clickListener;
+            gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
+                @Override
+                public boolean onSingleTapUp(MotionEvent e) {
+                    return true;
+                }
+
+                @Override
+                public void onLongPress(MotionEvent e) {
+                    View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
+                    if (child != null && clickListener != null) {
+                        clickListener.onLongClick(child, recyclerView.getChildAdapterPosition(child));
+                    }
+                }
+            });
+        }
+
+        @Override
+        public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+            View child = rv.findChildViewUnder(e.getX(), e.getY());
+            if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
+                clickListener.onClick(child, rv.getChildAdapterPosition(child));
+            }
+            return false;
+        }
+
+        @Override
+        public void onTouchEvent(RecyclerView rv, MotionEvent e) {
+        }
+
+        @Override
+        public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
+        }
     }
     private void load() {
         for (int i =0; i<10; i++) {
-            Manager_Hosp_Data data = new Manager_Hosp_Data(R.drawable.hosp, i + "번째 문의사항");
+            Manager_Hosp_Data data = new Manager_Hosp_Data(R.drawable.hosp, i + "번째 이름", i+"번째 주소", i+"번째 전화번호", i+"번째 영업시간", i+"번째 진료과");
             Main_dataList.add(0, data);
             Main_adapter.notifyDataSetChanged();
         }
+    }
+
+    public interface ClickListener {
+        void onClick(View view, int position);
+
+        void onLongClick(View view, int position);
     }
 }

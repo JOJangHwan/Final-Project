@@ -10,11 +10,15 @@
     <application
         android:allowBackup="false"
         android:icon="@mipmap/appicon"
-        android:label="."
+        android:label="@string/app_name"
         android:roundIcon="@mipmap/appicon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Virus_Confirmation_Management_Application"
         android:usesCleartextTraffic="true">
+
+        <activity
+            android:name=".manager_activity_hosp_list"
+            android:exported="false" />
 
         <activity
             android:name=".manager_activity_qanda_webview"
@@ -170,9 +174,7 @@
         <activity
             android:name=".manager_activity_viral_transmissin_power"
             android:exported="false" />
-        <activity
-            android:name=".manager_activity_hosp_list"
-            android:exported="false" />
+
 
         <activity
             android:name=".manager_activity_virus_mana"
