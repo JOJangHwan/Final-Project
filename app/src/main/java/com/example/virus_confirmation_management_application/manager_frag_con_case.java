@@ -43,10 +43,12 @@ public class manager_frag_con_case extends Fragment {
         recyclerView.setAdapter((RecyclerView.Adapter)Main_adapter);
 
         load();
-        
-
 
         return view;
+
+
+
+
 
 
     }

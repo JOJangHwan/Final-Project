@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,7 +36,7 @@ public class manager_activity_hosp_list extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.manager_activity_hosp_list);
 
-        recyclerview = (RecyclerView) findViewById(R.id.rc_matter_view);  /// 리사이클러뷰 초기화
+        recyclerview = (RecyclerView) findViewById(R.id.rc_hosp_view);  /// 리사이클러뷰 초기화
         recyclerview.addItemDecoration(new DividerItemDecoration(getApplicationContext(), DividerItemDecoration.VERTICAL)); ///구분선 넣어주는 옵션
         linearLayoutManager = new LinearLayoutManager(this); // 레이아웃 매니져
         recyclerview.setLayoutManager(linearLayoutManager); // 리사이클러뷰에 set 해준다 .
@@ -74,18 +75,24 @@ public class manager_activity_hosp_list extends AppCompatActivity {
             }
         });
 
-        recyclerview.addItemDecoration(new RecyclerTouchListener(getApplicationContext(), recyclerview, new ClickListener() {
+        recyclerview.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), recyclerview, new ClickListener() {
             @Override
             public void onClick(View view, int position) {
                 com.example.virus_confirmation_management_application.Manager_Hosp_Data dict = Main_dataList.get(position);
-                Intent intent = new Intent(getApplicationContext(), manager_hosp_detail.class);
+                //아이템화면전환
+                Toast.makeText(getApplicationContext(), dict.getHosp_name()+' '+dict.getHosp_address(), Toast.LENGTH_LONG).show();
 
-                intent.putExtra("image", dict.getHosp_image());
-                intent.putExtra("name", dict.getHosp_name());
-                intent.putExtra("address", dict.getHosp_address());
-                intent.putExtra("number", dict.getHosp_number());
-                intent.putExtra("ing", dict.getHosp_ing());
-                intent.putExtra("target", dict.getHosp_target());
+                Intent intent = new Intent(getBaseContext(), manager_hosp_detail.class); //여기는 이동할 창을 넣어주는곳
+
+
+                intent.putExtra("hospimage", dict.getHosp_image());
+                intent.putExtra("hospname", dict.getHosp_name());
+                intent.putExtra("hospaddress", dict.getHosp_address());
+                intent.putExtra("hospnumber", dict.getHosp_number());
+                intent.putExtra("hosping", dict.getHosp_ing());
+                intent.putExtra("hosptarget", dict.getHosp_target());
+
+                startActivity(intent);
             }
 
             @Override
@@ -101,10 +108,10 @@ public class manager_activity_hosp_list extends AppCompatActivity {
 
     }
 
-    public static class RecyclerTouchListener extends RecyclerView.ItemDecoration implements RecyclerView.OnItemTouchListener {
+    public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
 
         private GestureDetector gestureDetector;
-        private ClickListener clickListener;
+        private manager_activity_hosp_list.ClickListener clickListener;
 
         public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final manager_activity_hosp_list.ClickListener clickListener) {
             this.clickListener = clickListener;
@@ -141,6 +148,7 @@ public class manager_activity_hosp_list extends AppCompatActivity {
         public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
         }
     }
+
     private void load() {
         for (int i =0; i<10; i++) {
             Manager_Hosp_Data data = new Manager_Hosp_Data(R.drawable.hosp, i + "번째 이름", i+"번째 주소", i+"번째 전화번호", i+"번째 영업시간", i+"번째 진료과");

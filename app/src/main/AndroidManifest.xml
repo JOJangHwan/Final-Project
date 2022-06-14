@@ -15,28 +15,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Virus_Confirmation_Management_Application"
         android:usesCleartextTraffic="true">
-
+        <activity
+            android:name=".manager_virpeople_detail"
+            android:exported="false" />
+        <activity
+            android:name=".manager_hosp_detail"
+            android:exported="false" />
         <activity
             android:name=".manager_activity_hosp_list"
             android:exported="false" />
-
         <activity
             android:name=".manager_activity_qanda_webview"
             android:exported="false" />
-
         <activity
             android:name=".joint_activity_register_manager"
             android:exported="false" />
-
         <activity
             android:name=".joint_activity_register_user"
             android:exported="false" />
-
         <activity
             android:name=".joint_findpwd"
             android:exported="false" />
-
-
         <activity
             android:name=".user_anothercontury"
             android:exported="false" />
@@ -174,8 +173,6 @@
         <activity
             android:name=".manager_activity_viral_transmissin_power"
             android:exported="false" />
-
-
         <activity
             android:name=".manager_activity_virus_mana"
             android:exported="false" />
@@ -194,7 +191,6 @@
         <activity
             android:name=".manager_activity_matter_update"
             android:exported="false" />
-
         <activity
             android:name=".manager_activity_gogu_update"
             android:exported="false" />
@@ -207,7 +203,6 @@
         <activity
             android:name=".manager_activity_home_bottom_navi"
             android:exported="false" />
-
         <activity
             android:name=".user_bottomnavi"
             android:exported="false" />

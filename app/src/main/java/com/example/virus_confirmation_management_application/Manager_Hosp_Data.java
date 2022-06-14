@@ -55,8 +55,8 @@ class Manager_Hosp_Data {
     }
 
 
-    public void setResourceId(int resourceId) {
-        this.Hosp_image = resourceId;
+    public void setHosp_image(int hosp_image) {
+        this.Hosp_image = hosp_image;
     }
 
 

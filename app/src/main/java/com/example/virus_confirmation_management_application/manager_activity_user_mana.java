@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -80,17 +81,17 @@ public class manager_activity_user_mana extends AppCompatActivity {
             public void onClick(View view, int position) {
                 com.example.virus_confirmation_management_application.Manager_User_Data dict = Main_dataList.get(position);
                 //아이템화면전환
-                //Toast.makeText(getApplicationContext(), dict.getQnAmessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), dict.getUser_name()+' '+dict.getUser_age(), Toast.LENGTH_LONG).show();
 
                 Intent intent = new Intent(getBaseContext(), manager_user_detail.class); //여기는 이동할 창을 넣어주는곳
 
 
-                intent.putExtra("image", dict.getUser_image());
-                intent.putExtra("name", dict.getUser_name());
-                intent.putExtra("age", dict.getUser_age());
-                intent.putExtra("area", dict.getUser_address());
-                intent.putExtra("sex", dict.getUser_sex());
-                intent.putExtra("ph_number", dict.getUser_ph_number());
+                intent.putExtra("userimage", dict.getUser_image());
+                intent.putExtra("username", dict.getUser_name());
+                intent.putExtra("userage", dict.getUser_age());
+                intent.putExtra("useraddress", dict.getUser_address());
+                intent.putExtra("usersex", dict.getUser_sex());
+                intent.putExtra("userph_number", dict.getUser_ph_number());
 
 
                 startActivity(intent);
@@ -114,7 +115,7 @@ public class manager_activity_user_mana extends AppCompatActivity {
     public static class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
 
         private GestureDetector gestureDetector;
-        private ClickListener clickListener;
+        private manager_activity_user_mana.ClickListener clickListener;
 
         public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final manager_activity_user_mana.ClickListener clickListener) {
             this.clickListener = clickListener;
@@ -154,8 +155,8 @@ public class manager_activity_user_mana extends AppCompatActivity {
 
     private void load() {
         for (int i =0; i<10; i++) {
-            Manager_User_Data data = new Manager_User_Data(R.drawable.man, i+"번째 이름",i+"번째 나이",i+"번째 전화번호",
-                    i+"번째 성별",i+"번째 주소");
+            Manager_User_Data data = new Manager_User_Data(R.drawable.man, i+"번째 이름",i+"번째 나이",i+"번째 주소",
+                    i+"번째 성별",i+"전화번호");
             Main_dataList.add(0, data);
             Main_adapter.notifyDataSetChanged();
         }
