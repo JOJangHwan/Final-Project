@@ -81,6 +81,14 @@
           }
         },
         {
+          "client_id": "692419106682-pibs2ud9r0qt34mjknhm4svba6ugurgd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.virus_confirmation_management_application",
+            "certificate_hash": "3d8b12b51457d2ff93b6f240b2ff48bd76e5747d"
+          }
+        },
+        {
           "client_id": "692419106682-h4s70ksak1bf9qaumagkmejvua55qo7q.apps.googleusercontent.com",
           "client_type": 3
         }
