@@ -2,50 +2,36 @@ package com.example.virus_confirmation_management_application;
 
 public class user_map_board_comment_item {
 
-    private int index; //지역에 인덱스
-    private String comment;
-    //private String board_contents;
-    private String user_id;
-    private String board_date;
+
+    private String content;
+    private String name;
+    private String Time;
+
+    public user_map_board_comment_item(){}
 
 
-    public user_map_board_comment_item( int index, String comment, String user_id, String board_date) {
-        this.index = index;
-        this.comment = comment;
-        this.user_id= user_id;
-        this.board_date = board_date;
-        }
 
-
-    public int getIndex() {
-        return index;
+    public String getContent() {
+        return content;
     }
 
-    public void setIndex(int index) {
-        this.index = index;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public String getComment() {
-        return comment;
+    public String getName() {
+        return name;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getUser_id() {
-        return user_id;
+    public String getTime() {
+        return Time;
     }
 
-    public void setUser_id(String user_id) {
-        this.user_id = user_id;
-    }
-
-    public String getBoard_date() {
-        return board_date;
-    }
-
-    public void setBoard_date(String board_date) {
-        this.board_date = board_date;
+    public void setTime(String time) {
+        Time = time;
     }
 }

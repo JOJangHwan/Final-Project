@@ -248,6 +248,10 @@ public class user_map_boardlist  extends AppCompatActivity {
                 intent.putExtra( "Board_date", dict.getTime());
                 intent.putExtra( "User_id", dict.getName());
                 intent.putExtra( "User_content", dict.getContent());
+                intent.putExtra( "index", dict.getIndex());
+                intent.putExtra( "region", tittle);
+
+
                 startActivity(intent);
 
 

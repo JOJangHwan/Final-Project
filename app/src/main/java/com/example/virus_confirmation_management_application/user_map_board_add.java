@@ -111,6 +111,7 @@ public class user_map_board_add extends AppCompatActivity {
                             mDatabase.child("board").child(data).child(index).child("tittle").setValue(tittle);
                             mDatabase.child("board").child(data).child(index).child("content").setValue(content);
                             mDatabase.child("board").child(data).child(index).child("index").setValue(index);
+                            mDatabase.child("board").child(data).child(index).child("i").child("index").setValue(asd);
 
                             long now = System.currentTimeMillis();
                             Date date = new Date(now);

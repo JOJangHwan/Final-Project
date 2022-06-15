@@ -49,12 +49,7 @@ public class user_map_boardlist_CustomAdapter extends RecyclerView.Adapter<user_
         holder.name.setText(mboardlistIteArrayList.get(position).getName());
         holder.Time.setText(mboardlistIteArrayList.get(position).getTime());
     }
-/*
-    public void setMboardlistIteArrayList(ArrayList<user_map_boardlist_item> list){
-        this.mboardlistIteArrayList = list;
-        notifyDataSetChanged();
-    }
-*/
+
     @Override
     public int getItemCount() {
         return (mboardlistIteArrayList != null ? mboardlistIteArrayList.size():0);
@@ -84,16 +79,7 @@ public class user_map_boardlist_CustomAdapter extends RecyclerView.Adapter<user_
 
 
         }
-/*
-        void onBind(user_map_boardlist_item item){
-            tittle.setText(item.getTittle());
-            Time.setText(item.getTime());
-            name.setText(item.getName());
-            //board_like.setText(String.valueOf(item.get()));
-            //board_chat.setText(String.valueOf(item.getBoard_chat_num()));
 
-        }
-        */
 
     }
 

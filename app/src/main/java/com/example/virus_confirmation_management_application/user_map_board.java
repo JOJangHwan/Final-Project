@@ -7,29 +7,54 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.TimeZone;
 
 public class user_map_board extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
-    private user_map_board_comment_CustomAdapter mboardcommentCustomAdapter;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
+
     private ArrayList<user_map_board_comment_item> user_map_board_comment_item;
+    private FirebaseDatabase database;
+    private DatabaseReference databaseReference;
+    private DatabaseReference databaseReference_add;
+
+    private DatabaseReference mDatabase;
+    private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +98,8 @@ public class user_map_board extends AppCompatActivity {
         String Board_date = getIntent().getStringExtra("Board_date");
         String User_id = getIntent().getStringExtra("User_id");
         String User_content = getIntent().getStringExtra("User_content");
+        final String index = getIntent().getStringExtra("index");
+        String region = getIntent().getStringExtra("region");
 
 
         TextView title_tv = (TextView) findViewById(R.id.title_tv);
@@ -92,25 +119,142 @@ public class user_map_board extends AppCompatActivity {
             }
         });
 
+
         mRecyclerView = (RecyclerView) findViewById(R.id.comment_recyclerView);
+        mRecyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(layoutManager);
+        user_map_board_comment_item =new ArrayList<>();
 
-        /* initiate adapter */
-        mboardcommentCustomAdapter= new user_map_board_comment_CustomAdapter();
-        /* initiate recyclerview */
-        mRecyclerView.setAdapter(mboardcommentCustomAdapter);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        /* adapt data */
-        user_map_board_comment_item = new ArrayList<>();
-        for(int i=1;i<=3;i++){
-            user_map_board_comment_item.add(new user_map_board_comment_item(i,i+"번째 내용",i+"번째아이디",i+"번째 날짜"));
+        database =FirebaseDatabase.getInstance();
 
-        }
-        mboardcommentCustomAdapter.setMboardcommentIteArrayList(user_map_board_comment_item);
+        databaseReference =database.getReference("board").child(region).child(index);
+            databaseReference.child("cm").addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    user_map_board_comment_item.clear();
+                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                        user_map_board_comment_item board = snapshot.getValue(user_map_board_comment_item.class);//불러오기 오류
+                        user_map_board_comment_item.add(board);
+
+                    }
+                    adapter.notifyDataSetChanged();
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError error) {
+                    Log.e("MainActivity", String.valueOf(error.toException())); // 에러문 출력
+
+                }
+            });
 
 
 
+
+
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        mAuth = FirebaseAuth.getInstance();
+        final FirebaseUser user = mAuth.getCurrentUser();
+        databaseReference_add = FirebaseDatabase.getInstance().getReference();
+
+        Button add_reg_button = (Button)findViewById(R.id.reg_button);
+        add_reg_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                EditText comment_et = (EditText)findViewById(R.id.comment_et);
+
+                if ( comment_et.getText().toString().length() == 0 )
+                {
+                    //빈칸일때
+
+                }
+                else {
+                    //실행
+                    databaseReference_add.child("board").child(region).child(index).child("i").child("index").addListenerForSingleValueEvent(new ValueEventListener() {
+                        @Override
+                        public void onDataChange(@NonNull DataSnapshot snapshot) {
+                            int value = (int)snapshot.getValue(Integer.class);
+                            final int  asd =value;
+                            value +=1;//숫자를 1 증가시켜서
+                            String in_index = String.valueOf (asd);
+
+                            databaseReference_add.child("board").child(region).child(index).child("i").child("index").setValue(value);//저장
+
+
+                            String content=comment_et.getText().toString();
+                            mDatabase.child("board").child(region).child(index).child("cm").child(in_index).child("content").setValue(content);
+
+                            SimpleDateFormat sdf = new SimpleDateFormat("yy/MM/dd HH:mm");
+                            Calendar calendar = Calendar.getInstance();
+                            Date date = calendar.getTime();
+                            sdf.setTimeZone(TimeZone.getTimeZone("Asia/Seoul"));
+                            String dateResult = sdf.format(date);
+
+                            //String getTime = dateFormat.format(date);
+                            mDatabase.child("board").child(region).child(index).child("cm").child(in_index).child("Time").setValue(dateResult);
+                            mDatabase.child("board").child(region).child(index).child("cm").child(in_index).child("name").setValue(user.getEmail());
+
+                            comment_et.setText("");
+
+                            Window window = getWindow();
+                            new WindowInsetsControllerCompat(window, window.getDecorView()).hide(WindowInsetsCompat.Type.ime());
+                            databaseReference =database.getReference("board").child(region).child(index);
+                            databaseReference.child("cm").addListenerForSingleValueEvent(new ValueEventListener() {
+                                @Override
+                                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                                    user_map_board_comment_item.clear();
+                                    for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                                        user_map_board_comment_item board = snapshot.getValue(user_map_board_comment_item.class);//불러오기 오류
+                                        user_map_board_comment_item.add(board);
+
+                                    }
+                                    adapter.notifyDataSetChanged();
+                                }
+
+                                @Override
+                                public void onCancelled(@NonNull DatabaseError error) {
+                                    Log.e("MainActivity", String.valueOf(error.toException())); // 에러문 출력
+
+                                }
+                            });
+                            /*
+                            Intent intent = new Intent(getApplicationContext(),user_map_board.class);
+                            intent.putExtra( "Board_tittle", Board_tittle);
+                            intent.putExtra( "Board_date", Board_date);
+                            intent.putExtra( "User_id", User_id);
+                            intent.putExtra( "User_content", User_content);
+                            intent.putExtra( "index", index);
+                            intent.putExtra( "region",region);
+
+                            startActivity(intent);
+                            finish();
+*/
+                        }
+
+                        @Override
+                        public void onCancelled(@NonNull DatabaseError databaseError) {
+                            //Log.e("MainActivity", String.valueOf(databaseError.toException()));
+                        }
+
+
+
+                    });
+
+
+/*
+                    Intent intent = new Intent(getApplicationContext(),user_map_boardlist.class);
+                    intent.putExtra("tittle", data);
+
+                    startActivity(intent);
+                    finish();
+*/
+                }
+
+            }
+        });
+
+        adapter =new user_map_board_comment_CustomAdapter(user_map_board_comment_item,this);
+        mRecyclerView.setAdapter(adapter);
     }
-
-
 
 }
