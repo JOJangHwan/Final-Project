@@ -72,16 +72,18 @@ public class user_map_board extends AppCompatActivity {
         String Board_tittle = getIntent().getStringExtra("Board_tittle");
         String Board_date = getIntent().getStringExtra("Board_date");
         String User_id = getIntent().getStringExtra("User_id");
+        String User_content = getIntent().getStringExtra("User_content");
 
 
         TextView title_tv = (TextView) findViewById(R.id.title_tv);
         TextView date_tv = (TextView) findViewById(R.id.date_tv);
         TextView userid_tv = (TextView) findViewById(R.id.userid_tv);
+        TextView content_tv = (TextView) findViewById(R.id.content_tv);
 
         title_tv.setText(Board_tittle);
         date_tv.setText(Board_date);
         userid_tv.setText(User_id.substring(0,2)+"**");
-
+        content_tv.setText(User_content);
 
         ImageView imageview = (ImageView)findViewById(R.id.imageView6);
         imageview.setOnClickListener(new View.OnClickListener() {

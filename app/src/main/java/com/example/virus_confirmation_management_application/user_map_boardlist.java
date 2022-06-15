@@ -233,7 +233,7 @@ public class user_map_boardlist  extends AppCompatActivity {
          */
 
 
-/*
+
 
         mRecyclerView.addOnItemTouchListener(new user_mystatereportlist.RecyclerTouchListener(getApplicationContext(), mRecyclerView, new user_mystatereportlist.ClickListener() {
             @Override
@@ -247,6 +247,7 @@ public class user_map_boardlist  extends AppCompatActivity {
                 intent.putExtra( "Board_tittle", dict.getTittle());
                 intent.putExtra( "Board_date", dict.getTime());
                 intent.putExtra( "User_id", dict.getName());
+                intent.putExtra( "User_content", dict.getContent());
                 startActivity(intent);
 
 
@@ -258,7 +259,7 @@ public class user_map_boardlist  extends AppCompatActivity {
         }));
 
 
-*/
+
 
 
 
