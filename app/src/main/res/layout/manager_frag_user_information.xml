@@ -141,58 +141,58 @@
             </Button>
 
             <Button
-        android:id="@+id/button_manager_notice"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:text="공지사항"
+                android:id="@+id/button_manager_notice"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="공지사항"
                 android:textSize="15pt"
                 android:backgroundTint="#71CCD8"
                 android:textColor="@color/white"
                 android:textStyle="bold"
-        >
+                >
 
-    </Button>
-    <Button
-        android:id="@+id/button_manager_QandA"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:text="Q and A"
-        android:textSize="15pt"
-        android:backgroundTint="#71CCD8"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        >
+            </Button>
+            <Button
+                android:id="@+id/button_manager_QandA"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="Q and A"
+                android:textSize="15pt"
+                android:backgroundTint="#71CCD8"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                >
 
-    </Button>
+            </Button>
 
-    <Button
-        android:id="@+id/button_manager_question"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:text="문의사항"
-        android:textSize="15pt"
-        android:backgroundTint="#71CCD8"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        >
+            <Button
+                android:id="@+id/button_manager_question"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="문의사항"
+                android:textSize="15pt"
+                android:backgroundTint="#71CCD8"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                >
 
-    </Button>
+            </Button>
 
-    <Button
-        android:id="@+id/button_manager_gogu"
-        android:layout_marginTop="15dp"
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:text="정부지침"
-        android:textSize="15pt"
-        android:textStyle="bold"
-        android:backgroundTint="#71CCD8"
-        android:textColor="@color/white">
+            <Button
+                android:id="@+id/button_manager_gogu"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:text="정부지침"
+                android:textSize="15pt"
+                android:textStyle="bold"
+                android:backgroundTint="#71CCD8"
+                android:textColor="@color/white">
 
-    </Button>
+            </Button>
 
 
         </LinearLayout>

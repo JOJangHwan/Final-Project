@@ -68,7 +68,7 @@ public class user_map_board extends AppCompatActivity {
         });
 
 
-        String Boardlocation = getIntent().getStringExtra("Boardlocation");
+        //String Boardlocation = getIntent().getStringExtra("Boardlocation");
         String Board_tittle = getIntent().getStringExtra("Board_tittle");
         String Board_date = getIntent().getStringExtra("Board_date");
         String User_id = getIntent().getStringExtra("User_id");

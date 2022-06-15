@@ -7,6 +7,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -22,15 +23,23 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
 public class user_map_boardlist  extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
-    private user_map_boardlist_CustomAdapter mboardlistCustomAdapter;
-    private ArrayList<user_map_boardlist_item> user_map_boardlist_item;
+    private RecyclerView.Adapter adapter;
+    private RecyclerView.LayoutManager layoutManager;
 
+    private ArrayList<user_map_boardlist_item> user_map_boardlist_item;
+    private FirebaseDatabase database;
+    private DatabaseReference databaseReference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -167,27 +176,64 @@ public class user_map_boardlist  extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),user_map_board_add.class);
+                intent.putExtra("data", tittle);
                 startActivity(intent);
+                finish();
             }
         });
+        /* initiate adapter */
+        //mboardlistCustomAdapter= new user_map_boardlist_CustomAdapter();
+        /* initiate recyclerview */
+        // mRecyclerView.setAdapter(mboardlistCustomAdapter);
+        // mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        /* adapt data */
+        //user_map_boardlist_item = new ArrayList<>();
+        // database = FirebaseDatabase.getInstance();
+        //databaseReference=database.getReference("board").child(tittle);
 
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.user_map_bord_recyclerview);
+        mRecyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(layoutManager);
+        user_map_boardlist_item =new ArrayList<>();
 
-        /* initiate adapter */
-        mboardlistCustomAdapter= new user_map_boardlist_CustomAdapter();
-        /* initiate recyclerview */
-        mRecyclerView.setAdapter(mboardlistCustomAdapter);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        /* adapt data */
-        user_map_boardlist_item = new ArrayList<>();
+        database =FirebaseDatabase.getInstance();
+
+        databaseReference =database.getReference("board");
+
+        databaseReference.child(tittle).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                user_map_boardlist_item.clear();
+                for(DataSnapshot snapshot : dataSnapshot.getChildren()){
+                    user_map_boardlist_item board =snapshot.getValue(user_map_boardlist_item.class);//불러오기 오류
+                    user_map_boardlist_item.add(board);
+
+                }
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Log.e("MainActivity", String.valueOf(error.toException())); // 에러문 출력
+
+            }
+        });
+
+        adapter =new user_map_boardlist_CustomAdapter(user_map_boardlist_item,this);
+        mRecyclerView.setAdapter(adapter);
+
+        /*
         for(int i=1;i<=10;i++){
-            user_map_boardlist_item.add(new user_map_boardlist_item(tittlename,i,i+"번째 제목",i+"번째아이디",i+"번째 날짜",i,i));
+            user_map_boardlist_item.add(new user_map_boardlist_item(tittlename,i,i+"번째 제목",i+"번째아이디",i+"번째 날짜"));
 
         }
-        mboardlistCustomAdapter.setMboardlistIteArrayList(user_map_boardlist_item);
+         */
 
+
+/*
 
         mRecyclerView.addOnItemTouchListener(new user_mystatereportlist.RecyclerTouchListener(getApplicationContext(), mRecyclerView, new user_mystatereportlist.ClickListener() {
             @Override
@@ -197,10 +243,10 @@ public class user_map_boardlist  extends AppCompatActivity {
                 //아이템화면전환
                 Intent intent = new Intent(getBaseContext(), user_map_board.class);
 
-                intent.putExtra("Boardlocation", dict.getBoardlocation());
-                intent.putExtra( "Board_tittle", dict.getBoard_tittle());
-                intent.putExtra( "Board_date", dict.getBoard_date());
-                intent.putExtra( "User_id", dict.getUser_id());
+              //  intent.putExtra("Boardlocation", dict.getBoardlocation());
+                intent.putExtra( "Board_tittle", dict.getTittle());
+                intent.putExtra( "Board_date", dict.getTime());
+                intent.putExtra( "User_id", dict.getName());
                 startActivity(intent);
 
 
@@ -212,7 +258,7 @@ public class user_map_boardlist  extends AppCompatActivity {
         }));
 
 
-
+*/
 
 
 
@@ -265,6 +311,7 @@ public class user_map_boardlist  extends AppCompatActivity {
         public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
         }
     }
+
 
 
 }

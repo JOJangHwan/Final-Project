@@ -54,7 +54,7 @@ public class joint_activity_register_user extends AppCompatActivity {
                         if(task.isSuccessful()){
                             FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
                             UserAccount userAccount = new UserAccount();
-                            userAccount.setUid(firebaseUser.getUid());
+                            userAccount.setName(user_name);
                             userAccount.setEmail(firebaseUser.getEmail());
                             userAccount.setPwd(user_pwd);
 
