@@ -1,8 +1,12 @@
+/*
+2017243053 조장환
+
+ */
 package com.example.virus_confirmation_management_application;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class manager_activity_notice_update extends AppCompatActivity {
 

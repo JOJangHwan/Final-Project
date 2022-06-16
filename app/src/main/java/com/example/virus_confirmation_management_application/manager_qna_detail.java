@@ -1,14 +1,12 @@
+/*
+2017243053 조장환
+
+ */
 package com.example.virus_confirmation_management_application;
 
-import static com.example.virus_confirmation_management_application.user_Frag2.a;
-import static com.example.virus_confirmation_management_application.user_bottomnavi.pagedata;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
