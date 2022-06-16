@@ -9,7 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_virpeople_detail extends AppCompatActivity {
 
     @Override

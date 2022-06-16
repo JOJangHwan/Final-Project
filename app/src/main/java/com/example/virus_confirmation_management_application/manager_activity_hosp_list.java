@@ -26,7 +26,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_activity_hosp_list extends AppCompatActivity {
     private Button button_move;
 

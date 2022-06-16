@@ -3,7 +3,11 @@
 
  */
 package com.example.virus_confirmation_management_application;
+/*
 
+2017243053 조장환
+
+ */
 class Manager_virus_people_Data {
 
 //item_layout에 들어갈 데이터

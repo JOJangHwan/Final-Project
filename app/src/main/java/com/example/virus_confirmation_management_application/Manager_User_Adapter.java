@@ -14,7 +14,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+/*
 
+2017243053 조장환
+
+ */
 public class Manager_User_Adapter extends RecyclerView.Adapter<Manager_User_Adapter.ViewHolder> {
 
     private ArrayList<Manager_User_Data> Data_arrayList;

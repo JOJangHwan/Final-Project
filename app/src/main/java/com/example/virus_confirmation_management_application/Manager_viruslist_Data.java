@@ -3,7 +3,11 @@
 
  */
 package com.example.virus_confirmation_management_application;
+/*
 
+2017243053 조장환
+
+ */
 public class Manager_viruslist_Data {
     private int img_viruslist_pelple;
     private String text_vruslist_name;

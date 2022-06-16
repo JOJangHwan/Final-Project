@@ -24,7 +24,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_activity_qanda extends AppCompatActivity {
     private Button button_move;
     private ArrayList<Manager_QnA_Data> Main_dataList;   /// 데이터를 담기위한 어레이 리스트

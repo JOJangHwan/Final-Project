@@ -3,7 +3,11 @@
 
  */
 package com.example.virus_confirmation_management_application;
+/*
 
+2017243053 조장환
+
+ */
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

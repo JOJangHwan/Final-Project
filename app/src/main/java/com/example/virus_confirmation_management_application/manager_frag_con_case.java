@@ -17,7 +17,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_frag_con_case extends Fragment {
 
     private Context context;

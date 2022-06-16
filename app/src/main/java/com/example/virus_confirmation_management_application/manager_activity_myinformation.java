@@ -10,7 +10,11 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_activity_myinformation extends AppCompatActivity {
     private Button button_move;
 

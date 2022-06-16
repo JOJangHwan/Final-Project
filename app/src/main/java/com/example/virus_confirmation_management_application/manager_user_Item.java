@@ -3,7 +3,11 @@
 
  */
 package com.example.virus_confirmation_management_application;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_user_Item {
     private int image;
     private String name;

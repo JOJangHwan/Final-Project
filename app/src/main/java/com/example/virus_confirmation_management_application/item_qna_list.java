@@ -1,9 +1,9 @@
+
+package com.example.virus_confirmation_management_application;
 /*
 2017243053 조장환
 
  */
-package com.example.virus_confirmation_management_application;
-
 public class item_qna_list {
     private String qnamessage;
 

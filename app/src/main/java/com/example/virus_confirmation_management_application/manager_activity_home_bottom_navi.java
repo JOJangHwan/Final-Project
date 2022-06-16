@@ -14,7 +14,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_activity_home_bottom_navi extends AppCompatActivity {
 
     private Button button_move; // intend

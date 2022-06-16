@@ -10,7 +10,11 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_qna_detail extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {

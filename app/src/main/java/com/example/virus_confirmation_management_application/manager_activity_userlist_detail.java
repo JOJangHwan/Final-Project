@@ -9,7 +9,11 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_activity_userlist_detail extends AppCompatActivity {
 
     TextView detail_name_text, detail_age_text,detail_sex_text;

@@ -1,7 +1,4 @@
-/*
-2017243053 조장환
 
- */
 package com.example.virus_confirmation_management_application;
 
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
@@ -19,7 +16,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+/*
+2017243053 조장환
 
+ */
 public class manager_activity_gogu_5 extends AppCompatActivity {
 
     private WebView webView;

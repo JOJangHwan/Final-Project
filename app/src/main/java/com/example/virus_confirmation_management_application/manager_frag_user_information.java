@@ -15,7 +15,11 @@ import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_frag_user_information extends Fragment {
 
     private View view;

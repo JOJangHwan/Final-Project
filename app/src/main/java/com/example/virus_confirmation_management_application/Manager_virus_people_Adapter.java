@@ -14,7 +14,11 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+/*
 
+2017243053 조장환
+
+ */
 public class Manager_virus_people_Adapter extends RecyclerView.Adapter<Manager_virus_people_Adapter.ViewHolder> {
 
     private ArrayList<Manager_virus_people_Data> Data_arrayList;

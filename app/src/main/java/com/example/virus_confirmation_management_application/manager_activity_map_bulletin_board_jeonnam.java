@@ -22,8 +22,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
+/*
 
-public class manager_activity_map_bulletin_board_jeonnam extends AppCompatActivity {
+2017243053 조장환
+
+ */public class manager_activity_map_bulletin_board_jeonnam extends AppCompatActivity {
     private Button button_move;
 
     private ArrayList<Manager_Map_Data> Main_dataList;   /// 데이터를 담기위한 어레이 리스트

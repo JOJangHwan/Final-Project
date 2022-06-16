@@ -19,7 +19,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_activity_virus_mana extends AppCompatActivity {
 
     private Button button_move;

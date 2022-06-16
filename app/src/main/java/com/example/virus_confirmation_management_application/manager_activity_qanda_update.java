@@ -15,7 +15,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_activity_qanda_update extends AppCompatActivity {
 
     @Override

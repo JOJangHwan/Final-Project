@@ -11,7 +11,11 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
+/*
 
+2017243053 조장환
+
+ */
 public class manager_activity_qanda_webview extends AppCompatActivity {
 
     private WebView webView;
