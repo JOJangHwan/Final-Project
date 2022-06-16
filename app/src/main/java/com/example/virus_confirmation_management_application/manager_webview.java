@@ -8,19 +8,17 @@ import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class manager_activity_map_busan extends AppCompatActivity {
+public class manager_webview extends AppCompatActivity {
 
     private WebView webView;
-    private String url = "https://www.busan.go.kr/covid19/";//부산
+    private String url = "http://ncov.mohw.go.kr/faqBoardList.do?brdId=3&brdGubun=38";//qanda
 
     @Override
     protected  void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_govguude_activity_gogu2);
+        setContentView(R.layout.manager_webview);
 
-
-
-        webView = (WebView) findViewById(R.id.user_govguide_gogu2);
+        webView = (WebView) findViewById(R.id.manager_webview);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.loadUrl(url);
         webView.setWebChromeClient(new WebChromeClient());

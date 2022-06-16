@@ -76,18 +76,19 @@ public class manager_frag_user_information extends Fragment {
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
-/*
+
         button_move = view.findViewById(R.id.button_manager_QandA); // qanda
         button_move.setOnClickListener(new View.OnClickListener() {
             @Override
 
             public void onClick(View v) {
-                Intent intent =new Intent(getActivity(), manager_activity_qanda.class);
+                Intent intent =new Intent(getActivity(), manager_activity_qanda1.class);
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
 
- */
+
+        /*
         button_move = view.findViewById(R.id.button_manager_QandA); // qanda
         button_move.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,6 +98,8 @@ public class manager_frag_user_information extends Fragment {
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
+
+         */
 
         button_move = view.findViewById(R.id.button_manager_question); // 문의사항
         button_move.setOnClickListener(new View.OnClickListener() {

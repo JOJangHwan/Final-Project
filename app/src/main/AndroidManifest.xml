@@ -16,6 +16,15 @@
         android:theme="@style/Theme.Virus_Confirmation_Management_Application"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".manager_overseas"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_qanda1"
+            android:exported="false" />
+        <activity
+            android:name=".manager_webview"
+            android:exported="false" />
+        <activity
             android:name=".manager_virpeople_detail"
             android:exported="false" />
         <activity
@@ -112,6 +121,51 @@
             android:exported="false" />
         <activity
             android:name=".manager_activity_map_ganwon_do"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_chungbuk2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_chungnam2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_ulsan2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_busan2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_incheon2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_daejeon2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_daegu2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_jeonbuk2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_jeonnam2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_jeju2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_gyeognam2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_gyeongbuk2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_gyeonggi_do2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_seoul2"
+            android:exported="false" />
+        <activity
+            android:name=".manager_activity_map_ganwon_do2"
             android:exported="false" />
         <activity
             android:name=".manager_activity_map_bulletin_board_chungbuk"

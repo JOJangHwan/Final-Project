@@ -78,7 +78,7 @@ public class manager_activity_map_bulletin_board_seoul extends AppCompatActivity
             @Override
 
             public void onClick(View v) {
-                Intent intent = new Intent(manager_activity_map_bulletin_board_seoul.this, manager_activity_map_seoul.class); //현재 위치와 이동할 위치의 인자
+                Intent intent = new Intent(manager_activity_map_bulletin_board_seoul.this, manager_activity_map_seoul2.class); //현재 위치와 이동할 위치의 인자
                 startActivity(intent); // 액티비티 이동 구문
             }
         });
