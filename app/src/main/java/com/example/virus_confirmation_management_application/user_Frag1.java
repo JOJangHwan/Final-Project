@@ -14,7 +14,9 @@ import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
+/*
+    gramer : 윤승준 내부 기능 및 UI 담당
+ */
 public class user_Frag1 extends Fragment {
 
 

@@ -26,7 +26,9 @@ import java.net.URL;
 import java.util.ArrayList;
 
 import me.relex.circleindicator.CircleIndicator3;
-
+/*
+    gramer : 윤승준 내부 기능 및 UI 담당
+ */
 public class user_MainActivity extends AppCompatActivity {
     /*
     private RecyclerView recyclerView;

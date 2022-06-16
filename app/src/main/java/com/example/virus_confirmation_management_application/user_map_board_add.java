@@ -26,7 +26,9 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
+/*
+    gramer : 윤승준  DB까지 개시판 구현 완료
+ */
 public class user_map_board_add extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;

@@ -30,7 +30,9 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
-
+/*
+    gramer : 윤승준  DB까지 개시판 구현 완료
+ */
 public class user_map_boardlist  extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;

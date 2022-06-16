@@ -6,7 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
-
+/*
+    gramer : 윤승준 내부기능
+ */
 public class user_slider_Fragment_3 extends Fragment {
 
     @Override

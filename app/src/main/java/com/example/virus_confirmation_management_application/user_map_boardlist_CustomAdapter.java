@@ -14,7 +14,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*
+    gramer : 윤승준  DB까지 개시판 구현 완료
+ */
 public class user_map_boardlist_CustomAdapter extends RecyclerView.Adapter<user_map_boardlist_CustomAdapter.CustomViewHolder> {
 
     private ArrayList<user_map_boardlist_item> mboardlistIteArrayList;

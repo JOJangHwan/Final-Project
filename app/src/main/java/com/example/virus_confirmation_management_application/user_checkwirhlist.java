@@ -21,7 +21,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
-
+/*
+    gramer : 윤승준 내부 기능 및 UI 담당
+ */
 public class user_checkwirhlist extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;

@@ -15,7 +15,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+/*
+    gramer : 윤승준  UI및 내부기능
+ */
 public class user_QandA extends AppCompatActivity {
 
     private WebView webView;

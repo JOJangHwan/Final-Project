@@ -13,7 +13,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+/*
+    gramer : 윤승준 내부기능, UI
+ */
 public class user_virusinformation_add extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {

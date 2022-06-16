@@ -7,7 +7,9 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+/*
+    gramer : 윤승준
+ */
 public class user_anotherconturywebview extends AppCompatActivity {
 
     private WebView webView;

@@ -16,7 +16,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import me.relex.circleindicator.CircleIndicator3;
-
+/*
+    gramer : 윤승준 내부 기능 및 UI 담당
+ */
 public class user_Frag2 extends Fragment {
     private View view;
     static int a =0;

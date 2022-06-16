@@ -1,5 +1,7 @@
 package com.example.virus_confirmation_management_application;
-
+/*
+    gramer : 윤승준  DB까지 개시판 구현 완료
+ */
 public class user_map_boardlist_item {
     //private String boardlocation;
 

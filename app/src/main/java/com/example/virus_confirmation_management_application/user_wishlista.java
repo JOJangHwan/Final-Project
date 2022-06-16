@@ -21,7 +21,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
-
+/*
+    gramer : 윤승준 내부기능, UI
+ */
 public class user_wishlista extends AppCompatActivity {
     private RecyclerView mRecyclerView;//병원
     private RecyclerView mRecyclerView1;//약국

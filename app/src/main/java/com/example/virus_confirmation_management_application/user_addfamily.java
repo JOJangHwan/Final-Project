@@ -1,5 +1,7 @@
 package com.example.virus_confirmation_management_application;
-
+/*
+    윤승준:UI 담당,어플내에서 기능 구현
+ */
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
 import static com.example.virus_confirmation_management_application.user_bottomnavi.pagedata;
 

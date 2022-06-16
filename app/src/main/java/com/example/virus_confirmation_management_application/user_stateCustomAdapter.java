@@ -9,7 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+/*
+    gramer : 윤승준 내부기능, UI
+ */
 public class user_stateCustomAdapter extends RecyclerView.Adapter<user_stateCustomAdapter.ViewHolder> {
 
     private ArrayList<user_stateItem> mstateIteArrayList;

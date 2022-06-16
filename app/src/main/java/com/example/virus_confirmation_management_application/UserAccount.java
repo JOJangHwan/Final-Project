@@ -1,5 +1,7 @@
 package com.example.virus_confirmation_management_application;
-
+/*
+    gramer : 윤승준 내부기능, UI
+ */
 public class UserAccount {
     private String name;
     private String email;

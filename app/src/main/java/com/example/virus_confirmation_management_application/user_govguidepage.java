@@ -11,7 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+/*
+    gramer : 윤승준 내부 기능 및 UI 담당
+ */
 public class user_govguidepage extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {

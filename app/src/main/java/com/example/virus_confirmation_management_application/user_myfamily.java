@@ -22,7 +22,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
-
+/*
+    gramer : 윤승준  UI및 내부기능
+ */
 public class user_myfamily extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;

@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+/*
+    gramer : 윤승준  UI및 내부기능
+ */
 public class user_mypage  extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {

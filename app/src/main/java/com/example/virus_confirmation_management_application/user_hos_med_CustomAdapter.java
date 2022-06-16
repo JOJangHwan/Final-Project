@@ -10,7 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
+/*
+    gramer : 윤승준 내부 기능 및 UI 담당
+ */
 public class user_hos_med_CustomAdapter extends RecyclerView.Adapter<user_hos_med_CustomAdapter.ViewHolder> {
 
     private ArrayList<user_hos_med_Item> mhosmedArrayList;

@@ -8,7 +8,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
-
+/*
+    gramer : 윤승준
+ */
 public class user_anothercontury extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {

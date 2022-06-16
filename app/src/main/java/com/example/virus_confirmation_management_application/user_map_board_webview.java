@@ -16,7 +16,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+/*
+    gramer : 윤승준  DB까지 개시판 구현 완료
+ */
 public class user_map_board_webview extends AppCompatActivity {
 
     private WebView webView;

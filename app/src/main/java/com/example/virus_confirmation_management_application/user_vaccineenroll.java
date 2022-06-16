@@ -26,7 +26,9 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
-
+/*
+    gramer : 윤승준 내부기능, UI
+ */
 public class user_vaccineenroll extends AppCompatActivity {
 
 

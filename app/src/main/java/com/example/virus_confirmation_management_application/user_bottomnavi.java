@@ -19,7 +19,9 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.ArrayList;
-
+/*
+    gramer : 윤승준
+ */
 public class user_bottomnavi extends AppCompatActivity {
 
 

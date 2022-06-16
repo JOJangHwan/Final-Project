@@ -19,7 +19,9 @@ import androidx.fragment.app.Fragment;
 
 import java.text.SimpleDateFormat;
 import java.util.Locale;
-
+/*
+    gramer : 윤승준 내부 기능 및 UI 담당
+ */
 public class user_Frag3 extends Fragment {
     private View view;
 

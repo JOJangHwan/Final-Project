@@ -1,5 +1,7 @@
 package com.example.virus_confirmation_management_application;
-
+/*
+    gramer : 윤승준 내부 기능 및 UI 담당
+ */
 public class user_hos_med_Item1 {
     private int image;
     private String name;

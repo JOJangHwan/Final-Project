@@ -20,7 +20,9 @@ import static com.example.virus_confirmation_management_application.user_Frag2.a
 import static com.example.virus_confirmation_management_application.user_bottomnavi.pagedata;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-
+/*
+    gramer : 윤승준  UI
+ */
 public class user_selftest extends AppCompatActivity {
 
 
