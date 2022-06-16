@@ -1,3 +1,7 @@
+/*
+2017243053 조장환
+
+ */
 package com.example.virus_confirmation_management_application;
 
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
@@ -11,11 +15,9 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
