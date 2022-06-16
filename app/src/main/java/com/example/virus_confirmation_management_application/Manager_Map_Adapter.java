@@ -3,7 +3,6 @@ package com.example.virus_confirmation_management_application;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -31,8 +30,12 @@ public class Manager_Map_Adapter extends RecyclerView.Adapter<Manager_Map_Adapte
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.text_map_list.setText(Data_arrayList.get(position).getMessage());
-        holder.img_map_list.setImageResource(Data_arrayList.get(position).getResourceId());
+        holder.manager_board_tittle.setText(Data_arrayList.get(position).getMessage());
+        holder.manager_board_date.setText(Data_arrayList.get(position).getMessage());
+        holder.manager_board_userid.setText(Data_arrayList.get(position).getMessage());
+        holder.manager_board_like.setText(Data_arrayList.get(position).getMessage());
+        holder.manager_board_chat.setText(Data_arrayList.get(position).getMessage());
+
 
     }
 
@@ -43,13 +46,19 @@ public class Manager_Map_Adapter extends RecyclerView.Adapter<Manager_Map_Adapte
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder{
-        ImageView img_map_list;
-        TextView text_map_list;
+        TextView manager_board_tittle;
+        TextView manager_board_date;
+        TextView manager_board_userid;
+        TextView manager_board_like;
+        TextView manager_board_chat;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            img_map_list = (ImageView) itemView.findViewById(R.id.img_map_list);
-            text_map_list = itemView.findViewById(R.id.text_map_list);
+            manager_board_tittle = (TextView) itemView.findViewById(R.id.manager_board_tittle);
+            manager_board_date = (TextView) itemView.findViewById(R.id.manager_board_date);
+            manager_board_userid = (TextView) itemView.findViewById(R.id.manager_board_userid);
+            manager_board_like = (TextView) itemView.findViewById(R.id.manager_board_like);
+            manager_board_chat = (TextView) itemView.findViewById(R.id.manager_board_chat);
         }
 
 
