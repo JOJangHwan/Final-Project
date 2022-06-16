@@ -37,6 +37,7 @@
         <entry key="..\:/Fianl/app/src/main/res/layout/item_qna_list.xml" value="0.26458333333333334" />
         <entry key="..\:/Fianl/app/src/main/res/layout/item_user_list.xml" value="0.26458333333333334" />
         <entry key="..\:/Fianl/app/src/main/res/layout/item_virpeoplelist.xml" value="0.1" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/joint_login.xml" value="0.1527777777777778" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu.xml" value="0.29375" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_1.xml" value="0.29375" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_activity_gogu_mainimg.xml" value="0.22" />
@@ -81,11 +82,14 @@
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_peo_infor.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_frag_user_information.xml" value="0.2210144927536232" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_home_bottom_navi.xml" value="0.2884963768115942" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_hosp_detail.xml" value="0.3140625" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_map_write.xml" value="0.2884963768115942" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_matter_detail.xml" value="0.3619791666666667" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_notice_detail.xml" value="0.26458333333333334" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_overseas.xml" value="0.276268115942029" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_qna_detail.xml" value="0.3125" />
         <entry key="..\:/Fianl/app/src/main/res/layout/manager_user_detail.xml" value="0.30117753623188404" />
+        <entry key="..\:/Fianl/app/src/main/res/layout/manager_webview.xml" value="0.23385416666666667" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_activity_main.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_announce_activity.xml" value="0.38697916666666665" />
         <entry key="..\:/Fianl/app/src/main/res/layout/user_anotherconturywebview.xml" value="0.26458333333333334" />
@@ -180,7 +184,6 @@
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_hosinformation_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_board.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_board_add.xml" value="0.3537037037037037" />
-        <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_board_comment_item.xml" value="0.25" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_map_boardlist_item.xml" value="0.14537037037037037" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_myfamily_activity.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/Final-Project/app/src/main/res/layout/user_mypage_activity.xml" value="0.36614583333333334" />

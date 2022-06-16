@@ -1,3 +1,7 @@
+/*
+2017243053 조장환
+
+ */
 package com.example.virus_confirmation_management_application;
 
 class Manager_Map_Data {
