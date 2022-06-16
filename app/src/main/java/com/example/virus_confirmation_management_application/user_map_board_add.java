@@ -42,40 +42,10 @@ public class user_map_board_add extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_map_board_add);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         mDatabase = FirebaseDatabase.getInstance().getReference();
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
         String data = getIntent().getStringExtra("data");
-
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.action_map:
-                        pagedata = 0;
-                        Intent intent = new Intent(getApplicationContext(), user_bottomnavi.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent); // 액티비티 이동 구문
-                        break;
-                    case R.id.action_main:
-                        pagedata = 1;
-                        a = 0;
-                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent); // 액티비티 이동 구문
-                        break;
-                    case R.id.action_person:
-                        pagedata = 2;
-                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent); // 액티비티 이동 구문
-                        break;
-                }
-                return true;
-            }
-        });
 
         mAuth = FirebaseAuth.getInstance();
 
@@ -111,7 +81,9 @@ public class user_map_board_add extends AppCompatActivity {
                             mDatabase.child("board").child(data).child(index).child("tittle").setValue(tittle);
                             mDatabase.child("board").child(data).child(index).child("content").setValue(content);
                             mDatabase.child("board").child(data).child(index).child("index").setValue(index);
-                            mDatabase.child("board").child(data).child(index).child("i").child("index").setValue(asd);
+                            mDatabase.child("board").child(data).child(index).child("chattingnum").setValue("0");
+
+                            mDatabase.child("board").child(data).child(index).child("i").child("index").setValue(1);
 
                             long now = System.currentTimeMillis();
                             Date date = new Date(now);
@@ -146,6 +118,38 @@ public class user_map_board_add extends AppCompatActivity {
 
             }
         });
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.action_map:
+                        pagedata = 0;
+                        Intent intent = new Intent(getApplicationContext(), user_bottomnavi.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent); // 액티비티 이동 구문
+                        break;
+                    case R.id.action_main:
+                        pagedata = 1;
+                        a = 0;
+                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent); // 액티비티 이동 구문
+                        break;
+                    case R.id.action_person:
+                        pagedata = 2;
+                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent); // 액티비티 이동 구문
+                        break;
+                }
+                return true;
+            }
+        });
+
+
 
 
 

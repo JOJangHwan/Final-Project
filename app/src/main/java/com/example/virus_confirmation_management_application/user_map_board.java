@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.GestureDetector;
+import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -55,42 +56,11 @@ public class user_map_board extends AppCompatActivity {
     private DatabaseReference mDatabase;
     private FirebaseAuth mAuth;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.user_map_board);
 
-        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
-
-        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.action_map:
-                        pagedata=0;
-                        Intent intent = new Intent(getApplicationContext(), user_bottomnavi.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent); // 액티비티 이동 구문
-                        break;
-                    case R.id.action_main:
-                        pagedata=1;
-                        a=0;
-                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent); // 액티비티 이동 구문
-                        break;
-                    case R.id.action_person:
-                        pagedata=2;
-                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                        startActivity(intent); // 액티비티 이동 구문
-                        break;
-                }
-                return true;
-            }
-        });
 
 
         //String Boardlocation = getIntent().getStringExtra("Boardlocation");
@@ -100,7 +70,6 @@ public class user_map_board extends AppCompatActivity {
         String User_content = getIntent().getStringExtra("User_content");
         final String index = getIntent().getStringExtra("index");
         String region = getIntent().getStringExtra("region");
-
 
         TextView title_tv = (TextView) findViewById(R.id.title_tv);
         TextView date_tv = (TextView) findViewById(R.id.date_tv);
@@ -112,12 +81,7 @@ public class user_map_board extends AppCompatActivity {
         userid_tv.setText(User_id.substring(0,2)+"**");
         content_tv.setText(User_content);
 
-        ImageView imageview = (ImageView)findViewById(R.id.imageView6);
-        imageview.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(), "좋아요을 눌르셧습니다..", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
 
         mRecyclerView = (RecyclerView) findViewById(R.id.comment_recyclerView);
@@ -177,7 +141,7 @@ public class user_map_board extends AppCompatActivity {
                             final int  asd =value;
                             value +=1;//숫자를 1 증가시켜서
                             String in_index = String.valueOf (asd);
-
+                            databaseReference_add.child("board").child(region).child(index).child("chattingnum").setValue(String.valueOf (asd));//저장
                             databaseReference_add.child("board").child(region).child(index).child("i").child("index").setValue(value);//저장
 
 
@@ -217,18 +181,7 @@ public class user_map_board extends AppCompatActivity {
 
                                 }
                             });
-                            /*
-                            Intent intent = new Intent(getApplicationContext(),user_map_board.class);
-                            intent.putExtra( "Board_tittle", Board_tittle);
-                            intent.putExtra( "Board_date", Board_date);
-                            intent.putExtra( "User_id", User_id);
-                            intent.putExtra( "User_content", User_content);
-                            intent.putExtra( "index", index);
-                            intent.putExtra( "region",region);
 
-                            startActivity(intent);
-                            finish();
-*/
                         }
 
                         @Override
@@ -241,20 +194,48 @@ public class user_map_board extends AppCompatActivity {
                     });
 
 
-/*
-                    Intent intent = new Intent(getApplicationContext(),user_map_boardlist.class);
-                    intent.putExtra("tittle", data);
 
-                    startActivity(intent);
-                    finish();
-*/
                 }
 
             }
         });
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+
+
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.action_map:
+                        pagedata=0;
+                        Intent intent = new Intent(getApplicationContext(), user_bottomnavi.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent); // 액티비티 이동 구문
+                        break;
+                    case R.id.action_main:
+                        pagedata=1;
+                        a=0;
+                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent); // 액티비티 이동 구문
+                        break;
+                    case R.id.action_person:
+                        pagedata=2;
+                        intent = new Intent(getApplicationContext(), user_bottomnavi.class);
+                        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                        startActivity(intent); // 액티비티 이동 구문
+                        break;
+                }
+                return true;
+            }
+        });
+
 
         adapter =new user_map_board_comment_CustomAdapter(user_map_board_comment_item,this);
         mRecyclerView.setAdapter(adapter);
+
     }
+
+
 
 }

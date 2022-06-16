@@ -8,21 +8,21 @@ public class user_map_boardlist_item {
     private String content;
     private String name;
     private String Time;
+    private String chattingnum;
 
     public user_map_boardlist_item(){}
 
-    /*
-    public user_map_boardlist_item(String Time, String content,String index,  String name,String tittle) {
-        //this.boardlocation = boardlocation;
-        //this.index = index;
-        this.index = index;
-        this.tittle= tittle;
-        this.content = content;
-        this.name = name;
-        this.Time = Time;
 
+
+
+    public String getChattingnum() {
+        return chattingnum;
     }
-*/
+
+    public void setChattingnum(String chattingnum) {
+        this.chattingnum = chattingnum;
+    }
+
     public String getIndex() {
         return index;
     }

@@ -43,11 +43,11 @@ public class user_map_boardlist_CustomAdapter extends RecyclerView.Adapter<user_
     @Override
     public void onBindViewHolder(@NonNull CustomViewHolder holder, int position) {
 
-        holder.index.setText(mboardlistIteArrayList.get(position).getIndex());
         holder.tittle.setText(mboardlistIteArrayList.get(position).getTittle());
         holder.content.setText(mboardlistIteArrayList.get(position).getContent());
         holder.name.setText(mboardlistIteArrayList.get(position).getName());
         holder.Time.setText(mboardlistIteArrayList.get(position).getTime());
+        holder.board_chat.setText(mboardlistIteArrayList.get(position).getChattingnum());
     }
 
     @Override
@@ -60,10 +60,7 @@ public class user_map_boardlist_CustomAdapter extends RecyclerView.Adapter<user_
         TextView Time;
         TextView name;
         TextView content;
-        TextView index;
-
-        //TextView board_like;
-        //TextView board_chat;
+        TextView board_chat;
 
 
         public CustomViewHolder(@NonNull View itemView) {
@@ -72,10 +69,8 @@ public class user_map_boardlist_CustomAdapter extends RecyclerView.Adapter<user_
             tittle = itemView.findViewById(R.id.board_tittle);
             Time = itemView.findViewById(R.id.board_date);
             name =  itemView.findViewById(R.id.board_userid);
-             content =itemView.findViewById(R.id.board_like);
-            index=itemView.findViewById(R.id.board_chat);
-            //board_like = (TextView) itemView.findViewById(R.id.board_like);
-            //board_chat = (TextView) itemView.findViewById(R.id.board_chat);
+            content = (TextView) itemView.findViewById(R.id.board_chat);
+            board_chat = (TextView) itemView.findViewById(R.id.board_chat);
 
 
         }

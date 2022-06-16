@@ -98,13 +98,6 @@
                         android:padding="16dp"
                         android:text="내용" />
 
-                    <ImageView
-                        android:id="@+id/imageView6"
-                        android:layout_width="50dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="right"
-                        app:srcCompat="@drawable/like_ga30cf2bb6_640" />
-
 
                 </LinearLayout>
 

@@ -181,15 +181,6 @@ public class user_map_boardlist  extends AppCompatActivity {
                 finish();
             }
         });
-        /* initiate adapter */
-        //mboardlistCustomAdapter= new user_map_boardlist_CustomAdapter();
-        /* initiate recyclerview */
-        // mRecyclerView.setAdapter(mboardlistCustomAdapter);
-        // mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        /* adapt data */
-        //user_map_boardlist_item = new ArrayList<>();
-        // database = FirebaseDatabase.getInstance();
-        //databaseReference=database.getReference("board").child(tittle);
 
 
 
@@ -203,7 +194,7 @@ public class user_map_boardlist  extends AppCompatActivity {
 
         databaseReference =database.getReference("board");
 
-        databaseReference.child(tittle).addListenerForSingleValueEvent(new ValueEventListener() {
+        databaseReference.child(tittle).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 user_map_boardlist_item.clear();

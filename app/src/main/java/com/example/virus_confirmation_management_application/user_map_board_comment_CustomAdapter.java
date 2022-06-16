@@ -38,6 +38,7 @@ public class user_map_board_comment_CustomAdapter extends RecyclerView.Adapter<u
         holder.cmt_userid_tv.setText(mboardcommentIteArrayList.get(position).getName());
         holder.cmt_content_tv.setText(mboardcommentIteArrayList.get(position).getContent());
 
+
     }
 
     public void setMboardcommentIteArrayList(ArrayList<user_map_board_comment_item> list){
@@ -54,8 +55,7 @@ public class user_map_board_comment_CustomAdapter extends RecyclerView.Adapter<u
         TextView cmt_content_tv;
         TextView cmt_date_tv;
         TextView cmt_userid_tv;
-        //TextView board_like;
-        //TextView board_chat;
+
 
 
         public CustomViewHolder(@NonNull View itemView) {
@@ -64,8 +64,7 @@ public class user_map_board_comment_CustomAdapter extends RecyclerView.Adapter<u
             cmt_content_tv = (TextView) itemView.findViewById(R.id.cmt_content_tv);
             cmt_date_tv = (TextView) itemView.findViewById(R.id.cmt_date_tv);
             cmt_userid_tv = (TextView) itemView.findViewById(R.id.cmt_userid_tv);
-           // board_like = (TextView) itemView.findViewById(R.id.board_like);
-           // board_chat = (TextView) itemView.findViewById(R.id.board_chat);
+
 
 
         }
