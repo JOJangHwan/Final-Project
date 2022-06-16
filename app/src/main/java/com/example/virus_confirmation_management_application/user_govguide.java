@@ -15,6 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 /*
     gramer : 윤승준 내부 기능 및 UI 담당
+    2017243028  임현성
+
  */
 public class user_govguide extends AppCompatActivity {
 

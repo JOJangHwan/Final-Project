@@ -1,5 +1,8 @@
 package com.example.virus_confirmation_management_application;
+/*
+2017243028  임현성
 
+ */
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;

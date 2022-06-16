@@ -22,6 +22,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 /*
     gramer : 윤승준  UI
+    2017243028  임현성
+
  */
 public class user_selftest extends AppCompatActivity {
 

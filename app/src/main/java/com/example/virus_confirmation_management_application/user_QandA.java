@@ -17,6 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 /*
     gramer : 윤승준  UI및 내부기능
+    2017243028  임현성
  */
 public class user_QandA extends AppCompatActivity {
 

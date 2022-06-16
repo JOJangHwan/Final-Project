@@ -15,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 /*
     gramer : 윤승준 내부기능, UI
+    2017243028  임현성
  */
 public class user_virusinformationlist  extends AppCompatActivity {
 

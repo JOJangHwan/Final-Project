@@ -1,5 +1,8 @@
 package com.example.virus_confirmation_management_application;
+/*
+2017243028 임현성 병원 api 개발
 
+ */
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -25,7 +28,7 @@ import java.net.URLEncoder;
 import java.util.ArrayList;
 
 
-public class hos extends AppCompatActivity {
+public class hos extends AppCompatActivity { // 임현성 병원 api 개발
 
     private View view;
     static ArrayList<String> array = new ArrayList<String>();
@@ -113,6 +116,7 @@ public class hos extends AppCompatActivity {
 
 
          String queryUrl = "http://apis.data.go.kr/B552657/HsptlAsembySearchService/getHsptlMdcncLcinfoInqire?WGS84_LON=" + "127.07584097261743"+"&WGS84_LAT="+"36.798547089307185"+"&pageNo=1&numOfRows=200&ServiceKey=1YlW0QVRfpVBzSDpza%2FFoWL0WpN817YpMoPtXuT3dYmQSpBVUT6X974ETi2OVyxWp3nDg4R8GB0CttiGBl7n%2Fw%3D%3D";
+
         try {
 
             URL url = new URL(queryUrl); // 문자열로 된 요청 url을 URL 객체로 생성.

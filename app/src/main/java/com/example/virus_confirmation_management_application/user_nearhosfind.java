@@ -1,7 +1,8 @@
 package com.example.virus_confirmation_management_application;
 
 /*
-    gramer : 윤승준  UI및 내부기능
+2017243028  임현성
+
  */
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
 import static com.example.virus_confirmation_management_application.user_bottomnavi.pagedata;

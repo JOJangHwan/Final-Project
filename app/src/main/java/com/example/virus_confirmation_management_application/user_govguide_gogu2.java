@@ -1,8 +1,10 @@
 package com.example.virus_confirmation_management_application;
+/*
+2017243028  임현성
 
+ */
 import static com.example.virus_confirmation_management_application.user_Frag2.a;
 import static com.example.virus_confirmation_management_application.user_bottomnavi.pagedata;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
@@ -10,7 +12,6 @@ import android.view.MenuItem;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 

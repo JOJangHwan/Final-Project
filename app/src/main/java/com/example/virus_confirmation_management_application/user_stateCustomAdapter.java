@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 /*
     gramer : 윤승준 내부기능, UI
+    2017243028  임현성
+
  */
 public class user_stateCustomAdapter extends RecyclerView.Adapter<user_stateCustomAdapter.ViewHolder> {
 

@@ -1,5 +1,8 @@
 package com.example.virus_confirmation_management_application;
+/*
+2017243028 로그인 후 임현성 병원 api 개발
 
+ */
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -60,6 +63,7 @@ public class joint_fragment_login_user extends Fragment {
         bt_login = view.findViewById(R.id.btn_login_user); // 메인으로 이동
         bt_login.setOnClickListener(new View.OnClickListener() {
             @Override
+
 
             public void onClick(View v) {
 
@@ -200,8 +204,5 @@ public class joint_fragment_login_user extends Fragment {
 
         return buffer.toString(); // 파싱 다 종료 후 StringBuffer 문자열 객체 반환
     }
-
-
-
 
 }

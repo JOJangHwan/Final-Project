@@ -1,5 +1,4 @@
 package com.example.virus_confirmation_management_application;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
